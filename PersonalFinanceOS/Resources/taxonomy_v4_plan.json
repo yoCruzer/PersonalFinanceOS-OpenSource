@@ -1,0 +1,2314 @@
+{
+  "documentRole": "implementation_plan_not_executable_migration",
+  "product": "PersonalFinanceOS V2",
+  "baseline": "e30cb2f5d739b0029fb2a0f256b0805461379c6d",
+  "proposedCategoryCatalogRevision": 4,
+  "retainedSwiftDataSchema": 4,
+  "counts": {
+    "expense": {
+      "roots": 20,
+      "leaves": 178
+    },
+    "income": {
+      "roots": 6,
+      "leaves": 29
+    }
+  },
+  "warnings": [
+    "semanticKey 与存储 defaultDefinitionKey 分离；不得把 semanticKey 批量写回旧记录。",
+    "本文件只覆盖目标主目录；旧兼容分类及用户自定义分类必须继续保留。",
+    "existingRootReuse 不授权自动改名或移动；存量账本需预览、身份核对及并发验收。",
+    "升级数据模型版本与升级分类目录版本是两种不同操作。"
+  ],
+  "catalog": [
+    {
+      "semanticKey": "expense.dining",
+      "kind": "expense",
+      "displayName": "餐饮饮品",
+      "storageDefaultKey": "expense.dining",
+      "existingRootReuse": true,
+      "children": [
+        {
+          "semanticKey": "expense.dining.breakfast",
+          "displayName": "早餐",
+          "storageDefaultKey": "expense.dining.breakfast",
+          "reuseExistingIdentity": true,
+          "parentSemanticKey": "expense.dining"
+        },
+        {
+          "semanticKey": "expense.dining.lunch",
+          "displayName": "午餐",
+          "storageDefaultKey": "expense.dining.lunch",
+          "reuseExistingIdentity": true,
+          "parentSemanticKey": "expense.dining"
+        },
+        {
+          "semanticKey": "expense.dining.dinner",
+          "displayName": "晚餐",
+          "storageDefaultKey": "expense.dining.dinner",
+          "reuseExistingIdentity": true,
+          "parentSemanticKey": "expense.dining"
+        },
+        {
+          "semanticKey": "expense.dining.late-meal",
+          "displayName": "夜宵",
+          "storageDefaultKey": "expense.dining.late-meal",
+          "reuseExistingIdentity": false,
+          "parentSemanticKey": "expense.dining"
+        },
+        {
+          "semanticKey": "expense.dining.regular-meal",
+          "displayName": "正餐（未分餐次）",
+          "storageDefaultKey": "expense.dining.regular-meal",
+          "reuseExistingIdentity": false,
+          "parentSemanticKey": "expense.dining"
+        },
+        {
+          "semanticKey": "expense.dining.coffee",
+          "displayName": "咖啡",
+          "storageDefaultKey": "expense.dining.coffee",
+          "reuseExistingIdentity": false,
+          "parentSemanticKey": "expense.dining"
+        },
+        {
+          "semanticKey": "expense.dining.tea-drink",
+          "displayName": "奶茶",
+          "storageDefaultKey": "expense.dining.tea-drink",
+          "reuseExistingIdentity": false,
+          "parentSemanticKey": "expense.dining"
+        },
+        {
+          "semanticKey": "expense.dining.beverages",
+          "displayName": "饮料饮水",
+          "storageDefaultKey": "expense.dining.beverages",
+          "reuseExistingIdentity": false,
+          "parentSemanticKey": "expense.dining"
+        },
+        {
+          "semanticKey": "expense.dining.snacks",
+          "displayName": "零食烘焙",
+          "storageDefaultKey": "expense.dining.snacks",
+          "reuseExistingIdentity": false,
+          "parentSemanticKey": "expense.dining"
+        },
+        {
+          "semanticKey": "expense.dining.fruit",
+          "displayName": "水果",
+          "storageDefaultKey": "expense.dining.fruit",
+          "reuseExistingIdentity": true,
+          "parentSemanticKey": "expense.dining"
+        },
+        {
+          "semanticKey": "expense.dining.alcohol",
+          "displayName": "酒水",
+          "storageDefaultKey": "expense.dining.alcohol",
+          "reuseExistingIdentity": false,
+          "parentSemanticKey": "expense.dining"
+        },
+        {
+          "semanticKey": "expense.dining.other",
+          "displayName": "其他餐饮",
+          "storageDefaultKey": "expense.dining.other",
+          "reuseExistingIdentity": true,
+          "parentSemanticKey": "expense.dining"
+        }
+      ]
+    },
+    {
+      "semanticKey": "expense.groceries",
+      "kind": "expense",
+      "displayName": "买菜食材",
+      "storageDefaultKey": "expense.groceries",
+      "existingRootReuse": false,
+      "children": [
+        {
+          "semanticKey": "expense.groceries.vegetables",
+          "displayName": "蔬菜菌菇",
+          "storageDefaultKey": "expense.groceries.vegetables",
+          "reuseExistingIdentity": false,
+          "parentSemanticKey": "expense.groceries"
+        },
+        {
+          "semanticKey": "expense.groceries.meat-eggs",
+          "displayName": "肉禽蛋类",
+          "storageDefaultKey": "expense.groceries.meat-eggs",
+          "reuseExistingIdentity": false,
+          "parentSemanticKey": "expense.groceries"
+        },
+        {
+          "semanticKey": "expense.groceries.seafood",
+          "displayName": "水产海鲜",
+          "storageDefaultKey": "expense.groceries.seafood",
+          "reuseExistingIdentity": false,
+          "parentSemanticKey": "expense.groceries"
+        },
+        {
+          "semanticKey": "expense.groceries.grains",
+          "displayName": "米面杂粮",
+          "storageDefaultKey": "expense.groceries.grains",
+          "reuseExistingIdentity": false,
+          "parentSemanticKey": "expense.groceries"
+        },
+        {
+          "semanticKey": "expense.groceries.oil",
+          "displayName": "食用油",
+          "storageDefaultKey": "expense.groceries.oil",
+          "reuseExistingIdentity": false,
+          "parentSemanticKey": "expense.groceries"
+        },
+        {
+          "semanticKey": "expense.groceries.seasoning",
+          "displayName": "调味干货",
+          "storageDefaultKey": "expense.groceries.seasoning",
+          "reuseExistingIdentity": false,
+          "parentSemanticKey": "expense.groceries"
+        },
+        {
+          "semanticKey": "expense.groceries.dairy",
+          "displayName": "乳制品",
+          "storageDefaultKey": "expense.groceries.dairy",
+          "reuseExistingIdentity": false,
+          "parentSemanticKey": "expense.groceries"
+        },
+        {
+          "semanticKey": "expense.groceries.convenience",
+          "displayName": "速冻方便食品",
+          "storageDefaultKey": "expense.groceries.convenience",
+          "reuseExistingIdentity": false,
+          "parentSemanticKey": "expense.groceries"
+        },
+        {
+          "semanticKey": "expense.groceries.other",
+          "displayName": "其他食材",
+          "storageDefaultKey": "expense.groceries.other",
+          "reuseExistingIdentity": false,
+          "parentSemanticKey": "expense.groceries"
+        }
+      ]
+    },
+    {
+      "semanticKey": "expense.transportation",
+      "kind": "expense",
+      "displayName": "交通出行",
+      "storageDefaultKey": "expense.transportation",
+      "existingRootReuse": true,
+      "children": [
+        {
+          "semanticKey": "expense.transportation.bus",
+          "displayName": "公交",
+          "storageDefaultKey": "expense.transportation.bus",
+          "reuseExistingIdentity": true,
+          "parentSemanticKey": "expense.transportation"
+        },
+        {
+          "semanticKey": "expense.transportation.metro",
+          "displayName": "地铁",
+          "storageDefaultKey": "expense.transportation.metro",
+          "reuseExistingIdentity": true,
+          "parentSemanticKey": "expense.transportation"
+        },
+        {
+          "semanticKey": "expense.transportation.taxi",
+          "displayName": "打车",
+          "storageDefaultKey": "expense.transportation.taxi",
+          "reuseExistingIdentity": true,
+          "parentSemanticKey": "expense.transportation"
+        },
+        {
+          "semanticKey": "expense.transportation.bike",
+          "displayName": "共享骑行",
+          "storageDefaultKey": "expense.transportation.bike",
+          "reuseExistingIdentity": false,
+          "parentSemanticKey": "expense.transportation"
+        },
+        {
+          "semanticKey": "expense.transportation.rail",
+          "displayName": "高铁火车",
+          "storageDefaultKey": "expense.transportation.rail",
+          "reuseExistingIdentity": false,
+          "parentSemanticKey": "expense.transportation"
+        },
+        {
+          "semanticKey": "expense.transportation.coach",
+          "displayName": "长途汽车",
+          "storageDefaultKey": "expense.transportation.coach",
+          "reuseExistingIdentity": false,
+          "parentSemanticKey": "expense.transportation"
+        },
+        {
+          "semanticKey": "expense.transportation.flight",
+          "displayName": "飞机",
+          "storageDefaultKey": "expense.transportation.flight",
+          "reuseExistingIdentity": false,
+          "parentSemanticKey": "expense.transportation"
+        },
+        {
+          "semanticKey": "expense.transportation.ferry",
+          "displayName": "轮渡船票",
+          "storageDefaultKey": "expense.transportation.ferry",
+          "reuseExistingIdentity": false,
+          "parentSemanticKey": "expense.transportation"
+        },
+        {
+          "semanticKey": "expense.transportation.rental",
+          "displayName": "租车",
+          "storageDefaultKey": "expense.transportation.rental",
+          "reuseExistingIdentity": false,
+          "parentSemanticKey": "expense.transportation"
+        },
+        {
+          "semanticKey": "expense.transportation.other",
+          "displayName": "其他交通",
+          "storageDefaultKey": "expense.transportation.other",
+          "reuseExistingIdentity": true,
+          "parentSemanticKey": "expense.transportation"
+        }
+      ]
+    },
+    {
+      "semanticKey": "expense.vehicle",
+      "kind": "expense",
+      "displayName": "车辆养护",
+      "storageDefaultKey": "expense.vehicle",
+      "existingRootReuse": false,
+      "children": [
+        {
+          "semanticKey": "expense.vehicle.fuel",
+          "displayName": "加油",
+          "storageDefaultKey": "expense.transportation.fuel",
+          "reuseExistingIdentity": true,
+          "parentSemanticKey": "expense.vehicle"
+        },
+        {
+          "semanticKey": "expense.vehicle.charging",
+          "displayName": "充电",
+          "storageDefaultKey": "expense.vehicle.charging",
+          "reuseExistingIdentity": false,
+          "parentSemanticKey": "expense.vehicle"
+        },
+        {
+          "semanticKey": "expense.vehicle.parking",
+          "displayName": "停车",
+          "storageDefaultKey": "expense.transportation.parking",
+          "reuseExistingIdentity": true,
+          "parentSemanticKey": "expense.vehicle"
+        },
+        {
+          "semanticKey": "expense.vehicle.toll",
+          "displayName": "高速过路",
+          "storageDefaultKey": "expense.transportation.toll",
+          "reuseExistingIdentity": true,
+          "parentSemanticKey": "expense.vehicle"
+        },
+        {
+          "semanticKey": "expense.vehicle.cleaning",
+          "displayName": "洗车美容",
+          "storageDefaultKey": "expense.vehicle.cleaning",
+          "reuseExistingIdentity": false,
+          "parentSemanticKey": "expense.vehicle"
+        },
+        {
+          "semanticKey": "expense.vehicle.maintenance",
+          "displayName": "维修保养",
+          "storageDefaultKey": "expense.transportation.maintenance",
+          "reuseExistingIdentity": true,
+          "parentSemanticKey": "expense.vehicle"
+        },
+        {
+          "semanticKey": "expense.vehicle.accessories",
+          "displayName": "车载用品",
+          "storageDefaultKey": "expense.vehicle.accessories",
+          "reuseExistingIdentity": false,
+          "parentSemanticKey": "expense.vehicle"
+        },
+        {
+          "semanticKey": "expense.vehicle.insurance",
+          "displayName": "车辆保险",
+          "storageDefaultKey": "expense.vehicle.insurance",
+          "reuseExistingIdentity": false,
+          "parentSemanticKey": "expense.vehicle"
+        },
+        {
+          "semanticKey": "expense.vehicle.inspection-tax",
+          "displayName": "年检车船税",
+          "storageDefaultKey": "expense.vehicle.inspection-tax",
+          "reuseExistingIdentity": false,
+          "parentSemanticKey": "expense.vehicle"
+        },
+        {
+          "semanticKey": "expense.vehicle.other",
+          "displayName": "其他养车",
+          "storageDefaultKey": "expense.vehicle.other",
+          "reuseExistingIdentity": false,
+          "parentSemanticKey": "expense.vehicle"
+        }
+      ]
+    },
+    {
+      "semanticKey": "expense.home",
+      "kind": "expense",
+      "displayName": "住房物业",
+      "storageDefaultKey": "expense.home",
+      "existingRootReuse": true,
+      "children": [
+        {
+          "semanticKey": "expense.home.rent",
+          "displayName": "房租",
+          "storageDefaultKey": "expense.home.rent",
+          "reuseExistingIdentity": false,
+          "parentSemanticKey": "expense.home"
+        },
+        {
+          "semanticKey": "expense.home.property",
+          "displayName": "物业",
+          "storageDefaultKey": "expense.home.property",
+          "reuseExistingIdentity": true,
+          "parentSemanticKey": "expense.home"
+        },
+        {
+          "semanticKey": "expense.home.water",
+          "displayName": "水费",
+          "storageDefaultKey": "expense.home.water",
+          "reuseExistingIdentity": false,
+          "parentSemanticKey": "expense.home"
+        },
+        {
+          "semanticKey": "expense.home.electricity",
+          "displayName": "电费",
+          "storageDefaultKey": "expense.home.electricity",
+          "reuseExistingIdentity": false,
+          "parentSemanticKey": "expense.home"
+        },
+        {
+          "semanticKey": "expense.home.gas",
+          "displayName": "燃气",
+          "storageDefaultKey": "expense.home.gas",
+          "reuseExistingIdentity": false,
+          "parentSemanticKey": "expense.home"
+        },
+        {
+          "semanticKey": "expense.home.heating",
+          "displayName": "供暖",
+          "storageDefaultKey": "expense.home.heating",
+          "reuseExistingIdentity": false,
+          "parentSemanticKey": "expense.home"
+        },
+        {
+          "semanticKey": "expense.home.cleaning",
+          "displayName": "家政保洁",
+          "storageDefaultKey": "expense.home.cleaning",
+          "reuseExistingIdentity": false,
+          "parentSemanticKey": "expense.home"
+        },
+        {
+          "semanticKey": "expense.home.repair",
+          "displayName": "住房维修",
+          "storageDefaultKey": "expense.home.repair",
+          "reuseExistingIdentity": false,
+          "parentSemanticKey": "expense.home"
+        },
+        {
+          "semanticKey": "expense.home.moving",
+          "displayName": "搬家",
+          "storageDefaultKey": "expense.home.moving",
+          "reuseExistingIdentity": false,
+          "parentSemanticKey": "expense.home"
+        },
+        {
+          "semanticKey": "expense.home.other",
+          "displayName": "其他住房",
+          "storageDefaultKey": "expense.home.other",
+          "reuseExistingIdentity": true,
+          "parentSemanticKey": "expense.home"
+        }
+      ]
+    },
+    {
+      "semanticKey": "expense.household",
+      "kind": "expense",
+      "displayName": "日用家居",
+      "storageDefaultKey": "expense.household",
+      "existingRootReuse": false,
+      "children": [
+        {
+          "semanticKey": "expense.household.paper-cleaning",
+          "displayName": "纸品清洁",
+          "storageDefaultKey": "expense.household.paper-cleaning",
+          "reuseExistingIdentity": false,
+          "parentSemanticKey": "expense.household"
+        },
+        {
+          "semanticKey": "expense.household.toiletries",
+          "displayName": "洗护日用",
+          "storageDefaultKey": "expense.household.toiletries",
+          "reuseExistingIdentity": false,
+          "parentSemanticKey": "expense.household"
+        },
+        {
+          "semanticKey": "expense.household.kitchen",
+          "displayName": "厨房用品",
+          "storageDefaultKey": "expense.household.kitchen",
+          "reuseExistingIdentity": false,
+          "parentSemanticKey": "expense.household"
+        },
+        {
+          "semanticKey": "expense.household.textiles",
+          "displayName": "家居布艺",
+          "storageDefaultKey": "expense.household.textiles",
+          "reuseExistingIdentity": false,
+          "parentSemanticKey": "expense.household"
+        },
+        {
+          "semanticKey": "expense.household.furniture",
+          "displayName": "家具",
+          "storageDefaultKey": "expense.household.furniture",
+          "reuseExistingIdentity": false,
+          "parentSemanticKey": "expense.household"
+        },
+        {
+          "semanticKey": "expense.household.appliances",
+          "displayName": "家电",
+          "storageDefaultKey": "expense.household.appliances",
+          "reuseExistingIdentity": false,
+          "parentSemanticKey": "expense.household"
+        },
+        {
+          "semanticKey": "expense.household.appliance-service",
+          "displayName": "家电维修安装",
+          "storageDefaultKey": "expense.household.appliance-service",
+          "reuseExistingIdentity": false,
+          "parentSemanticKey": "expense.household"
+        },
+        {
+          "semanticKey": "expense.household.tools",
+          "displayName": "五金工具",
+          "storageDefaultKey": "expense.household.tools",
+          "reuseExistingIdentity": false,
+          "parentSemanticKey": "expense.household"
+        },
+        {
+          "semanticKey": "expense.household.gardening",
+          "displayName": "绿植园艺",
+          "storageDefaultKey": "expense.household.gardening",
+          "reuseExistingIdentity": false,
+          "parentSemanticKey": "expense.household"
+        },
+        {
+          "semanticKey": "expense.household.other",
+          "displayName": "其他日用",
+          "storageDefaultKey": "expense.household.other",
+          "reuseExistingIdentity": false,
+          "parentSemanticKey": "expense.household"
+        }
+      ]
+    },
+    {
+      "semanticKey": "expense.clothing",
+      "kind": "expense",
+      "displayName": "服饰装扮",
+      "storageDefaultKey": "expense.clothing",
+      "existingRootReuse": false,
+      "children": [
+        {
+          "semanticKey": "expense.clothing.clothes",
+          "displayName": "衣服",
+          "storageDefaultKey": "expense.clothing.clothes",
+          "reuseExistingIdentity": false,
+          "parentSemanticKey": "expense.clothing"
+        },
+        {
+          "semanticKey": "expense.clothing.shoes",
+          "displayName": "鞋靴",
+          "storageDefaultKey": "expense.clothing.shoes",
+          "reuseExistingIdentity": false,
+          "parentSemanticKey": "expense.clothing"
+        },
+        {
+          "semanticKey": "expense.clothing.bags",
+          "displayName": "箱包",
+          "storageDefaultKey": "expense.clothing.bags",
+          "reuseExistingIdentity": false,
+          "parentSemanticKey": "expense.clothing"
+        },
+        {
+          "semanticKey": "expense.clothing.underwear",
+          "displayName": "内衣袜子",
+          "storageDefaultKey": "expense.clothing.underwear",
+          "reuseExistingIdentity": false,
+          "parentSemanticKey": "expense.clothing"
+        },
+        {
+          "semanticKey": "expense.clothing.jewelry",
+          "displayName": "配饰珠宝",
+          "storageDefaultKey": "expense.clothing.jewelry",
+          "reuseExistingIdentity": false,
+          "parentSemanticKey": "expense.clothing"
+        },
+        {
+          "semanticKey": "expense.clothing.watch",
+          "displayName": "手表",
+          "storageDefaultKey": "expense.clothing.watch",
+          "reuseExistingIdentity": false,
+          "parentSemanticKey": "expense.clothing"
+        },
+        {
+          "semanticKey": "expense.clothing.laundry",
+          "displayName": "洗衣干洗",
+          "storageDefaultKey": "expense.clothing.laundry",
+          "reuseExistingIdentity": false,
+          "parentSemanticKey": "expense.clothing"
+        },
+        {
+          "semanticKey": "expense.clothing.repair",
+          "displayName": "服饰修护",
+          "storageDefaultKey": "expense.clothing.repair",
+          "reuseExistingIdentity": false,
+          "parentSemanticKey": "expense.clothing"
+        },
+        {
+          "semanticKey": "expense.clothing.other",
+          "displayName": "其他服饰",
+          "storageDefaultKey": "expense.clothing.other",
+          "reuseExistingIdentity": false,
+          "parentSemanticKey": "expense.clothing"
+        }
+      ]
+    },
+    {
+      "semanticKey": "expense.personal-care",
+      "kind": "expense",
+      "displayName": "美容个护",
+      "storageDefaultKey": "expense.personal-care",
+      "existingRootReuse": false,
+      "children": [
+        {
+          "semanticKey": "expense.personal-care.skincare",
+          "displayName": "护肤",
+          "storageDefaultKey": "expense.personal-care.skincare",
+          "reuseExistingIdentity": false,
+          "parentSemanticKey": "expense.personal-care"
+        },
+        {
+          "semanticKey": "expense.personal-care.makeup",
+          "displayName": "彩妆香水",
+          "storageDefaultKey": "expense.personal-care.makeup",
+          "reuseExistingIdentity": false,
+          "parentSemanticKey": "expense.personal-care"
+        },
+        {
+          "semanticKey": "expense.personal-care.haircut",
+          "displayName": "理发",
+          "storageDefaultKey": "expense.personal-care.haircut",
+          "reuseExistingIdentity": false,
+          "parentSemanticKey": "expense.personal-care"
+        },
+        {
+          "semanticKey": "expense.personal-care.hair-treatment",
+          "displayName": "烫染",
+          "storageDefaultKey": "expense.personal-care.hair-treatment",
+          "reuseExistingIdentity": false,
+          "parentSemanticKey": "expense.personal-care"
+        },
+        {
+          "semanticKey": "expense.personal-care.beauty",
+          "displayName": "美容护理",
+          "storageDefaultKey": "expense.personal-care.beauty",
+          "reuseExistingIdentity": false,
+          "parentSemanticKey": "expense.personal-care"
+        },
+        {
+          "semanticKey": "expense.personal-care.nail-lash",
+          "displayName": "美甲美睫",
+          "storageDefaultKey": "expense.personal-care.nail-lash",
+          "reuseExistingIdentity": false,
+          "parentSemanticKey": "expense.personal-care"
+        },
+        {
+          "semanticKey": "expense.personal-care.massage",
+          "displayName": "按摩洗浴",
+          "storageDefaultKey": "expense.personal-care.massage",
+          "reuseExistingIdentity": false,
+          "parentSemanticKey": "expense.personal-care"
+        },
+        {
+          "semanticKey": "expense.personal-care.other",
+          "displayName": "其他个护",
+          "storageDefaultKey": "expense.personal-care.other",
+          "reuseExistingIdentity": false,
+          "parentSemanticKey": "expense.personal-care"
+        }
+      ]
+    },
+    {
+      "semanticKey": "expense.digital-services",
+      "kind": "expense",
+      "displayName": "通讯数字服务",
+      "storageDefaultKey": "expense.digital-services",
+      "existingRootReuse": false,
+      "children": [
+        {
+          "semanticKey": "expense.digital-services.phone-plan",
+          "displayName": "话费套餐",
+          "storageDefaultKey": "expense.digital-services.phone-plan",
+          "reuseExistingIdentity": false,
+          "parentSemanticKey": "expense.digital-services"
+        },
+        {
+          "semanticKey": "expense.digital-services.mobile-data",
+          "displayName": "流量加购",
+          "storageDefaultKey": "expense.digital-services.mobile-data",
+          "reuseExistingIdentity": false,
+          "parentSemanticKey": "expense.digital-services"
+        },
+        {
+          "semanticKey": "expense.digital-services.broadband",
+          "displayName": "家庭宽带",
+          "storageDefaultKey": "expense.digital-services.broadband",
+          "reuseExistingIdentity": false,
+          "parentSemanticKey": "expense.digital-services"
+        },
+        {
+          "semanticKey": "expense.digital-services.media",
+          "displayName": "影音会员",
+          "storageDefaultKey": "expense.digital-services.media",
+          "reuseExistingIdentity": false,
+          "parentSemanticKey": "expense.digital-services"
+        },
+        {
+          "semanticKey": "expense.digital-services.reading",
+          "displayName": "阅读会员",
+          "storageDefaultKey": "expense.digital-services.reading",
+          "reuseExistingIdentity": false,
+          "parentSemanticKey": "expense.digital-services"
+        },
+        {
+          "semanticKey": "expense.digital-services.software",
+          "displayName": "软件应用",
+          "storageDefaultKey": "expense.digital-services.software",
+          "reuseExistingIdentity": false,
+          "parentSemanticKey": "expense.digital-services"
+        },
+        {
+          "semanticKey": "expense.digital-services.ai-tools",
+          "displayName": "AI工具",
+          "storageDefaultKey": "expense.digital-services.ai-tools",
+          "reuseExistingIdentity": false,
+          "parentSemanticKey": "expense.digital-services"
+        },
+        {
+          "semanticKey": "expense.digital-services.cloud-storage",
+          "displayName": "云存储",
+          "storageDefaultKey": "expense.digital-services.cloud-storage",
+          "reuseExistingIdentity": false,
+          "parentSemanticKey": "expense.digital-services"
+        },
+        {
+          "semanticKey": "expense.digital-services.hosting",
+          "displayName": "域名服务器",
+          "storageDefaultKey": "expense.digital-services.hosting",
+          "reuseExistingIdentity": false,
+          "parentSemanticKey": "expense.digital-services"
+        },
+        {
+          "semanticKey": "expense.digital-services.other",
+          "displayName": "其他数字服务",
+          "storageDefaultKey": "expense.digital-services.other",
+          "reuseExistingIdentity": false,
+          "parentSemanticKey": "expense.digital-services"
+        }
+      ]
+    },
+    {
+      "semanticKey": "expense.devices",
+      "kind": "expense",
+      "displayName": "数码设备",
+      "storageDefaultKey": "expense.devices",
+      "existingRootReuse": false,
+      "children": [
+        {
+          "semanticKey": "expense.devices.phone",
+          "displayName": "手机",
+          "storageDefaultKey": "expense.devices.phone",
+          "reuseExistingIdentity": false,
+          "parentSemanticKey": "expense.devices"
+        },
+        {
+          "semanticKey": "expense.devices.computer",
+          "displayName": "电脑",
+          "storageDefaultKey": "expense.devices.computer",
+          "reuseExistingIdentity": false,
+          "parentSemanticKey": "expense.devices"
+        },
+        {
+          "semanticKey": "expense.devices.tablet",
+          "displayName": "平板",
+          "storageDefaultKey": "expense.devices.tablet",
+          "reuseExistingIdentity": false,
+          "parentSemanticKey": "expense.devices"
+        },
+        {
+          "semanticKey": "expense.devices.peripherals",
+          "displayName": "电脑配件外设",
+          "storageDefaultKey": "expense.devices.peripherals",
+          "reuseExistingIdentity": false,
+          "parentSemanticKey": "expense.devices"
+        },
+        {
+          "semanticKey": "expense.devices.audio",
+          "displayName": "耳机音响",
+          "storageDefaultKey": "expense.devices.audio",
+          "reuseExistingIdentity": false,
+          "parentSemanticKey": "expense.devices"
+        },
+        {
+          "semanticKey": "expense.devices.wearables",
+          "displayName": "智能穿戴",
+          "storageDefaultKey": "expense.devices.wearables",
+          "reuseExistingIdentity": false,
+          "parentSemanticKey": "expense.devices"
+        },
+        {
+          "semanticKey": "expense.devices.accessories",
+          "displayName": "手机平板配件",
+          "storageDefaultKey": "expense.devices.accessories",
+          "reuseExistingIdentity": false,
+          "parentSemanticKey": "expense.devices"
+        },
+        {
+          "semanticKey": "expense.devices.repair",
+          "displayName": "数码维修",
+          "storageDefaultKey": "expense.devices.repair",
+          "reuseExistingIdentity": false,
+          "parentSemanticKey": "expense.devices"
+        },
+        {
+          "semanticKey": "expense.devices.other",
+          "displayName": "其他数码",
+          "storageDefaultKey": "expense.devices.other",
+          "reuseExistingIdentity": false,
+          "parentSemanticKey": "expense.devices"
+        }
+      ]
+    },
+    {
+      "semanticKey": "expense.health",
+      "kind": "expense",
+      "displayName": "医疗健康",
+      "storageDefaultKey": "expense.health",
+      "existingRootReuse": false,
+      "children": [
+        {
+          "semanticKey": "expense.health.outpatient",
+          "displayName": "门诊挂号",
+          "storageDefaultKey": "expense.health.outpatient",
+          "reuseExistingIdentity": false,
+          "parentSemanticKey": "expense.health"
+        },
+        {
+          "semanticKey": "expense.health.medicine",
+          "displayName": "药品",
+          "storageDefaultKey": "expense.health.medicine",
+          "reuseExistingIdentity": false,
+          "parentSemanticKey": "expense.health"
+        },
+        {
+          "semanticKey": "expense.health.inpatient",
+          "displayName": "住院治疗",
+          "storageDefaultKey": "expense.health.inpatient",
+          "reuseExistingIdentity": false,
+          "parentSemanticKey": "expense.health"
+        },
+        {
+          "semanticKey": "expense.health.checkup",
+          "displayName": "体检",
+          "storageDefaultKey": "expense.health-education.checkup",
+          "reuseExistingIdentity": true,
+          "parentSemanticKey": "expense.health"
+        },
+        {
+          "semanticKey": "expense.health.dental",
+          "displayName": "牙科",
+          "storageDefaultKey": "expense.health.dental",
+          "reuseExistingIdentity": false,
+          "parentSemanticKey": "expense.health"
+        },
+        {
+          "semanticKey": "expense.health.vision",
+          "displayName": "眼科配镜",
+          "storageDefaultKey": "expense.health.vision",
+          "reuseExistingIdentity": false,
+          "parentSemanticKey": "expense.health"
+        },
+        {
+          "semanticKey": "expense.health.vaccine",
+          "displayName": "疫苗",
+          "storageDefaultKey": "expense.health.vaccine",
+          "reuseExistingIdentity": false,
+          "parentSemanticKey": "expense.health"
+        },
+        {
+          "semanticKey": "expense.health.rehab",
+          "displayName": "康复护理",
+          "storageDefaultKey": "expense.health.rehab",
+          "reuseExistingIdentity": false,
+          "parentSemanticKey": "expense.health"
+        },
+        {
+          "semanticKey": "expense.health.devices",
+          "displayName": "医疗器械",
+          "storageDefaultKey": "expense.health.devices",
+          "reuseExistingIdentity": false,
+          "parentSemanticKey": "expense.health"
+        },
+        {
+          "semanticKey": "expense.health.wellness",
+          "displayName": "保健营养",
+          "storageDefaultKey": "expense.health-education.wellness",
+          "reuseExistingIdentity": true,
+          "parentSemanticKey": "expense.health"
+        },
+        {
+          "semanticKey": "expense.health.other",
+          "displayName": "其他医疗",
+          "storageDefaultKey": "expense.health.other",
+          "reuseExistingIdentity": false,
+          "parentSemanticKey": "expense.health"
+        }
+      ]
+    },
+    {
+      "semanticKey": "expense.education",
+      "kind": "expense",
+      "displayName": "教育学习",
+      "storageDefaultKey": "expense.education",
+      "existingRootReuse": false,
+      "children": [
+        {
+          "semanticKey": "expense.education.school-fees",
+          "displayName": "学费学杂",
+          "storageDefaultKey": "expense.education.school-fees",
+          "reuseExistingIdentity": false,
+          "parentSemanticKey": "expense.education"
+        },
+        {
+          "semanticKey": "expense.education.courses",
+          "displayName": "培训课程",
+          "storageDefaultKey": "expense.education.courses",
+          "reuseExistingIdentity": false,
+          "parentSemanticKey": "expense.education"
+        },
+        {
+          "semanticKey": "expense.education.books",
+          "displayName": "图书",
+          "storageDefaultKey": "expense.education.books",
+          "reuseExistingIdentity": false,
+          "parentSemanticKey": "expense.education"
+        },
+        {
+          "semanticKey": "expense.education.stationery",
+          "displayName": "文具",
+          "storageDefaultKey": "expense.education.stationery",
+          "reuseExistingIdentity": false,
+          "parentSemanticKey": "expense.education"
+        },
+        {
+          "semanticKey": "expense.education.exams",
+          "displayName": "考试认证",
+          "storageDefaultKey": "expense.education.exams",
+          "reuseExistingIdentity": false,
+          "parentSemanticKey": "expense.education"
+        },
+        {
+          "semanticKey": "expense.education.learning-device",
+          "displayName": "学习机点读笔",
+          "storageDefaultKey": "expense.education.learning-device",
+          "reuseExistingIdentity": false,
+          "parentSemanticKey": "expense.education"
+        },
+        {
+          "semanticKey": "expense.education.study-tour",
+          "displayName": "研学活动",
+          "storageDefaultKey": "expense.education.study-tour",
+          "reuseExistingIdentity": false,
+          "parentSemanticKey": "expense.education"
+        },
+        {
+          "semanticKey": "expense.education.other",
+          "displayName": "其他教育",
+          "storageDefaultKey": "expense.education.other",
+          "reuseExistingIdentity": false,
+          "parentSemanticKey": "expense.education"
+        }
+      ]
+    },
+    {
+      "semanticKey": "expense.childcare",
+      "kind": "expense",
+      "displayName": "育儿照护",
+      "storageDefaultKey": "expense.childcare",
+      "existingRootReuse": false,
+      "children": [
+        {
+          "semanticKey": "expense.childcare.formula-food",
+          "displayName": "奶粉辅食",
+          "storageDefaultKey": "expense.childcare.formula-food",
+          "reuseExistingIdentity": false,
+          "parentSemanticKey": "expense.childcare"
+        },
+        {
+          "semanticKey": "expense.childcare.diapers",
+          "displayName": "尿裤湿巾",
+          "storageDefaultKey": "expense.childcare.diapers",
+          "reuseExistingIdentity": false,
+          "parentSemanticKey": "expense.childcare"
+        },
+        {
+          "semanticKey": "expense.childcare.feeding-care",
+          "displayName": "喂养洗护",
+          "storageDefaultKey": "expense.childcare.feeding-care",
+          "reuseExistingIdentity": false,
+          "parentSemanticKey": "expense.childcare"
+        },
+        {
+          "semanticKey": "expense.childcare.toys",
+          "displayName": "玩具益智",
+          "storageDefaultKey": "expense.childcare.toys",
+          "reuseExistingIdentity": false,
+          "parentSemanticKey": "expense.childcare"
+        },
+        {
+          "semanticKey": "expense.childcare.equipment",
+          "displayName": "婴童设备",
+          "storageDefaultKey": "expense.childcare.equipment",
+          "reuseExistingIdentity": false,
+          "parentSemanticKey": "expense.childcare"
+        },
+        {
+          "semanticKey": "expense.childcare.daycare",
+          "displayName": "托育保育",
+          "storageDefaultKey": "expense.childcare.daycare",
+          "reuseExistingIdentity": false,
+          "parentSemanticKey": "expense.childcare"
+        },
+        {
+          "semanticKey": "expense.childcare.nanny",
+          "displayName": "月嫂育儿嫂",
+          "storageDefaultKey": "expense.childcare.nanny",
+          "reuseExistingIdentity": false,
+          "parentSemanticKey": "expense.childcare"
+        },
+        {
+          "semanticKey": "expense.childcare.other",
+          "displayName": "其他育儿",
+          "storageDefaultKey": "expense.childcare.other",
+          "reuseExistingIdentity": false,
+          "parentSemanticKey": "expense.childcare"
+        }
+      ]
+    },
+    {
+      "semanticKey": "expense.entertainment",
+      "kind": "expense",
+      "displayName": "休闲娱乐",
+      "storageDefaultKey": "expense.entertainment",
+      "existingRootReuse": true,
+      "children": [
+        {
+          "semanticKey": "expense.entertainment.movie",
+          "displayName": "电影",
+          "storageDefaultKey": "expense.entertainment.movie",
+          "reuseExistingIdentity": false,
+          "parentSemanticKey": "expense.entertainment"
+        },
+        {
+          "semanticKey": "expense.entertainment.show",
+          "displayName": "演出",
+          "storageDefaultKey": "expense.entertainment.show",
+          "reuseExistingIdentity": false,
+          "parentSemanticKey": "expense.entertainment"
+        },
+        {
+          "semanticKey": "expense.entertainment.game-purchase",
+          "displayName": "游戏购买",
+          "storageDefaultKey": "expense.entertainment.game-purchase",
+          "reuseExistingIdentity": false,
+          "parentSemanticKey": "expense.entertainment"
+        },
+        {
+          "semanticKey": "expense.entertainment.game-topup",
+          "displayName": "游戏充值",
+          "storageDefaultKey": "expense.entertainment.game-topup",
+          "reuseExistingIdentity": false,
+          "parentSemanticKey": "expense.entertainment"
+        },
+        {
+          "semanticKey": "expense.entertainment.tabletop",
+          "displayName": "桌游棋牌",
+          "storageDefaultKey": "expense.entertainment.tabletop",
+          "reuseExistingIdentity": false,
+          "parentSemanticKey": "expense.entertainment"
+        },
+        {
+          "semanticKey": "expense.entertainment.karaoke-bar",
+          "displayName": "KTV酒吧",
+          "storageDefaultKey": "expense.entertainment.karaoke-bar",
+          "reuseExistingIdentity": false,
+          "parentSemanticKey": "expense.entertainment"
+        },
+        {
+          "semanticKey": "expense.entertainment.exhibition",
+          "displayName": "展览活动",
+          "storageDefaultKey": "expense.entertainment.exhibition",
+          "reuseExistingIdentity": false,
+          "parentSemanticKey": "expense.entertainment"
+        },
+        {
+          "semanticKey": "expense.entertainment.amusement",
+          "displayName": "游乐园",
+          "storageDefaultKey": "expense.entertainment.amusement",
+          "reuseExistingIdentity": false,
+          "parentSemanticKey": "expense.entertainment"
+        },
+        {
+          "semanticKey": "expense.entertainment.other",
+          "displayName": "其他娱乐",
+          "storageDefaultKey": "expense.entertainment.other",
+          "reuseExistingIdentity": true,
+          "parentSemanticKey": "expense.entertainment"
+        }
+      ]
+    },
+    {
+      "semanticKey": "expense.hobbies",
+      "kind": "expense",
+      "displayName": "运动爱好",
+      "storageDefaultKey": "expense.hobbies",
+      "existingRootReuse": false,
+      "children": [
+        {
+          "semanticKey": "expense.hobbies.gym",
+          "displayName": "健身会员",
+          "storageDefaultKey": "expense.hobbies.gym",
+          "reuseExistingIdentity": false,
+          "parentSemanticKey": "expense.hobbies"
+        },
+        {
+          "semanticKey": "expense.hobbies.venue",
+          "displayName": "运动场馆",
+          "storageDefaultKey": "expense.hobbies.venue",
+          "reuseExistingIdentity": false,
+          "parentSemanticKey": "expense.hobbies"
+        },
+        {
+          "semanticKey": "expense.hobbies.coaching",
+          "displayName": "运动课程",
+          "storageDefaultKey": "expense.hobbies.coaching",
+          "reuseExistingIdentity": false,
+          "parentSemanticKey": "expense.hobbies"
+        },
+        {
+          "semanticKey": "expense.hobbies.gear",
+          "displayName": "运动装备",
+          "storageDefaultKey": "expense.hobbies.gear",
+          "reuseExistingIdentity": false,
+          "parentSemanticKey": "expense.hobbies"
+        },
+        {
+          "semanticKey": "expense.hobbies.camping",
+          "displayName": "户外露营",
+          "storageDefaultKey": "expense.hobbies.camping",
+          "reuseExistingIdentity": false,
+          "parentSemanticKey": "expense.hobbies"
+        },
+        {
+          "semanticKey": "expense.hobbies.camera",
+          "displayName": "摄影器材",
+          "storageDefaultKey": "expense.hobbies.camera",
+          "reuseExistingIdentity": false,
+          "parentSemanticKey": "expense.hobbies"
+        },
+        {
+          "semanticKey": "expense.hobbies.photo-service",
+          "displayName": "摄影服务",
+          "storageDefaultKey": "expense.hobbies.photo-service",
+          "reuseExistingIdentity": false,
+          "parentSemanticKey": "expense.hobbies"
+        },
+        {
+          "semanticKey": "expense.hobbies.music-art",
+          "displayName": "乐器美术",
+          "storageDefaultKey": "expense.hobbies.music-art",
+          "reuseExistingIdentity": false,
+          "parentSemanticKey": "expense.hobbies"
+        },
+        {
+          "semanticKey": "expense.hobbies.collecting",
+          "displayName": "收藏手作",
+          "storageDefaultKey": "expense.hobbies.collecting",
+          "reuseExistingIdentity": false,
+          "parentSemanticKey": "expense.hobbies"
+        },
+        {
+          "semanticKey": "expense.hobbies.other",
+          "displayName": "其他兴趣",
+          "storageDefaultKey": "expense.hobbies.other",
+          "reuseExistingIdentity": false,
+          "parentSemanticKey": "expense.hobbies"
+        }
+      ]
+    },
+    {
+      "semanticKey": "expense.travel",
+      "kind": "expense",
+      "displayName": "旅行住宿",
+      "storageDefaultKey": "expense.travel",
+      "existingRootReuse": true,
+      "children": [
+        {
+          "semanticKey": "expense.travel.lodging",
+          "displayName": "酒店民宿",
+          "storageDefaultKey": "expense.travel.lodging",
+          "reuseExistingIdentity": true,
+          "parentSemanticKey": "expense.travel"
+        },
+        {
+          "semanticKey": "expense.travel.tickets",
+          "displayName": "景区门票",
+          "storageDefaultKey": "expense.travel.tickets",
+          "reuseExistingIdentity": true,
+          "parentSemanticKey": "expense.travel"
+        },
+        {
+          "semanticKey": "expense.travel.guide",
+          "displayName": "跟团导游",
+          "storageDefaultKey": "expense.travel.guide",
+          "reuseExistingIdentity": false,
+          "parentSemanticKey": "expense.travel"
+        },
+        {
+          "semanticKey": "expense.travel.visa",
+          "displayName": "签证证件",
+          "storageDefaultKey": "expense.travel.visa",
+          "reuseExistingIdentity": false,
+          "parentSemanticKey": "expense.travel"
+        },
+        {
+          "semanticKey": "expense.travel.luggage",
+          "displayName": "行李寄存",
+          "storageDefaultKey": "expense.travel.luggage",
+          "reuseExistingIdentity": false,
+          "parentSemanticKey": "expense.travel"
+        },
+        {
+          "semanticKey": "expense.travel.service",
+          "displayName": "旅行服务",
+          "storageDefaultKey": "expense.travel.service",
+          "reuseExistingIdentity": false,
+          "parentSemanticKey": "expense.travel"
+        },
+        {
+          "semanticKey": "expense.travel.other",
+          "displayName": "其他旅行",
+          "storageDefaultKey": "expense.travel.other",
+          "reuseExistingIdentity": true,
+          "parentSemanticKey": "expense.travel"
+        }
+      ]
+    },
+    {
+      "semanticKey": "expense.gifts",
+      "kind": "expense",
+      "displayName": "人情公益",
+      "storageDefaultKey": "expense.gifts",
+      "existingRootReuse": true,
+      "children": [
+        {
+          "semanticKey": "expense.gifts.gifts",
+          "displayName": "礼物",
+          "storageDefaultKey": "expense.shopping.gifts",
+          "reuseExistingIdentity": true,
+          "parentSemanticKey": "expense.gifts"
+        },
+        {
+          "semanticKey": "expense.gifts.red-envelope",
+          "displayName": "红包",
+          "storageDefaultKey": "expense.gifts.red-envelope",
+          "reuseExistingIdentity": true,
+          "parentSemanticKey": "expense.gifts"
+        },
+        {
+          "semanticKey": "expense.gifts.cash-gift",
+          "displayName": "礼金随礼",
+          "storageDefaultKey": "expense.gifts.cash-gift",
+          "reuseExistingIdentity": true,
+          "parentSemanticKey": "expense.gifts"
+        },
+        {
+          "semanticKey": "expense.gifts.parents",
+          "displayName": "孝敬长辈",
+          "storageDefaultKey": "expense.gifts.parents",
+          "reuseExistingIdentity": true,
+          "parentSemanticKey": "expense.gifts"
+        },
+        {
+          "semanticKey": "expense.gifts.family-support",
+          "displayName": "亲友资助",
+          "storageDefaultKey": "expense.gifts.family-support",
+          "reuseExistingIdentity": false,
+          "parentSemanticKey": "expense.gifts"
+        },
+        {
+          "semanticKey": "expense.gifts.charity",
+          "displayName": "公益捐赠",
+          "storageDefaultKey": "expense.gifts.charity",
+          "reuseExistingIdentity": false,
+          "parentSemanticKey": "expense.gifts"
+        },
+        {
+          "semanticKey": "expense.gifts.other",
+          "displayName": "其他人情",
+          "storageDefaultKey": "expense.gifts.other",
+          "reuseExistingIdentity": true,
+          "parentSemanticKey": "expense.gifts"
+        }
+      ]
+    },
+    {
+      "semanticKey": "expense.pets",
+      "kind": "expense",
+      "displayName": "宠物养护",
+      "storageDefaultKey": "expense.pets",
+      "existingRootReuse": false,
+      "children": [
+        {
+          "semanticKey": "expense.pets.food",
+          "displayName": "宠物食品",
+          "storageDefaultKey": "expense.pets.food",
+          "reuseExistingIdentity": false,
+          "parentSemanticKey": "expense.pets"
+        },
+        {
+          "semanticKey": "expense.pets.supplies",
+          "displayName": "宠物用品",
+          "storageDefaultKey": "expense.pets.supplies",
+          "reuseExistingIdentity": false,
+          "parentSemanticKey": "expense.pets"
+        },
+        {
+          "semanticKey": "expense.pets.medical",
+          "displayName": "宠物医疗",
+          "storageDefaultKey": "expense.pets.medical",
+          "reuseExistingIdentity": false,
+          "parentSemanticKey": "expense.pets"
+        },
+        {
+          "semanticKey": "expense.pets.grooming",
+          "displayName": "洗护美容",
+          "storageDefaultKey": "expense.pets.grooming",
+          "reuseExistingIdentity": false,
+          "parentSemanticKey": "expense.pets"
+        },
+        {
+          "semanticKey": "expense.pets.boarding",
+          "displayName": "寄养托管",
+          "storageDefaultKey": "expense.pets.boarding",
+          "reuseExistingIdentity": false,
+          "parentSemanticKey": "expense.pets"
+        },
+        {
+          "semanticKey": "expense.pets.purchase",
+          "displayName": "宠物购置",
+          "storageDefaultKey": "expense.pets.purchase",
+          "reuseExistingIdentity": false,
+          "parentSemanticKey": "expense.pets"
+        },
+        {
+          "semanticKey": "expense.pets.other",
+          "displayName": "其他宠物",
+          "storageDefaultKey": "expense.pets.other",
+          "reuseExistingIdentity": false,
+          "parentSemanticKey": "expense.pets"
+        }
+      ]
+    },
+    {
+      "semanticKey": "expense.insurance",
+      "kind": "expense",
+      "displayName": "保险保障",
+      "storageDefaultKey": "expense.insurance",
+      "existingRootReuse": false,
+      "children": [
+        {
+          "semanticKey": "expense.insurance.medical",
+          "displayName": "医疗保险",
+          "storageDefaultKey": "expense.insurance.medical",
+          "reuseExistingIdentity": false,
+          "parentSemanticKey": "expense.insurance"
+        },
+        {
+          "semanticKey": "expense.insurance.critical-illness",
+          "displayName": "重疾保险",
+          "storageDefaultKey": "expense.insurance.critical-illness",
+          "reuseExistingIdentity": false,
+          "parentSemanticKey": "expense.insurance"
+        },
+        {
+          "semanticKey": "expense.insurance.life",
+          "displayName": "寿险",
+          "storageDefaultKey": "expense.insurance.life",
+          "reuseExistingIdentity": false,
+          "parentSemanticKey": "expense.insurance"
+        },
+        {
+          "semanticKey": "expense.insurance.accident",
+          "displayName": "意外险",
+          "storageDefaultKey": "expense.insurance.accident",
+          "reuseExistingIdentity": false,
+          "parentSemanticKey": "expense.insurance"
+        },
+        {
+          "semanticKey": "expense.insurance.property",
+          "displayName": "家财保险",
+          "storageDefaultKey": "expense.insurance.property",
+          "reuseExistingIdentity": false,
+          "parentSemanticKey": "expense.insurance"
+        },
+        {
+          "semanticKey": "expense.insurance.travel",
+          "displayName": "旅行保险",
+          "storageDefaultKey": "expense.insurance.travel",
+          "reuseExistingIdentity": false,
+          "parentSemanticKey": "expense.insurance"
+        },
+        {
+          "semanticKey": "expense.insurance.other",
+          "displayName": "其他保障险",
+          "storageDefaultKey": "expense.insurance.other",
+          "reuseExistingIdentity": false,
+          "parentSemanticKey": "expense.insurance"
+        }
+      ]
+    },
+    {
+      "semanticKey": "expense.other",
+      "kind": "expense",
+      "displayName": "费用杂项",
+      "storageDefaultKey": "expense.other",
+      "existingRootReuse": true,
+      "children": [
+        {
+          "semanticKey": "expense.other.fees",
+          "displayName": "银行支付手续费",
+          "storageDefaultKey": "expense.other.fees",
+          "reuseExistingIdentity": false,
+          "parentSemanticKey": "expense.other"
+        },
+        {
+          "semanticKey": "expense.other.interest",
+          "displayName": "借款利息",
+          "storageDefaultKey": "expense.other.interest",
+          "reuseExistingIdentity": false,
+          "parentSemanticKey": "expense.other"
+        },
+        {
+          "semanticKey": "expense.other.taxes",
+          "displayName": "税费",
+          "storageDefaultKey": "expense.other.taxes",
+          "reuseExistingIdentity": false,
+          "parentSemanticKey": "expense.other"
+        },
+        {
+          "semanticKey": "expense.other.postage",
+          "displayName": "快递邮寄",
+          "storageDefaultKey": "expense.other.postage",
+          "reuseExistingIdentity": false,
+          "parentSemanticKey": "expense.other"
+        },
+        {
+          "semanticKey": "expense.other.administration",
+          "displayName": "证件办事",
+          "storageDefaultKey": "expense.other.administration",
+          "reuseExistingIdentity": false,
+          "parentSemanticKey": "expense.other"
+        },
+        {
+          "semanticKey": "expense.other.penalty",
+          "displayName": "违约滞纳",
+          "storageDefaultKey": "expense.other.penalty",
+          "reuseExistingIdentity": false,
+          "parentSemanticKey": "expense.other"
+        },
+        {
+          "semanticKey": "expense.other.other",
+          "displayName": "其他支出",
+          "storageDefaultKey": "expense.other.other",
+          "reuseExistingIdentity": true,
+          "parentSemanticKey": "expense.other"
+        }
+      ]
+    },
+    {
+      "semanticKey": "income.work",
+      "kind": "income",
+      "displayName": "工作薪酬",
+      "storageDefaultKey": "income.work",
+      "existingRootReuse": true,
+      "children": [
+        {
+          "semanticKey": "income.work.salary",
+          "displayName": "工资",
+          "storageDefaultKey": "income.work.salary",
+          "reuseExistingIdentity": true,
+          "parentSemanticKey": "income.work"
+        },
+        {
+          "semanticKey": "income.work.performance",
+          "displayName": "绩效奖金",
+          "storageDefaultKey": "income.work.performance",
+          "reuseExistingIdentity": false,
+          "parentSemanticKey": "income.work"
+        },
+        {
+          "semanticKey": "income.work.annual-bonus",
+          "displayName": "年终奖",
+          "storageDefaultKey": "income.work.annual-bonus",
+          "reuseExistingIdentity": false,
+          "parentSemanticKey": "income.work"
+        },
+        {
+          "semanticKey": "income.work.allowance",
+          "displayName": "津贴补助",
+          "storageDefaultKey": "income.work.allowance",
+          "reuseExistingIdentity": false,
+          "parentSemanticKey": "income.work"
+        },
+        {
+          "semanticKey": "income.work.overtime",
+          "displayName": "加班费",
+          "storageDefaultKey": "income.work.overtime",
+          "reuseExistingIdentity": false,
+          "parentSemanticKey": "income.work"
+        },
+        {
+          "semanticKey": "income.work.other",
+          "displayName": "其他薪酬",
+          "storageDefaultKey": "income.work.other",
+          "reuseExistingIdentity": false,
+          "parentSemanticKey": "income.work"
+        }
+      ]
+    },
+    {
+      "semanticKey": "income.side-work",
+      "kind": "income",
+      "displayName": "副业劳务",
+      "storageDefaultKey": "income.side-work",
+      "existingRootReuse": false,
+      "children": [
+        {
+          "semanticKey": "income.side-work.part-time",
+          "displayName": "兼职劳务",
+          "storageDefaultKey": "income.work.part-time",
+          "reuseExistingIdentity": true,
+          "parentSemanticKey": "income.side-work"
+        },
+        {
+          "semanticKey": "income.side-work.consulting",
+          "displayName": "咨询服务",
+          "storageDefaultKey": "income.side-work.consulting",
+          "reuseExistingIdentity": false,
+          "parentSemanticKey": "income.side-work"
+        },
+        {
+          "semanticKey": "income.side-work.royalties",
+          "displayName": "稿酬版税",
+          "storageDefaultKey": "income.side-work.royalties",
+          "reuseExistingIdentity": false,
+          "parentSemanticKey": "income.side-work"
+        },
+        {
+          "semanticKey": "income.side-work.creator",
+          "displayName": "内容创作",
+          "storageDefaultKey": "income.side-work.creator",
+          "reuseExistingIdentity": false,
+          "parentSemanticKey": "income.side-work"
+        },
+        {
+          "semanticKey": "income.side-work.business",
+          "displayName": "经营所得",
+          "storageDefaultKey": "income.side-work.business",
+          "reuseExistingIdentity": false,
+          "parentSemanticKey": "income.side-work"
+        },
+        {
+          "semanticKey": "income.side-work.other",
+          "displayName": "其他副业",
+          "storageDefaultKey": "income.side-work.other",
+          "reuseExistingIdentity": false,
+          "parentSemanticKey": "income.side-work"
+        }
+      ]
+    },
+    {
+      "semanticKey": "income.investment",
+      "kind": "income",
+      "displayName": "投资收益",
+      "storageDefaultKey": "income.investment",
+      "existingRootReuse": true,
+      "children": [
+        {
+          "semanticKey": "income.investment.deposit-interest",
+          "displayName": "存款利息",
+          "storageDefaultKey": "income.investment.deposit-interest",
+          "reuseExistingIdentity": false,
+          "parentSemanticKey": "income.investment"
+        },
+        {
+          "semanticKey": "income.investment.product-interest",
+          "displayName": "理财利息",
+          "storageDefaultKey": "income.investment.product-interest",
+          "reuseExistingIdentity": false,
+          "parentSemanticKey": "income.investment"
+        },
+        {
+          "semanticKey": "income.investment.dividend",
+          "displayName": "现金分红",
+          "storageDefaultKey": "income.investment.dividend",
+          "reuseExistingIdentity": true,
+          "parentSemanticKey": "income.investment"
+        },
+        {
+          "semanticKey": "income.investment.realized",
+          "displayName": "已实现投资收益",
+          "storageDefaultKey": "income.investment.realized",
+          "reuseExistingIdentity": false,
+          "parentSemanticKey": "income.investment"
+        },
+        {
+          "semanticKey": "income.investment.other",
+          "displayName": "其他投资收益",
+          "storageDefaultKey": "income.investment.other",
+          "reuseExistingIdentity": false,
+          "parentSemanticKey": "income.investment"
+        }
+      ]
+    },
+    {
+      "semanticKey": "income.rental",
+      "kind": "income",
+      "displayName": "资产出租",
+      "storageDefaultKey": "income.rental",
+      "existingRootReuse": false,
+      "children": [
+        {
+          "semanticKey": "income.rental.home",
+          "displayName": "房屋租金",
+          "storageDefaultKey": "income.rental.home",
+          "reuseExistingIdentity": false,
+          "parentSemanticKey": "income.rental"
+        },
+        {
+          "semanticKey": "income.rental.parking",
+          "displayName": "车位租金",
+          "storageDefaultKey": "income.rental.parking",
+          "reuseExistingIdentity": false,
+          "parentSemanticKey": "income.rental"
+        },
+        {
+          "semanticKey": "income.rental.equipment",
+          "displayName": "设备租金",
+          "storageDefaultKey": "income.rental.equipment",
+          "reuseExistingIdentity": false,
+          "parentSemanticKey": "income.rental"
+        },
+        {
+          "semanticKey": "income.rental.other",
+          "displayName": "其他租金",
+          "storageDefaultKey": "income.rental.other",
+          "reuseExistingIdentity": false,
+          "parentSemanticKey": "income.rental"
+        }
+      ]
+    },
+    {
+      "semanticKey": "income.gifts",
+      "kind": "income",
+      "displayName": "礼赠补助",
+      "storageDefaultKey": "income.gifts",
+      "existingRootReuse": false,
+      "children": [
+        {
+          "semanticKey": "income.gifts.red-envelope",
+          "displayName": "收到红包",
+          "storageDefaultKey": "income.other.red-envelope",
+          "reuseExistingIdentity": true,
+          "parentSemanticKey": "income.gifts"
+        },
+        {
+          "semanticKey": "income.gifts.cash-gift",
+          "displayName": "收到礼金",
+          "storageDefaultKey": "income.other.cash-gift",
+          "reuseExistingIdentity": true,
+          "parentSemanticKey": "income.gifts"
+        },
+        {
+          "semanticKey": "income.gifts.family-support",
+          "displayName": "亲友资助",
+          "storageDefaultKey": "income.gifts.family-support",
+          "reuseExistingIdentity": false,
+          "parentSemanticKey": "income.gifts"
+        },
+        {
+          "semanticKey": "income.gifts.subsidy",
+          "displayName": "公共补贴",
+          "storageDefaultKey": "income.gifts.subsidy",
+          "reuseExistingIdentity": false,
+          "parentSemanticKey": "income.gifts"
+        },
+        {
+          "semanticKey": "income.gifts.other",
+          "displayName": "其他礼赠补助",
+          "storageDefaultKey": "income.gifts.other",
+          "reuseExistingIdentity": false,
+          "parentSemanticKey": "income.gifts"
+        }
+      ]
+    },
+    {
+      "semanticKey": "income.other",
+      "kind": "income",
+      "displayName": "其他收入",
+      "storageDefaultKey": "income.other",
+      "existingRootReuse": true,
+      "children": [
+        {
+          "semanticKey": "income.other.pension",
+          "displayName": "养老金",
+          "storageDefaultKey": "income.other.pension",
+          "reuseExistingIdentity": false,
+          "parentSemanticKey": "income.other"
+        },
+        {
+          "semanticKey": "income.other.award",
+          "displayName": "奖学金奖励",
+          "storageDefaultKey": "income.other.award",
+          "reuseExistingIdentity": false,
+          "parentSemanticKey": "income.other"
+        },
+        {
+          "semanticKey": "income.other.other",
+          "displayName": "其他收入",
+          "storageDefaultKey": "income.other.other",
+          "reuseExistingIdentity": true,
+          "parentSemanticKey": "income.other"
+        }
+      ]
+    }
+  ],
+  "legacyMappings": [
+    {
+      "oldKey": "expense.dining",
+      "oldName": "餐饮",
+      "node": "root",
+      "action": "preserve_id_key_review_display_structure",
+      "targetSemanticKey": "expense.dining"
+    },
+    {
+      "oldKey": "expense.dining.breakfast",
+      "oldName": "餐饮/早餐",
+      "node": "leaf",
+      "action": "preserve_id_key_review_display_structure",
+      "targetSemanticKey": "expense.dining.breakfast",
+      "targetDisplayPath": "餐饮饮品/早餐"
+    },
+    {
+      "oldKey": "expense.dining.lunch",
+      "oldName": "餐饮/午餐",
+      "node": "leaf",
+      "action": "preserve_id_key_review_display_structure",
+      "targetSemanticKey": "expense.dining.lunch",
+      "targetDisplayPath": "餐饮饮品/午餐"
+    },
+    {
+      "oldKey": "expense.dining.dinner",
+      "oldName": "餐饮/晚餐",
+      "node": "leaf",
+      "action": "preserve_id_key_review_display_structure",
+      "targetSemanticKey": "expense.dining.dinner",
+      "targetDisplayPath": "餐饮饮品/晚餐"
+    },
+    {
+      "oldKey": "expense.dining.takeout-snacks",
+      "oldName": "餐饮/外卖零食",
+      "node": "leaf",
+      "action": "preserve_legacy_no_auto_split",
+      "targetSemanticKey": null,
+      "targetDisplayPath": null
+    },
+    {
+      "oldKey": "expense.dining.fruit",
+      "oldName": "餐饮/水果",
+      "node": "leaf",
+      "action": "preserve_id_key_review_display_structure",
+      "targetSemanticKey": "expense.dining.fruit",
+      "targetDisplayPath": "餐饮饮品/水果"
+    },
+    {
+      "oldKey": "expense.dining.coffee-tea",
+      "oldName": "餐饮/咖啡奶茶",
+      "node": "leaf",
+      "action": "preserve_legacy_no_auto_split",
+      "targetSemanticKey": null,
+      "targetDisplayPath": null
+    },
+    {
+      "oldKey": "expense.dining.groceries",
+      "oldName": "餐饮/买菜食材",
+      "node": "leaf",
+      "action": "preserve_legacy_no_auto_split",
+      "targetSemanticKey": null,
+      "targetDisplayPath": null
+    },
+    {
+      "oldKey": "expense.dining.other",
+      "oldName": "餐饮/其他餐饮",
+      "node": "leaf",
+      "action": "preserve_id_key_review_display_structure",
+      "targetSemanticKey": "expense.dining.other",
+      "targetDisplayPath": "餐饮饮品/其他餐饮"
+    },
+    {
+      "oldKey": "expense.transportation",
+      "oldName": "交通",
+      "node": "root",
+      "action": "preserve_id_key_review_display_structure",
+      "targetSemanticKey": "expense.transportation"
+    },
+    {
+      "oldKey": "expense.transportation.bus",
+      "oldName": "交通/公交",
+      "node": "leaf",
+      "action": "preserve_id_key_review_display_structure",
+      "targetSemanticKey": "expense.transportation.bus",
+      "targetDisplayPath": "交通出行/公交"
+    },
+    {
+      "oldKey": "expense.transportation.metro",
+      "oldName": "交通/地铁",
+      "node": "leaf",
+      "action": "preserve_id_key_review_display_structure",
+      "targetSemanticKey": "expense.transportation.metro",
+      "targetDisplayPath": "交通出行/地铁"
+    },
+    {
+      "oldKey": "expense.transportation.taxi",
+      "oldName": "交通/打车",
+      "node": "leaf",
+      "action": "preserve_id_key_review_display_structure",
+      "targetSemanticKey": "expense.transportation.taxi",
+      "targetDisplayPath": "交通出行/打车"
+    },
+    {
+      "oldKey": "expense.transportation.fuel",
+      "oldName": "交通/加油",
+      "node": "leaf",
+      "action": "preserve_id_key_review_display_structure",
+      "targetSemanticKey": "expense.vehicle.fuel",
+      "targetDisplayPath": "车辆养护/加油"
+    },
+    {
+      "oldKey": "expense.transportation.parking",
+      "oldName": "交通/停车",
+      "node": "leaf",
+      "action": "preserve_id_key_review_display_structure",
+      "targetSemanticKey": "expense.vehicle.parking",
+      "targetDisplayPath": "车辆养护/停车"
+    },
+    {
+      "oldKey": "expense.transportation.toll",
+      "oldName": "交通/高速过路",
+      "node": "leaf",
+      "action": "preserve_id_key_review_display_structure",
+      "targetSemanticKey": "expense.vehicle.toll",
+      "targetDisplayPath": "车辆养护/高速过路"
+    },
+    {
+      "oldKey": "expense.transportation.maintenance",
+      "oldName": "交通/维修保养",
+      "node": "leaf",
+      "action": "preserve_id_key_review_display_structure",
+      "targetSemanticKey": "expense.vehicle.maintenance",
+      "targetDisplayPath": "车辆养护/维修保养"
+    },
+    {
+      "oldKey": "expense.transportation.other",
+      "oldName": "交通/其他交通",
+      "node": "leaf",
+      "action": "preserve_id_key_review_display_structure",
+      "targetSemanticKey": "expense.transportation.other",
+      "targetDisplayPath": "交通出行/其他交通"
+    },
+    {
+      "oldKey": "expense.shopping",
+      "oldName": "购物",
+      "node": "root",
+      "action": "preserve_legacy_anchor",
+      "targetSemanticKey": null
+    },
+    {
+      "oldKey": "expense.shopping.daily-goods",
+      "oldName": "购物/日用品",
+      "node": "leaf",
+      "action": "preserve_legacy_no_auto_split",
+      "targetSemanticKey": null,
+      "targetDisplayPath": null
+    },
+    {
+      "oldKey": "expense.shopping.clothing",
+      "oldName": "购物/服饰鞋包",
+      "node": "leaf",
+      "action": "preserve_legacy_no_auto_split",
+      "targetSemanticKey": null,
+      "targetDisplayPath": null
+    },
+    {
+      "oldKey": "expense.shopping.digital",
+      "oldName": "购物/数码",
+      "node": "leaf",
+      "action": "preserve_legacy_no_auto_split",
+      "targetSemanticKey": null,
+      "targetDisplayPath": null
+    },
+    {
+      "oldKey": "expense.shopping.home",
+      "oldName": "购物/家居",
+      "node": "leaf",
+      "action": "preserve_legacy_no_auto_split",
+      "targetSemanticKey": null,
+      "targetDisplayPath": null
+    },
+    {
+      "oldKey": "expense.shopping.baby-care",
+      "oldName": "购物/婴幼儿养护",
+      "node": "leaf",
+      "action": "preserve_legacy_no_auto_split",
+      "targetSemanticKey": null,
+      "targetDisplayPath": null
+    },
+    {
+      "oldKey": "expense.shopping.beauty",
+      "oldName": "购物/美妆护肤",
+      "node": "leaf",
+      "action": "preserve_legacy_no_auto_split",
+      "targetSemanticKey": null,
+      "targetDisplayPath": null
+    },
+    {
+      "oldKey": "expense.shopping.gifts",
+      "oldName": "购物/礼物",
+      "node": "leaf",
+      "action": "preserve_id_key_review_display_structure",
+      "targetSemanticKey": "expense.gifts.gifts",
+      "targetDisplayPath": "人情公益/礼物"
+    },
+    {
+      "oldKey": "expense.shopping.other",
+      "oldName": "购物/其他购物",
+      "node": "leaf",
+      "action": "preserve_legacy_no_auto_split",
+      "targetSemanticKey": null,
+      "targetDisplayPath": null
+    },
+    {
+      "oldKey": "expense.home",
+      "oldName": "居家",
+      "node": "root",
+      "action": "preserve_id_key_review_display_structure",
+      "targetSemanticKey": "expense.home"
+    },
+    {
+      "oldKey": "expense.home.rent-mortgage",
+      "oldName": "居家/房租房贷",
+      "node": "leaf",
+      "action": "preserve_legacy_no_auto_split",
+      "targetSemanticKey": null,
+      "targetDisplayPath": null
+    },
+    {
+      "oldKey": "expense.home.utilities",
+      "oldName": "居家/水电燃气",
+      "node": "leaf",
+      "action": "preserve_legacy_no_auto_split",
+      "targetSemanticKey": null,
+      "targetDisplayPath": null
+    },
+    {
+      "oldKey": "expense.home.property",
+      "oldName": "居家/物业",
+      "node": "leaf",
+      "action": "preserve_id_key_review_display_structure",
+      "targetSemanticKey": "expense.home.property",
+      "targetDisplayPath": "住房物业/物业"
+    },
+    {
+      "oldKey": "expense.home.telecom",
+      "oldName": "居家/通讯网络",
+      "node": "leaf",
+      "action": "preserve_legacy_no_auto_split",
+      "targetSemanticKey": null,
+      "targetDisplayPath": null
+    },
+    {
+      "oldKey": "expense.home.maintenance",
+      "oldName": "居家/家政维修",
+      "node": "leaf",
+      "action": "preserve_legacy_no_auto_split",
+      "targetSemanticKey": null,
+      "targetDisplayPath": null
+    },
+    {
+      "oldKey": "expense.home.other",
+      "oldName": "居家/其他居家",
+      "node": "leaf",
+      "action": "preserve_id_key_review_display_structure",
+      "targetSemanticKey": "expense.home.other",
+      "targetDisplayPath": "住房物业/其他住房"
+    },
+    {
+      "oldKey": "expense.health-education",
+      "oldName": "医疗教育",
+      "node": "root",
+      "action": "preserve_legacy_anchor",
+      "targetSemanticKey": null
+    },
+    {
+      "oldKey": "expense.health-education.medical",
+      "oldName": "医疗教育/医疗药品",
+      "node": "leaf",
+      "action": "preserve_legacy_no_auto_split",
+      "targetSemanticKey": null,
+      "targetDisplayPath": null
+    },
+    {
+      "oldKey": "expense.health-education.checkup",
+      "oldName": "医疗教育/体检",
+      "node": "leaf",
+      "action": "preserve_id_key_review_display_structure",
+      "targetSemanticKey": "expense.health.checkup",
+      "targetDisplayPath": "医疗健康/体检"
+    },
+    {
+      "oldKey": "expense.health-education.wellness",
+      "oldName": "医疗教育/保健",
+      "node": "leaf",
+      "action": "preserve_id_key_review_display_structure",
+      "targetSemanticKey": "expense.health.wellness",
+      "targetDisplayPath": "医疗健康/保健营养"
+    },
+    {
+      "oldKey": "expense.health-education.courses",
+      "oldName": "医疗教育/学习课程",
+      "node": "leaf",
+      "action": "preserve_legacy_no_auto_split",
+      "targetSemanticKey": null,
+      "targetDisplayPath": null
+    },
+    {
+      "oldKey": "expense.health-education.books",
+      "oldName": "医疗教育/书籍文具",
+      "node": "leaf",
+      "action": "preserve_legacy_no_auto_split",
+      "targetSemanticKey": null,
+      "targetDisplayPath": null
+    },
+    {
+      "oldKey": "expense.health-education.other",
+      "oldName": "医疗教育/其他医教",
+      "node": "leaf",
+      "action": "preserve_legacy_no_auto_split",
+      "targetSemanticKey": null,
+      "targetDisplayPath": null
+    },
+    {
+      "oldKey": "expense.entertainment",
+      "oldName": "娱乐",
+      "node": "root",
+      "action": "preserve_id_key_review_display_structure",
+      "targetSemanticKey": "expense.entertainment"
+    },
+    {
+      "oldKey": "expense.entertainment.movies-shows",
+      "oldName": "娱乐/电影演出",
+      "node": "leaf",
+      "action": "preserve_legacy_no_auto_split",
+      "targetSemanticKey": null,
+      "targetDisplayPath": null
+    },
+    {
+      "oldKey": "expense.entertainment.games",
+      "oldName": "娱乐/游戏",
+      "node": "leaf",
+      "action": "preserve_legacy_no_auto_split",
+      "targetSemanticKey": null,
+      "targetDisplayPath": null
+    },
+    {
+      "oldKey": "expense.entertainment.sports",
+      "oldName": "娱乐/运动",
+      "node": "leaf",
+      "action": "preserve_legacy_no_auto_split",
+      "targetSemanticKey": null,
+      "targetDisplayPath": null
+    },
+    {
+      "oldKey": "expense.entertainment.gatherings",
+      "oldName": "娱乐/聚会",
+      "node": "leaf",
+      "action": "preserve_legacy_no_auto_split",
+      "targetSemanticKey": null,
+      "targetDisplayPath": null
+    },
+    {
+      "oldKey": "expense.entertainment.hobbies",
+      "oldName": "娱乐/兴趣爱好",
+      "node": "leaf",
+      "action": "preserve_legacy_no_auto_split",
+      "targetSemanticKey": null,
+      "targetDisplayPath": null
+    },
+    {
+      "oldKey": "expense.entertainment.subscriptions",
+      "oldName": "娱乐/会员订阅",
+      "node": "leaf",
+      "action": "preserve_legacy_no_auto_split",
+      "targetSemanticKey": null,
+      "targetDisplayPath": null
+    },
+    {
+      "oldKey": "expense.entertainment.other",
+      "oldName": "娱乐/其他娱乐",
+      "node": "leaf",
+      "action": "preserve_id_key_review_display_structure",
+      "targetSemanticKey": "expense.entertainment.other",
+      "targetDisplayPath": "休闲娱乐/其他娱乐"
+    },
+    {
+      "oldKey": "expense.gifts",
+      "oldName": "人情",
+      "node": "root",
+      "action": "preserve_id_key_review_display_structure",
+      "targetSemanticKey": "expense.gifts"
+    },
+    {
+      "oldKey": "expense.gifts.red-envelope",
+      "oldName": "人情/红包",
+      "node": "leaf",
+      "action": "preserve_id_key_review_display_structure",
+      "targetSemanticKey": "expense.gifts.red-envelope",
+      "targetDisplayPath": "人情公益/红包"
+    },
+    {
+      "oldKey": "expense.gifts.cash-gift",
+      "oldName": "人情/礼金",
+      "node": "leaf",
+      "action": "preserve_id_key_review_display_structure",
+      "targetSemanticKey": "expense.gifts.cash-gift",
+      "targetDisplayPath": "人情公益/礼金随礼"
+    },
+    {
+      "oldKey": "expense.gifts.parents",
+      "oldName": "人情/孝敬长辈",
+      "node": "leaf",
+      "action": "preserve_id_key_review_display_structure",
+      "targetSemanticKey": "expense.gifts.parents",
+      "targetDisplayPath": "人情公益/孝敬长辈"
+    },
+    {
+      "oldKey": "expense.gifts.other",
+      "oldName": "人情/其他人情",
+      "node": "leaf",
+      "action": "preserve_id_key_review_display_structure",
+      "targetSemanticKey": "expense.gifts.other",
+      "targetDisplayPath": "人情公益/其他人情"
+    },
+    {
+      "oldKey": "expense.travel",
+      "oldName": "旅行",
+      "node": "root",
+      "action": "preserve_id_key_review_display_structure",
+      "targetSemanticKey": "expense.travel"
+    },
+    {
+      "oldKey": "expense.travel.lodging",
+      "oldName": "旅行/住宿",
+      "node": "leaf",
+      "action": "preserve_id_key_review_display_structure",
+      "targetSemanticKey": "expense.travel.lodging",
+      "targetDisplayPath": "旅行住宿/酒店民宿"
+    },
+    {
+      "oldKey": "expense.travel.tickets",
+      "oldName": "旅行/门票",
+      "node": "leaf",
+      "action": "preserve_id_key_review_display_structure",
+      "targetSemanticKey": "expense.travel.tickets",
+      "targetDisplayPath": "旅行住宿/景区门票"
+    },
+    {
+      "oldKey": "expense.travel.transport",
+      "oldName": "旅行/旅行交通",
+      "node": "leaf",
+      "action": "preserve_legacy_no_auto_split",
+      "targetSemanticKey": null,
+      "targetDisplayPath": null
+    },
+    {
+      "oldKey": "expense.travel.dining",
+      "oldName": "旅行/旅行餐饮",
+      "node": "leaf",
+      "action": "preserve_legacy_no_auto_split",
+      "targetSemanticKey": null,
+      "targetDisplayPath": null
+    },
+    {
+      "oldKey": "expense.travel.shopping",
+      "oldName": "旅行/旅行购物",
+      "node": "leaf",
+      "action": "preserve_legacy_no_auto_split",
+      "targetSemanticKey": null,
+      "targetDisplayPath": null
+    },
+    {
+      "oldKey": "expense.travel.other",
+      "oldName": "旅行/其他旅行",
+      "node": "leaf",
+      "action": "preserve_id_key_review_display_structure",
+      "targetSemanticKey": "expense.travel.other",
+      "targetDisplayPath": "旅行住宿/其他旅行"
+    },
+    {
+      "oldKey": "expense.other",
+      "oldName": "其他支出",
+      "node": "root",
+      "action": "preserve_id_key_review_display_structure",
+      "targetSemanticKey": "expense.other"
+    },
+    {
+      "oldKey": "expense.other.other",
+      "oldName": "其他支出/其他",
+      "node": "leaf",
+      "action": "preserve_id_key_review_display_structure",
+      "targetSemanticKey": "expense.other.other",
+      "targetDisplayPath": "费用杂项/其他支出"
+    },
+    {
+      "oldKey": "income.work",
+      "oldName": "工作收入",
+      "node": "root",
+      "action": "preserve_id_key_review_display_structure",
+      "targetSemanticKey": "income.work"
+    },
+    {
+      "oldKey": "income.work.salary",
+      "oldName": "工作收入/工资",
+      "node": "leaf",
+      "action": "preserve_id_key_review_display_structure",
+      "targetSemanticKey": "income.work.salary",
+      "targetDisplayPath": "工作薪酬/工资"
+    },
+    {
+      "oldKey": "income.work.bonus",
+      "oldName": "工作收入/奖金",
+      "node": "leaf",
+      "action": "preserve_legacy_no_auto_split",
+      "targetSemanticKey": null,
+      "targetDisplayPath": null
+    },
+    {
+      "oldKey": "income.work.reimbursement",
+      "oldName": "工作收入/报销",
+      "node": "leaf",
+      "action": "preserve_legacy_no_auto_split",
+      "targetSemanticKey": null,
+      "targetDisplayPath": null
+    },
+    {
+      "oldKey": "income.work.part-time",
+      "oldName": "工作收入/兼职",
+      "node": "leaf",
+      "action": "preserve_id_key_review_display_structure",
+      "targetSemanticKey": "income.side-work.part-time",
+      "targetDisplayPath": "副业劳务/兼职劳务"
+    },
+    {
+      "oldKey": "income.investment",
+      "oldName": "理财收入",
+      "node": "root",
+      "action": "preserve_id_key_review_display_structure",
+      "targetSemanticKey": "income.investment"
+    },
+    {
+      "oldKey": "income.investment.interest",
+      "oldName": "理财收入/利息",
+      "node": "leaf",
+      "action": "preserve_legacy_no_auto_split",
+      "targetSemanticKey": null,
+      "targetDisplayPath": null
+    },
+    {
+      "oldKey": "income.investment.dividend",
+      "oldName": "理财收入/分红",
+      "node": "leaf",
+      "action": "preserve_id_key_review_display_structure",
+      "targetSemanticKey": "income.investment.dividend",
+      "targetDisplayPath": "投资收益/现金分红"
+    },
+    {
+      "oldKey": "income.investment.investment-return",
+      "oldName": "理财收入/投资收益",
+      "node": "leaf",
+      "action": "preserve_legacy_no_auto_split",
+      "targetSemanticKey": null,
+      "targetDisplayPath": null
+    },
+    {
+      "oldKey": "income.other",
+      "oldName": "其他收入",
+      "node": "root",
+      "action": "preserve_id_key_review_display_structure",
+      "targetSemanticKey": "income.other"
+    },
+    {
+      "oldKey": "income.other.refund",
+      "oldName": "其他收入/退款",
+      "node": "leaf",
+      "action": "preserve_legacy_no_auto_split",
+      "targetSemanticKey": null,
+      "targetDisplayPath": null
+    },
+    {
+      "oldKey": "income.other.red-envelope",
+      "oldName": "其他收入/红包",
+      "node": "leaf",
+      "action": "preserve_id_key_review_display_structure",
+      "targetSemanticKey": "income.gifts.red-envelope",
+      "targetDisplayPath": "礼赠补助/收到红包"
+    },
+    {
+      "oldKey": "income.other.cash-gift",
+      "oldName": "其他收入/礼金",
+      "node": "leaf",
+      "action": "preserve_id_key_review_display_structure",
+      "targetSemanticKey": "income.gifts.cash-gift",
+      "targetDisplayPath": "礼赠补助/收到礼金"
+    },
+    {
+      "oldKey": "income.other.other",
+      "oldName": "其他收入/其他",
+      "node": "leaf",
+      "action": "preserve_id_key_review_display_structure",
+      "targetSemanticKey": "income.other.other",
+      "targetDisplayPath": "其他收入/其他收入"
+    }
+  ]
+}

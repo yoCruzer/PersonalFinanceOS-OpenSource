@@ -1,0 +1,4 @@
+type,amount,date_time,category,account,note,tags
+expense,12.34,2026-07-01 08:30,餐饮,现金,"早餐,加蛋",工作|报销
+income,100.00,2026/07/02 09:00,薪资,银行卡,兼职,
+expense,invalid,2026-07-03,其他,现金,非法金额,

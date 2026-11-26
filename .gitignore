@@ -1,0 +1,17 @@
+.DS_Store
+.build/
+DerivedData/
+*.xcresult
+*.xccheckout
+*.xcuserstate
+xcuserdata/
+
+
+# Local signing material and build output
+*.p8
+*.p12
+*.mobileprovision
+*.xcarchive
+*.ipa
+.env
+.env.*

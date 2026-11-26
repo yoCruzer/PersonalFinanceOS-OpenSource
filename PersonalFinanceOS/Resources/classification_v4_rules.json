@@ -1,0 +1,2324 @@
+{
+  "version": 1,
+  "rules": [
+    {
+      "id": "expense.dining.breakfast",
+      "semanticKey": "expense.dining.breakfast",
+      "keywords": [
+        "早餐",
+        "早饭",
+        "早膳",
+        "豆浆油条",
+        "早上吃",
+        "早点"
+      ],
+      "exclusions": []
+    },
+    {
+      "id": "expense.dining.lunch",
+      "semanticKey": "expense.dining.lunch",
+      "keywords": [
+        "午餐",
+        "午饭",
+        "工作餐",
+        "中午吃",
+        "中午和",
+        "午间餐"
+      ],
+      "exclusions": []
+    },
+    {
+      "id": "expense.dining.dinner",
+      "semanticKey": "expense.dining.dinner",
+      "keywords": [
+        "晚餐",
+        "晚饭",
+        "晚膳",
+        "下班吃饭"
+      ],
+      "exclusions": []
+    },
+    {
+      "id": "expense.dining.late-meal",
+      "semanticKey": "expense.dining.late-meal",
+      "keywords": [
+        "夜宵",
+        "宵夜",
+        "深夜吃"
+      ],
+      "exclusions": []
+    },
+    {
+      "id": "expense.dining.regular-meal",
+      "semanticKey": "expense.dining.regular-meal",
+      "keywords": [
+        "吃饭",
+        "聚餐",
+        "面馆",
+        "火锅",
+        "麻辣烫",
+        "拉面",
+        "牛肉面",
+        "米线",
+        "盖饭",
+        "快餐",
+        "外卖",
+        "餐馆"
+      ],
+      "exclusions": [
+        "早餐",
+        "早饭",
+        "午餐",
+        "午饭",
+        "工作餐",
+        "中午",
+        "晚餐",
+        "晚饭",
+        "夜宵",
+        "宵夜",
+        "锅具",
+        "火锅底料"
+      ]
+    },
+    {
+      "id": "expense.dining.coffee",
+      "semanticKey": "expense.dining.coffee",
+      "keywords": [
+        "咖啡",
+        "拿铁",
+        "美式",
+        "卡布奇诺",
+        "瑞幸",
+        "星巴克"
+      ],
+      "exclusions": [
+        "咖啡机",
+        "咖啡杯",
+        "咖啡壶",
+        "咖啡色",
+        "滤芯",
+        "咖啡豆",
+        "咖啡粉"
+      ]
+    },
+    {
+      "id": "expense.dining.tea-drink",
+      "semanticKey": "expense.dining.tea-drink",
+      "keywords": [
+        "奶茶",
+        "喜茶",
+        "奈雪",
+        "茶百道",
+        "蜜雪冰城",
+        "霸王茶姬"
+      ],
+      "exclusions": [
+        "奶茶色",
+        "奶茶机",
+        "奶茶杯"
+      ]
+    },
+    {
+      "id": "expense.dining.beverages",
+      "semanticKey": "expense.dining.beverages",
+      "keywords": [
+        "矿泉水",
+        "瓶装水",
+        "饮用水",
+        "汽水",
+        "可乐",
+        "果汁",
+        "苏打水",
+        "饮料"
+      ],
+      "exclusions": [
+        "饮水机",
+        "净水器",
+        "饮料机"
+      ]
+    },
+    {
+      "id": "expense.dining.snacks",
+      "semanticKey": "expense.dining.snacks",
+      "keywords": [
+        "零食",
+        "薯片",
+        "饼干",
+        "蛋糕",
+        "面包",
+        "甜点",
+        "巧克力",
+        "冰淇淋"
+      ],
+      "exclusions": [
+        "面包机",
+        "蛋糕模具",
+        "面包车"
+      ]
+    },
+    {
+      "id": "expense.dining.fruit",
+      "semanticKey": "expense.dining.fruit",
+      "keywords": [
+        "水果",
+        "橘子",
+        "橙子",
+        "香蕉",
+        "葡萄",
+        "西瓜",
+        "芒果",
+        "火龙果",
+        "草莓",
+        "榴莲",
+        "买苹果"
+      ],
+      "exclusions": [
+        "苹果手机",
+        "苹果电脑",
+        "苹果手表",
+        "葡萄酒",
+        "水果刀"
+      ]
+    },
+    {
+      "id": "expense.dining.alcohol",
+      "semanticKey": "expense.dining.alcohol",
+      "keywords": [
+        "啤酒",
+        "红酒",
+        "白酒",
+        "葡萄酒",
+        "威士忌",
+        "黄酒"
+      ],
+      "exclusions": [
+        "酒杯",
+        "酒柜",
+        "酒精消毒"
+      ]
+    },
+    {
+      "id": "expense.groceries.vegetables",
+      "semanticKey": "expense.groceries.vegetables",
+      "keywords": [
+        "蔬菜",
+        "青菜",
+        "菠菜",
+        "白菜",
+        "西红柿",
+        "土豆",
+        "香菇",
+        "菌菇",
+        "茄子",
+        "黄瓜",
+        "买菜"
+      ],
+      "exclusions": []
+    },
+    {
+      "id": "expense.groceries.meat-eggs",
+      "semanticKey": "expense.groceries.meat-eggs",
+      "keywords": [
+        "猪肉",
+        "排骨",
+        "牛肉",
+        "鸡肉",
+        "鸭肉",
+        "鸡蛋",
+        "肉禽"
+      ],
+      "exclusions": [
+        "牛肉面",
+        "牛肉干",
+        "鸡肉卷"
+      ]
+    },
+    {
+      "id": "expense.groceries.seafood",
+      "semanticKey": "expense.groceries.seafood",
+      "keywords": [
+        "海鲜",
+        "买鱼",
+        "活鱼",
+        "活虾",
+        "鲜虾",
+        "螃蟹",
+        "扇贝",
+        "鲈鱼"
+      ],
+      "exclusions": []
+    },
+    {
+      "id": "expense.groceries.grains",
+      "semanticKey": "expense.groceries.grains",
+      "keywords": [
+        "大米",
+        "面粉",
+        "杂粮",
+        "燕麦",
+        "挂面",
+        "绿豆",
+        "红豆"
+      ],
+      "exclusions": []
+    },
+    {
+      "id": "expense.groceries.oil",
+      "semanticKey": "expense.groceries.oil",
+      "keywords": [
+        "食用油",
+        "花生油",
+        "菜籽油",
+        "玉米油",
+        "橄榄油"
+      ],
+      "exclusions": []
+    },
+    {
+      "id": "expense.groceries.seasoning",
+      "semanticKey": "expense.groceries.seasoning",
+      "keywords": [
+        "调味",
+        "酱油",
+        "陈醋",
+        "白醋",
+        "食盐",
+        "鸡精",
+        "火锅底料",
+        "花椒",
+        "八角"
+      ],
+      "exclusions": []
+    },
+    {
+      "id": "expense.groceries.dairy",
+      "semanticKey": "expense.groceries.dairy",
+      "keywords": [
+        "牛奶",
+        "酸奶",
+        "奶酪",
+        "黄油",
+        "乳制品"
+      ],
+      "exclusions": [
+        "奶粉",
+        "奶茶",
+        "牛奶面膜"
+      ]
+    },
+    {
+      "id": "expense.groceries.convenience",
+      "semanticKey": "expense.groceries.convenience",
+      "keywords": [
+        "速冻",
+        "冷冻水饺",
+        "方便面",
+        "自热",
+        "速食",
+        "冷冻馄饨"
+      ],
+      "exclusions": []
+    },
+    {
+      "id": "expense.transportation.bus",
+      "semanticKey": "expense.transportation.bus",
+      "keywords": [
+        "公交",
+        "巴士公交"
+      ],
+      "exclusions": [
+        "长途客车",
+        "长途汽车"
+      ]
+    },
+    {
+      "id": "expense.transportation.metro",
+      "semanticKey": "expense.transportation.metro",
+      "keywords": [
+        "地铁",
+        "轻轨",
+        "城轨"
+      ],
+      "exclusions": []
+    },
+    {
+      "id": "expense.transportation.taxi",
+      "semanticKey": "expense.transportation.taxi",
+      "keywords": [
+        "打车",
+        "滴滴",
+        "出租车",
+        "网约车",
+        "高德打车"
+      ],
+      "exclusions": []
+    },
+    {
+      "id": "expense.transportation.bike",
+      "semanticKey": "expense.transportation.bike",
+      "keywords": [
+        "共享单车",
+        "共享骑行",
+        "共享电单车",
+        "扫码骑车"
+      ],
+      "exclusions": [
+        "买自行车"
+      ]
+    },
+    {
+      "id": "expense.transportation.rail",
+      "semanticKey": "expense.transportation.rail",
+      "keywords": [
+        "高铁",
+        "动车票",
+        "火车票",
+        "铁路车票",
+        "高铁票",
+        "火车"
+      ],
+      "exclusions": [
+        "模型火车"
+      ]
+    },
+    {
+      "id": "expense.transportation.coach",
+      "semanticKey": "expense.transportation.coach",
+      "keywords": [
+        "长途汽车",
+        "长途客车",
+        "汽车站车票",
+        "大巴票"
+      ],
+      "exclusions": []
+    },
+    {
+      "id": "expense.transportation.flight",
+      "semanticKey": "expense.transportation.flight",
+      "keywords": [
+        "机票",
+        "飞机票",
+        "航班票",
+        "航空机票"
+      ],
+      "exclusions": [
+        "航模"
+      ]
+    },
+    {
+      "id": "expense.transportation.ferry",
+      "semanticKey": "expense.transportation.ferry",
+      "keywords": [
+        "轮渡",
+        "船票",
+        "渡轮"
+      ],
+      "exclusions": []
+    },
+    {
+      "id": "expense.transportation.rental",
+      "semanticKey": "expense.transportation.rental",
+      "keywords": [
+        "租车",
+        "车辆租赁"
+      ],
+      "exclusions": [
+        "车位租金"
+      ]
+    },
+    {
+      "id": "expense.vehicle.fuel",
+      "semanticKey": "expense.vehicle.fuel",
+      "keywords": [
+        "加油",
+        "汽油",
+        "柴油",
+        "中石化",
+        "中石油"
+      ],
+      "exclusions": [
+        "打气加油",
+        "加油鼓劲"
+      ]
+    },
+    {
+      "id": "expense.vehicle.charging",
+      "semanticKey": "expense.vehicle.charging",
+      "keywords": [
+        "汽车充电",
+        "电动车充电",
+        "充电桩",
+        "新能源充电",
+        "给车充电"
+      ],
+      "exclusions": [
+        "手机",
+        "充电器",
+        "充电宝"
+      ]
+    },
+    {
+      "id": "expense.vehicle.parking",
+      "semanticKey": "expense.vehicle.parking",
+      "keywords": [
+        "停车费",
+        "停车场",
+        "停车缴费",
+        "停车"
+      ],
+      "exclusions": [
+        "车位租金",
+        "车位出租"
+      ]
+    },
+    {
+      "id": "expense.vehicle.toll",
+      "semanticKey": "expense.vehicle.toll",
+      "keywords": [
+        "高速费",
+        "过路费",
+        "高速过路",
+        "etc扣费",
+        "etc通行"
+      ],
+      "exclusions": []
+    },
+    {
+      "id": "expense.vehicle.cleaning",
+      "semanticKey": "expense.vehicle.cleaning",
+      "keywords": [
+        "洗车",
+        "汽车美容",
+        "汽车打蜡",
+        "汽车贴膜"
+      ],
+      "exclusions": []
+    },
+    {
+      "id": "expense.vehicle.maintenance",
+      "semanticKey": "expense.vehicle.maintenance",
+      "keywords": [
+        "汽车保养",
+        "车辆保养",
+        "车换机油",
+        "换机油",
+        "汽车维修",
+        "修车",
+        "轮胎更换"
+      ],
+      "exclusions": [
+        "自行车"
+      ]
+    },
+    {
+      "id": "expense.vehicle.accessories",
+      "semanticKey": "expense.vehicle.accessories",
+      "keywords": [
+        "车载",
+        "汽车脚垫",
+        "车脚垫",
+        "车用品",
+        "汽车配件",
+        "行车记录仪"
+      ],
+      "exclusions": []
+    },
+    {
+      "id": "expense.vehicle.insurance",
+      "semanticKey": "expense.vehicle.insurance",
+      "keywords": [
+        "车险",
+        "交强险",
+        "汽车保险",
+        "机动车保险"
+      ],
+      "exclusions": []
+    },
+    {
+      "id": "expense.vehicle.inspection-tax",
+      "semanticKey": "expense.vehicle.inspection-tax",
+      "keywords": [
+        "车船税",
+        "车辆年检",
+        "汽车年审"
+      ],
+      "exclusions": []
+    },
+    {
+      "id": "expense.home.rent",
+      "semanticKey": "expense.home.rent",
+      "keywords": [
+        "房租",
+        "租房",
+        "租金房屋"
+      ],
+      "exclusions": [
+        "车位",
+        "设备",
+        "收到",
+        "租客"
+      ]
+    },
+    {
+      "id": "expense.home.property",
+      "semanticKey": "expense.home.property",
+      "keywords": [
+        "物业费",
+        "物业管理费"
+      ],
+      "exclusions": []
+    },
+    {
+      "id": "expense.home.water",
+      "semanticKey": "expense.home.water",
+      "keywords": [
+        "水费",
+        "自来水账单",
+        "自来水费"
+      ],
+      "exclusions": [
+        "矿泉水"
+      ]
+    },
+    {
+      "id": "expense.home.electricity",
+      "semanticKey": "expense.home.electricity",
+      "keywords": [
+        "电费",
+        "电表充值",
+        "电力缴费"
+      ],
+      "exclusions": [
+        "充电桩",
+        "电动车"
+      ]
+    },
+    {
+      "id": "expense.home.gas",
+      "semanticKey": "expense.home.gas",
+      "keywords": [
+        "燃气费",
+        "天然气费",
+        "煤气费"
+      ],
+      "exclusions": []
+    },
+    {
+      "id": "expense.home.heating",
+      "semanticKey": "expense.home.heating",
+      "keywords": [
+        "供暖费",
+        "采暖费",
+        "暖气费"
+      ],
+      "exclusions": []
+    },
+    {
+      "id": "expense.home.cleaning",
+      "semanticKey": "expense.home.cleaning",
+      "keywords": [
+        "家政保洁",
+        "保洁",
+        "上门打扫",
+        "房屋清洁"
+      ],
+      "exclusions": []
+    },
+    {
+      "id": "expense.home.repair",
+      "semanticKey": "expense.home.repair",
+      "keywords": [
+        "房屋维修",
+        "住房维修",
+        "疏通下水道",
+        "修水管",
+        "换门锁",
+        "修屋顶"
+      ],
+      "exclusions": [
+        "家电",
+        "空调",
+        "洗衣机"
+      ]
+    },
+    {
+      "id": "expense.home.moving",
+      "semanticKey": "expense.home.moving",
+      "keywords": [
+        "搬家",
+        "搬运家具",
+        "家具搬运"
+      ],
+      "exclusions": [
+        "搬家公司收入"
+      ]
+    },
+    {
+      "id": "expense.household.paper-cleaning",
+      "semanticKey": "expense.household.paper-cleaning",
+      "keywords": [
+        "抽纸",
+        "卷纸",
+        "卫生纸",
+        "纸巾",
+        "洗洁精",
+        "洗衣液",
+        "清洁剂"
+      ],
+      "exclusions": [
+        "尿裤",
+        "婴儿湿巾"
+      ]
+    },
+    {
+      "id": "expense.household.toiletries",
+      "semanticKey": "expense.household.toiletries",
+      "keywords": [
+        "牙刷",
+        "牙膏",
+        "洗发水",
+        "沐浴露",
+        "香皂",
+        "日用洗护"
+      ],
+      "exclusions": [
+        "宠物",
+        "婴儿"
+      ]
+    },
+    {
+      "id": "expense.household.kitchen",
+      "semanticKey": "expense.household.kitchen",
+      "keywords": [
+        "炒锅",
+        "电饭锅内胆",
+        "菜刀",
+        "碗筷",
+        "厨具",
+        "厨房用品",
+        "咖啡机滤芯",
+        "保鲜盒"
+      ],
+      "exclusions": []
+    },
+    {
+      "id": "expense.household.textiles",
+      "semanticKey": "expense.household.textiles",
+      "keywords": [
+        "床单",
+        "被套",
+        "枕头",
+        "窗帘",
+        "被子",
+        "毛巾",
+        "家居布艺"
+      ],
+      "exclusions": []
+    },
+    {
+      "id": "expense.household.furniture",
+      "semanticKey": "expense.household.furniture",
+      "keywords": [
+        "沙发",
+        "餐桌",
+        "书桌",
+        "衣柜",
+        "床架",
+        "家具"
+      ],
+      "exclusions": [
+        "维修",
+        "搬家",
+        "搬运"
+      ]
+    },
+    {
+      "id": "expense.household.appliances",
+      "semanticKey": "expense.household.appliances",
+      "keywords": [
+        "洗衣机",
+        "冰箱",
+        "空调",
+        "电饭煲",
+        "咖啡机",
+        "净水器",
+        "微波炉",
+        "家电"
+      ],
+      "exclusions": [
+        "维修",
+        "修理",
+        "安装费",
+        "滤芯",
+        "内胆",
+        "漏水"
+      ]
+    },
+    {
+      "id": "expense.household.appliance-service",
+      "semanticKey": "expense.household.appliance-service",
+      "keywords": [
+        "家电维修",
+        "家电安装",
+        "空调维修",
+        "空调漏水",
+        "修冰箱",
+        "洗衣机维修",
+        "空调安装"
+      ],
+      "exclusions": []
+    },
+    {
+      "id": "expense.household.tools",
+      "semanticKey": "expense.household.tools",
+      "keywords": [
+        "螺丝刀",
+        "扳手",
+        "五金工具",
+        "工具箱",
+        "电钻"
+      ],
+      "exclusions": [
+        "汽车维修"
+      ]
+    },
+    {
+      "id": "expense.household.gardening",
+      "semanticKey": "expense.household.gardening",
+      "keywords": [
+        "绿萝",
+        "花盆",
+        "盆栽",
+        "园艺",
+        "植物肥料",
+        "花土"
+      ],
+      "exclusions": []
+    },
+    {
+      "id": "expense.clothing.clothes",
+      "semanticKey": "expense.clothing.clothes",
+      "keywords": [
+        "衣服",
+        "外套",
+        "衬衫",
+        "裤子",
+        "羽绒服",
+        "连衣裙",
+        "毛衣"
+      ],
+      "exclusions": [
+        "洗衣",
+        "干洗",
+        "改裤",
+        "纸尿裤",
+        "内裤"
+      ]
+    },
+    {
+      "id": "expense.clothing.shoes",
+      "semanticKey": "expense.clothing.shoes",
+      "keywords": [
+        "鞋子",
+        "皮鞋",
+        "鞋靴",
+        "运动鞋",
+        "买鞋",
+        "童鞋",
+        "凉鞋",
+        "孩子鞋"
+      ],
+      "exclusions": [
+        "鞋柜",
+        "修鞋"
+      ]
+    },
+    {
+      "id": "expense.clothing.bags",
+      "semanticKey": "expense.clothing.bags",
+      "keywords": [
+        "背包",
+        "手提包",
+        "双肩包",
+        "行李箱",
+        "箱包"
+      ],
+      "exclusions": [
+        "包子",
+        "红包"
+      ]
+    },
+    {
+      "id": "expense.clothing.underwear",
+      "semanticKey": "expense.clothing.underwear",
+      "keywords": [
+        "内衣",
+        "内裤",
+        "袜子",
+        "文胸"
+      ],
+      "exclusions": []
+    },
+    {
+      "id": "expense.clothing.jewelry",
+      "semanticKey": "expense.clothing.jewelry",
+      "keywords": [
+        "项链",
+        "耳环",
+        "戒指",
+        "珠宝",
+        "手镯",
+        "首饰"
+      ],
+      "exclusions": [
+        "智能戒指"
+      ]
+    },
+    {
+      "id": "expense.clothing.watch",
+      "semanticKey": "expense.clothing.watch",
+      "keywords": [
+        "机械手表",
+        "石英表",
+        "普通手表",
+        "腕表"
+      ],
+      "exclusions": [
+        "智能",
+        "苹果手表"
+      ]
+    },
+    {
+      "id": "expense.clothing.laundry",
+      "semanticKey": "expense.clothing.laundry",
+      "keywords": [
+        "干洗",
+        "洗衣店",
+        "衣物洗护"
+      ],
+      "exclusions": []
+    },
+    {
+      "id": "expense.clothing.repair",
+      "semanticKey": "expense.clothing.repair",
+      "keywords": [
+        "改裤脚",
+        "裁缝",
+        "修鞋",
+        "衣服缝补",
+        "服饰修护"
+      ],
+      "exclusions": []
+    },
+    {
+      "id": "expense.personal-care.skincare",
+      "semanticKey": "expense.personal-care.skincare",
+      "keywords": [
+        "面霜",
+        "护肤",
+        "精华液",
+        "防晒霜",
+        "洁面",
+        "面膜"
+      ],
+      "exclusions": [
+        "宠物"
+      ]
+    },
+    {
+      "id": "expense.personal-care.makeup",
+      "semanticKey": "expense.personal-care.makeup",
+      "keywords": [
+        "口红",
+        "粉底",
+        "眼影",
+        "香水",
+        "彩妆",
+        "化妆品"
+      ],
+      "exclusions": []
+    },
+    {
+      "id": "expense.personal-care.haircut",
+      "semanticKey": "expense.personal-care.haircut",
+      "keywords": [
+        "理发",
+        "剪头发",
+        "剪发"
+      ],
+      "exclusions": [
+        "宠物",
+        "狗",
+        "猫"
+      ]
+    },
+    {
+      "id": "expense.personal-care.hair-treatment",
+      "semanticKey": "expense.personal-care.hair-treatment",
+      "keywords": [
+        "染发",
+        "烫发",
+        "头发护理"
+      ],
+      "exclusions": []
+    },
+    {
+      "id": "expense.personal-care.beauty",
+      "semanticKey": "expense.personal-care.beauty",
+      "keywords": [
+        "面部护理",
+        "美容护理",
+        "美容院",
+        "祛痘"
+      ],
+      "exclusions": []
+    },
+    {
+      "id": "expense.personal-care.nail-lash",
+      "semanticKey": "expense.personal-care.nail-lash",
+      "keywords": [
+        "美甲",
+        "美睫",
+        "接睫毛"
+      ],
+      "exclusions": []
+    },
+    {
+      "id": "expense.personal-care.massage",
+      "semanticKey": "expense.personal-care.massage",
+      "keywords": [
+        "按摩",
+        "按个摩",
+        "推拿",
+        "足浴",
+        "洗浴"
+      ],
+      "exclusions": [
+        "医疗",
+        "康复",
+        "宠物"
+      ]
+    },
+    {
+      "id": "expense.digital-services.phone-plan",
+      "semanticKey": "expense.digital-services.phone-plan",
+      "keywords": [
+        "话费",
+        "手机套餐",
+        "电话套餐"
+      ],
+      "exclusions": [
+        "手机购买"
+      ]
+    },
+    {
+      "id": "expense.digital-services.mobile-data",
+      "semanticKey": "expense.digital-services.mobile-data",
+      "keywords": [
+        "流量包",
+        "流量加购",
+        "加购流量"
+      ],
+      "exclusions": []
+    },
+    {
+      "id": "expense.digital-services.broadband",
+      "semanticKey": "expense.digital-services.broadband",
+      "keywords": [
+        "宽带",
+        "网络年费",
+        "家庭网络费"
+      ],
+      "exclusions": []
+    },
+    {
+      "id": "expense.digital-services.media",
+      "semanticKey": "expense.digital-services.media",
+      "keywords": [
+        "视频会员",
+        "音乐会员",
+        "腾讯视频",
+        "爱奇艺",
+        "优酷会员",
+        "哔哩哔哩大会员",
+        "网易云会员"
+      ],
+      "exclusions": []
+    },
+    {
+      "id": "expense.digital-services.reading",
+      "semanticKey": "expense.digital-services.reading",
+      "keywords": [
+        "读书会员",
+        "阅读会员",
+        "微信读书",
+        "电子书会员"
+      ],
+      "exclusions": []
+    },
+    {
+      "id": "expense.digital-services.software",
+      "semanticKey": "expense.digital-services.software",
+      "keywords": [
+        "软件订阅",
+        "软件会员",
+        "应用购买",
+        "修图软件",
+        "办公软件",
+        "软件许可"
+      ],
+      "exclusions": []
+    },
+    {
+      "id": "expense.digital-services.ai-tools",
+      "semanticKey": "expense.digital-services.ai-tools",
+      "keywords": [
+        "ai订阅",
+        "ai工具",
+        "人工智能助手",
+        "chatgpt",
+        "claude",
+        "copilot订阅"
+      ],
+      "exclusions": []
+    },
+    {
+      "id": "expense.digital-services.cloud-storage",
+      "semanticKey": "expense.digital-services.cloud-storage",
+      "keywords": [
+        "云存储",
+        "网盘",
+        "icloud空间",
+        "云盘"
+      ],
+      "exclusions": []
+    },
+    {
+      "id": "expense.digital-services.hosting",
+      "semanticKey": "expense.digital-services.hosting",
+      "keywords": [
+        "域名",
+        "服务器租用",
+        "云服务器",
+        "网站托管"
+      ],
+      "exclusions": []
+    },
+    {
+      "id": "expense.devices.phone",
+      "semanticKey": "expense.devices.phone",
+      "keywords": [
+        "手机",
+        "iphone"
+      ],
+      "exclusions": [
+        "话费",
+        "套餐",
+        "充值",
+        "流量",
+        "手机壳",
+        "手机膜",
+        "贴膜",
+        "维修",
+        "修手机",
+        "屏幕",
+        "支架",
+        "充电器",
+        "手机平板配件"
+      ]
+    },
+    {
+      "id": "expense.devices.computer",
+      "semanticKey": "expense.devices.computer",
+      "keywords": [
+        "电脑",
+        "笔记本电脑",
+        "macbook"
+      ],
+      "exclusions": [
+        "电脑包",
+        "电脑配件",
+        "键盘",
+        "鼠标",
+        "电脑维修",
+        "培训",
+        "课程"
+      ]
+    },
+    {
+      "id": "expense.devices.tablet",
+      "semanticKey": "expense.devices.tablet",
+      "keywords": [
+        "平板",
+        "ipad"
+      ],
+      "exclusions": [
+        "平板壳",
+        "平板配件",
+        "贴膜",
+        "学习机",
+        "点读笔",
+        "维修"
+      ]
+    },
+    {
+      "id": "expense.devices.peripherals",
+      "semanticKey": "expense.devices.peripherals",
+      "keywords": [
+        "键盘",
+        "鼠标",
+        "显示器",
+        "显卡",
+        "电脑配件",
+        "电脑外设",
+        "固态硬盘"
+      ],
+      "exclusions": []
+    },
+    {
+      "id": "expense.devices.audio",
+      "semanticKey": "expense.devices.audio",
+      "keywords": [
+        "耳机",
+        "音响",
+        "音箱"
+      ],
+      "exclusions": [
+        "维修"
+      ]
+    },
+    {
+      "id": "expense.devices.wearables",
+      "semanticKey": "expense.devices.wearables",
+      "keywords": [
+        "智能手表",
+        "智能手环",
+        "苹果手表",
+        "运动手环"
+      ],
+      "exclusions": []
+    },
+    {
+      "id": "expense.devices.accessories",
+      "semanticKey": "expense.devices.accessories",
+      "keywords": [
+        "手机壳",
+        "手机膜",
+        "贴膜",
+        "平板壳",
+        "手机支架",
+        "手机充电器",
+        "充电宝"
+      ],
+      "exclusions": []
+    },
+    {
+      "id": "expense.devices.repair",
+      "semanticKey": "expense.devices.repair",
+      "keywords": [
+        "手机维修",
+        "修手机",
+        "电脑维修",
+        "手机换屏",
+        "换屏幕",
+        "数码维修",
+        "修平板"
+      ],
+      "exclusions": []
+    },
+    {
+      "id": "expense.health.outpatient",
+      "semanticKey": "expense.health.outpatient",
+      "keywords": [
+        "挂号",
+        "门诊",
+        "看病"
+      ],
+      "exclusions": [
+        "宠物",
+        "猫",
+        "狗"
+      ]
+    },
+    {
+      "id": "expense.health.medicine",
+      "semanticKey": "expense.health.medicine",
+      "keywords": [
+        "药品",
+        "感冒药",
+        "买药",
+        "药店",
+        "药费"
+      ],
+      "exclusions": [
+        "宠物",
+        "猫",
+        "狗"
+      ]
+    },
+    {
+      "id": "expense.health.inpatient",
+      "semanticKey": "expense.health.inpatient",
+      "keywords": [
+        "住院",
+        "手术费"
+      ],
+      "exclusions": [
+        "宠物",
+        "猫",
+        "狗"
+      ]
+    },
+    {
+      "id": "expense.health.checkup",
+      "semanticKey": "expense.health.checkup",
+      "keywords": [
+        "体检"
+      ],
+      "exclusions": [
+        "宠物",
+        "猫",
+        "狗"
+      ]
+    },
+    {
+      "id": "expense.health.dental",
+      "semanticKey": "expense.health.dental",
+      "keywords": [
+        "牙科",
+        "补牙",
+        "补一颗牙",
+        "洗牙",
+        "拔牙",
+        "牙齿矫正"
+      ],
+      "exclusions": []
+    },
+    {
+      "id": "expense.health.vision",
+      "semanticKey": "expense.health.vision",
+      "keywords": [
+        "配镜",
+        "配眼镜",
+        "近视眼镜",
+        "验光",
+        "隐形眼镜"
+      ],
+      "exclusions": []
+    },
+    {
+      "id": "expense.health.vaccine",
+      "semanticKey": "expense.health.vaccine",
+      "keywords": [
+        "疫苗",
+        "接种"
+      ],
+      "exclusions": [
+        "宠物",
+        "猫",
+        "狗"
+      ]
+    },
+    {
+      "id": "expense.health.rehab",
+      "semanticKey": "expense.health.rehab",
+      "keywords": [
+        "康复训练",
+        "康复治疗",
+        "术后康复",
+        "理疗"
+      ],
+      "exclusions": []
+    },
+    {
+      "id": "expense.health.devices",
+      "semanticKey": "expense.health.devices",
+      "keywords": [
+        "血压计",
+        "血糖仪",
+        "医疗器械",
+        "助听器",
+        "制氧机"
+      ],
+      "exclusions": []
+    },
+    {
+      "id": "expense.health.wellness",
+      "semanticKey": "expense.health.wellness",
+      "keywords": [
+        "维生素",
+        "保健品",
+        "营养补充",
+        "钙片"
+      ],
+      "exclusions": [
+        "奶粉",
+        "宠物"
+      ]
+    },
+    {
+      "id": "expense.education.school-fees",
+      "semanticKey": "expense.education.school-fees",
+      "keywords": [
+        "学费",
+        "学杂费",
+        "学校学费"
+      ],
+      "exclusions": [
+        "培训班",
+        "课程费",
+        "托育",
+        "保育"
+      ]
+    },
+    {
+      "id": "expense.education.courses",
+      "semanticKey": "expense.education.courses",
+      "keywords": [
+        "培训",
+        "课程",
+        "英语班",
+        "补习班",
+        "辅导班"
+      ],
+      "exclusions": [
+        "运动",
+        "游泳",
+        "健身",
+        "瑜伽",
+        "网球",
+        "羽毛球"
+      ]
+    },
+    {
+      "id": "expense.education.books",
+      "semanticKey": "expense.education.books",
+      "keywords": [
+        "图书",
+        "小说",
+        "买书",
+        "书店",
+        "纸质书"
+      ],
+      "exclusions": [
+        "电子书会员",
+        "读书会员"
+      ]
+    },
+    {
+      "id": "expense.education.stationery",
+      "semanticKey": "expense.education.stationery",
+      "keywords": [
+        "文具",
+        "铅笔",
+        "橡皮",
+        "练习本",
+        "笔记本",
+        "钢笔"
+      ],
+      "exclusions": [
+        "电脑",
+        "笔记本包"
+      ]
+    },
+    {
+      "id": "expense.education.exams",
+      "semanticKey": "expense.education.exams",
+      "keywords": [
+        "考试报名",
+        "资格考试",
+        "考试认证",
+        "考证",
+        "考试费"
+      ],
+      "exclusions": []
+    },
+    {
+      "id": "expense.education.learning-device",
+      "semanticKey": "expense.education.learning-device",
+      "keywords": [
+        "学习机",
+        "点读笔",
+        "学习平板"
+      ],
+      "exclusions": []
+    },
+    {
+      "id": "expense.education.study-tour",
+      "semanticKey": "expense.education.study-tour",
+      "keywords": [
+        "研学",
+        "夏令营研学"
+      ],
+      "exclusions": []
+    },
+    {
+      "id": "expense.childcare.formula-food",
+      "semanticKey": "expense.childcare.formula-food",
+      "keywords": [
+        "奶粉",
+        "辅食",
+        "婴儿食品"
+      ],
+      "exclusions": []
+    },
+    {
+      "id": "expense.childcare.diapers",
+      "semanticKey": "expense.childcare.diapers",
+      "keywords": [
+        "纸尿裤",
+        "尿不湿",
+        "尿裤",
+        "婴儿湿巾"
+      ],
+      "exclusions": []
+    },
+    {
+      "id": "expense.childcare.feeding-care",
+      "semanticKey": "expense.childcare.feeding-care",
+      "keywords": [
+        "奶瓶",
+        "奶嘴",
+        "婴儿洗护",
+        "喂养用品"
+      ],
+      "exclusions": []
+    },
+    {
+      "id": "expense.childcare.toys",
+      "semanticKey": "expense.childcare.toys",
+      "keywords": [
+        "玩具",
+        "积木",
+        "益智"
+      ],
+      "exclusions": [
+        "宠物",
+        "收藏"
+      ]
+    },
+    {
+      "id": "expense.childcare.equipment",
+      "semanticKey": "expense.childcare.equipment",
+      "keywords": [
+        "婴儿推车",
+        "婴儿床",
+        "儿童安全座椅",
+        "婴童设备"
+      ],
+      "exclusions": []
+    },
+    {
+      "id": "expense.childcare.daycare",
+      "semanticKey": "expense.childcare.daycare",
+      "keywords": [
+        "托育",
+        "保育费",
+        "托儿所",
+        "托管照护"
+      ],
+      "exclusions": []
+    },
+    {
+      "id": "expense.childcare.nanny",
+      "semanticKey": "expense.childcare.nanny",
+      "keywords": [
+        "月嫂",
+        "育儿嫂",
+        "育婴师"
+      ],
+      "exclusions": []
+    },
+    {
+      "id": "expense.entertainment.movie",
+      "semanticKey": "expense.entertainment.movie",
+      "keywords": [
+        "电影票",
+        "电影院",
+        "看电影"
+      ],
+      "exclusions": []
+    },
+    {
+      "id": "expense.entertainment.show",
+      "semanticKey": "expense.entertainment.show",
+      "keywords": [
+        "演唱会",
+        "音乐会",
+        "话剧",
+        "演出票",
+        "舞台剧"
+      ],
+      "exclusions": []
+    },
+    {
+      "id": "expense.entertainment.game-purchase",
+      "semanticKey": "expense.entertainment.game-purchase",
+      "keywords": [
+        "买游戏",
+        "单机游戏",
+        "游戏购买",
+        "steam游戏"
+      ],
+      "exclusions": [
+        "充值",
+        "月卡"
+      ]
+    },
+    {
+      "id": "expense.entertainment.game-topup",
+      "semanticKey": "expense.entertainment.game-topup",
+      "keywords": [
+        "游戏充值",
+        "手游充值",
+        "手游充",
+        "游戏月卡",
+        "游戏点券"
+      ],
+      "exclusions": []
+    },
+    {
+      "id": "expense.entertainment.tabletop",
+      "semanticKey": "expense.entertainment.tabletop",
+      "keywords": [
+        "桌游",
+        "棋牌",
+        "麻将馆"
+      ],
+      "exclusions": []
+    },
+    {
+      "id": "expense.entertainment.karaoke-bar",
+      "semanticKey": "expense.entertainment.karaoke-bar",
+      "keywords": [
+        "ktv",
+        "唱k",
+        "酒吧",
+        "卡拉ok"
+      ],
+      "exclusions": []
+    },
+    {
+      "id": "expense.entertainment.exhibition",
+      "semanticKey": "expense.entertainment.exhibition",
+      "keywords": [
+        "美术展",
+        "展览",
+        "艺术展",
+        "博物馆门票"
+      ],
+      "exclusions": []
+    },
+    {
+      "id": "expense.entertainment.amusement",
+      "semanticKey": "expense.entertainment.amusement",
+      "keywords": [
+        "游乐园",
+        "主题乐园",
+        "迪士尼",
+        "环球影城"
+      ],
+      "exclusions": []
+    },
+    {
+      "id": "expense.hobbies.gym",
+      "semanticKey": "expense.hobbies.gym",
+      "keywords": [
+        "健身房",
+        "健身会员",
+        "健身年卡"
+      ],
+      "exclusions": [
+        "课程",
+        "私教"
+      ]
+    },
+    {
+      "id": "expense.hobbies.venue",
+      "semanticKey": "expense.hobbies.venue",
+      "keywords": [
+        "球场",
+        "运动场地",
+        "运动场馆",
+        "羽毛球场",
+        "篮球馆"
+      ],
+      "exclusions": []
+    },
+    {
+      "id": "expense.hobbies.coaching",
+      "semanticKey": "expense.hobbies.coaching",
+      "keywords": [
+        "游泳课",
+        "游泳教学",
+        "瑜伽课",
+        "运动课程",
+        "健身私教",
+        "网球课",
+        "羽毛球课"
+      ],
+      "exclusions": []
+    },
+    {
+      "id": "expense.hobbies.gear",
+      "semanticKey": "expense.hobbies.gear",
+      "keywords": [
+        "网球拍",
+        "羽毛球拍",
+        "运动装备",
+        "泳镜",
+        "瑜伽垫"
+      ],
+      "exclusions": [
+        "鞋"
+      ]
+    },
+    {
+      "id": "expense.hobbies.camping",
+      "semanticKey": "expense.hobbies.camping",
+      "keywords": [
+        "露营",
+        "帐篷",
+        "睡袋",
+        "户外炉具"
+      ],
+      "exclusions": []
+    },
+    {
+      "id": "expense.hobbies.camera",
+      "semanticKey": "expense.hobbies.camera",
+      "keywords": [
+        "摄影器材",
+        "相机",
+        "镜头"
+      ],
+      "exclusions": [
+        "培训",
+        "课程",
+        "租金",
+        "出租",
+        "摄影服务",
+        "照相馆"
+      ]
+    },
+    {
+      "id": "expense.hobbies.photo-service",
+      "semanticKey": "expense.hobbies.photo-service",
+      "keywords": [
+        "照相馆",
+        "拍证件照",
+        "摄影服务",
+        "约拍",
+        "写真"
+      ],
+      "exclusions": []
+    },
+    {
+      "id": "expense.hobbies.music-art",
+      "semanticKey": "expense.hobbies.music-art",
+      "keywords": [
+        "乐器",
+        "吉他",
+        "钢琴",
+        "水彩",
+        "颜料",
+        "画笔"
+      ],
+      "exclusions": [
+        "课程",
+        "培训"
+      ]
+    },
+    {
+      "id": "expense.hobbies.collecting",
+      "semanticKey": "expense.hobbies.collecting",
+      "keywords": [
+        "收藏",
+        "手办",
+        "手工材料",
+        "编织材料",
+        "模型制作"
+      ],
+      "exclusions": []
+    },
+    {
+      "id": "expense.travel.lodging",
+      "semanticKey": "expense.travel.lodging",
+      "keywords": [
+        "酒店",
+        "民宿",
+        "旅馆",
+        "住宿"
+      ],
+      "exclusions": [
+        "宠物"
+      ]
+    },
+    {
+      "id": "expense.travel.tickets",
+      "semanticKey": "expense.travel.tickets",
+      "keywords": [
+        "景区门票",
+        "景点门票",
+        "景区",
+        "景点"
+      ],
+      "exclusions": [
+        "游乐园",
+        "电影"
+      ]
+    },
+    {
+      "id": "expense.travel.guide",
+      "semanticKey": "expense.travel.guide",
+      "keywords": [
+        "导游",
+        "跟团",
+        "旅行团"
+      ],
+      "exclusions": []
+    },
+    {
+      "id": "expense.travel.visa",
+      "semanticKey": "expense.travel.visa",
+      "keywords": [
+        "签证",
+        "护照办理"
+      ],
+      "exclusions": []
+    },
+    {
+      "id": "expense.travel.luggage",
+      "semanticKey": "expense.travel.luggage",
+      "keywords": [
+        "行李寄存",
+        "寄存行李"
+      ],
+      "exclusions": []
+    },
+    {
+      "id": "expense.travel.service",
+      "semanticKey": "expense.travel.service",
+      "keywords": [
+        "旅行服务",
+        "行程服务",
+        "旅行社服务"
+      ],
+      "exclusions": [
+        "导游",
+        "跟团"
+      ]
+    },
+    {
+      "id": "expense.gifts.gifts",
+      "semanticKey": "expense.gifts.gifts",
+      "keywords": [
+        "礼物",
+        "送礼",
+        "生日礼物"
+      ],
+      "exclusions": [
+        "礼金",
+        "红包"
+      ]
+    },
+    {
+      "id": "expense.gifts.red-envelope",
+      "semanticKey": "expense.gifts.red-envelope",
+      "keywords": [
+        "发红包",
+        "发出去",
+        "给红包"
+      ],
+      "exclusions": [
+        "收到",
+        "到账"
+      ]
+    },
+    {
+      "id": "expense.gifts.cash-gift",
+      "semanticKey": "expense.gifts.cash-gift",
+      "keywords": [
+        "随礼",
+        "礼金",
+        "份子钱"
+      ],
+      "exclusions": [
+        "收到",
+        "到账"
+      ]
+    },
+    {
+      "id": "expense.gifts.parents",
+      "semanticKey": "expense.gifts.parents",
+      "keywords": [
+        "孝敬",
+        "给爸妈",
+        "给父母生活费",
+        "父母生活费"
+      ],
+      "exclusions": []
+    },
+    {
+      "id": "expense.gifts.family-support",
+      "semanticKey": "expense.gifts.family-support",
+      "keywords": [
+        "亲友资助",
+        "资助弟弟",
+        "资助亲友",
+        "资助家人"
+      ],
+      "exclusions": []
+    },
+    {
+      "id": "expense.gifts.charity",
+      "semanticKey": "expense.gifts.charity",
+      "keywords": [
+        "公益捐赠",
+        "捐款",
+        "捐赠",
+        "慈善"
+      ],
+      "exclusions": []
+    },
+    {
+      "id": "expense.pets.food",
+      "semanticKey": "expense.pets.food",
+      "keywords": [
+        "猫粮",
+        "狗粮",
+        "宠物食品",
+        "宠物零食"
+      ],
+      "exclusions": []
+    },
+    {
+      "id": "expense.pets.supplies",
+      "semanticKey": "expense.pets.supplies",
+      "keywords": [
+        "猫砂",
+        "猫爬架",
+        "宠物用品",
+        "狗窝",
+        "牵引绳"
+      ],
+      "exclusions": []
+    },
+    {
+      "id": "expense.pets.medical",
+      "semanticKey": "expense.pets.medical",
+      "keywords": [
+        "宠物医院",
+        "宠物医疗",
+        "猫看病",
+        "狗看病",
+        "宠物疫苗"
+      ],
+      "exclusions": []
+    },
+    {
+      "id": "expense.pets.grooming",
+      "semanticKey": "expense.pets.grooming",
+      "keywords": [
+        "宠物洗护",
+        "宠物美容",
+        "狗洗澡",
+        "猫洗澡",
+        "修毛"
+      ],
+      "exclusions": []
+    },
+    {
+      "id": "expense.pets.boarding",
+      "semanticKey": "expense.pets.boarding",
+      "keywords": [
+        "宠物寄养",
+        "猫寄养",
+        "狗寄养",
+        "宠物托管"
+      ],
+      "exclusions": []
+    },
+    {
+      "id": "expense.pets.purchase",
+      "semanticKey": "expense.pets.purchase",
+      "keywords": [
+        "购买宠物",
+        "买猫",
+        "买狗",
+        "宠物购置",
+        "小猫购置"
+      ],
+      "exclusions": [
+        "猫粮",
+        "狗粮"
+      ]
+    },
+    {
+      "id": "expense.insurance.medical",
+      "semanticKey": "expense.insurance.medical",
+      "keywords": [
+        "医疗保险",
+        "医疗险"
+      ],
+      "exclusions": [
+        "车辆",
+        "车险"
+      ]
+    },
+    {
+      "id": "expense.insurance.critical-illness",
+      "semanticKey": "expense.insurance.critical-illness",
+      "keywords": [
+        "重疾险",
+        "重大疾病保险"
+      ],
+      "exclusions": []
+    },
+    {
+      "id": "expense.insurance.life",
+      "semanticKey": "expense.insurance.life",
+      "keywords": [
+        "寿险",
+        "人寿保险"
+      ],
+      "exclusions": []
+    },
+    {
+      "id": "expense.insurance.accident",
+      "semanticKey": "expense.insurance.accident",
+      "keywords": [
+        "意外险",
+        "意外伤害险"
+      ],
+      "exclusions": []
+    },
+    {
+      "id": "expense.insurance.property",
+      "semanticKey": "expense.insurance.property",
+      "keywords": [
+        "家财险",
+        "财产保险",
+        "家财保险"
+      ],
+      "exclusions": []
+    },
+    {
+      "id": "expense.insurance.travel",
+      "semanticKey": "expense.insurance.travel",
+      "keywords": [
+        "旅行保险",
+        "旅游保险",
+        "出行保险"
+      ],
+      "exclusions": []
+    },
+    {
+      "id": "expense.other.fees",
+      "semanticKey": "expense.other.fees",
+      "keywords": [
+        "手续费",
+        "银行费用",
+        "支付手续费"
+      ],
+      "exclusions": []
+    },
+    {
+      "id": "expense.other.interest",
+      "semanticKey": "expense.other.interest",
+      "keywords": [
+        "借款利息",
+        "贷款利息",
+        "信用卡利息"
+      ],
+      "exclusions": [
+        "本金"
+      ]
+    },
+    {
+      "id": "expense.other.taxes",
+      "semanticKey": "expense.other.taxes",
+      "keywords": [
+        "税费",
+        "个人所得税",
+        "补税",
+        "缴税"
+      ],
+      "exclusions": [
+        "车船税"
+      ]
+    },
+    {
+      "id": "expense.other.postage",
+      "semanticKey": "expense.other.postage",
+      "keywords": [
+        "寄快递",
+        "快递费",
+        "邮费",
+        "邮寄"
+      ],
+      "exclusions": [
+        "快递柜购买"
+      ]
+    },
+    {
+      "id": "expense.other.administration",
+      "semanticKey": "expense.other.administration",
+      "keywords": [
+        "工本费",
+        "证件办事",
+        "证件费"
+      ],
+      "exclusions": [
+        "签证",
+        "护照"
+      ]
+    },
+    {
+      "id": "expense.other.penalty",
+      "semanticKey": "expense.other.penalty",
+      "keywords": [
+        "滞纳金",
+        "违约金",
+        "罚款"
+      ],
+      "exclusions": []
+    },
+    {
+      "id": "income.work.salary",
+      "semanticKey": "income.work.salary",
+      "keywords": [
+        "工资",
+        "薪水",
+        "薪资"
+      ],
+      "exclusions": [
+        "兼职",
+        "年终",
+        "报销"
+      ]
+    },
+    {
+      "id": "income.work.performance",
+      "semanticKey": "income.work.performance",
+      "keywords": [
+        "绩效",
+        "季度奖"
+      ],
+      "exclusions": []
+    },
+    {
+      "id": "income.work.annual-bonus",
+      "semanticKey": "income.work.annual-bonus",
+      "keywords": [
+        "年终奖",
+        "年终奖金"
+      ],
+      "exclusions": []
+    },
+    {
+      "id": "income.work.allowance",
+      "semanticKey": "income.work.allowance",
+      "keywords": [
+        "津贴",
+        "补助",
+        "餐补",
+        "交通补贴"
+      ],
+      "exclusions": [
+        "公共",
+        "政府"
+      ]
+    },
+    {
+      "id": "income.work.overtime",
+      "semanticKey": "income.work.overtime",
+      "keywords": [
+        "加班费",
+        "夜班费"
+      ],
+      "exclusions": []
+    },
+    {
+      "id": "income.side-work.part-time",
+      "semanticKey": "income.side-work.part-time",
+      "keywords": [
+        "兼职",
+        "劳务收入"
+      ],
+      "exclusions": []
+    },
+    {
+      "id": "income.side-work.consulting",
+      "semanticKey": "income.side-work.consulting",
+      "keywords": [
+        "咨询服务费",
+        "咨询费",
+        "顾问费"
+      ],
+      "exclusions": []
+    },
+    {
+      "id": "income.side-work.royalties",
+      "semanticKey": "income.side-work.royalties",
+      "keywords": [
+        "稿费",
+        "稿酬",
+        "版税"
+      ],
+      "exclusions": []
+    },
+    {
+      "id": "income.side-work.creator",
+      "semanticKey": "income.side-work.creator",
+      "keywords": [
+        "创作分成",
+        "内容创作",
+        "视频收益",
+        "创作者收益"
+      ],
+      "exclusions": []
+    },
+    {
+      "id": "income.side-work.business",
+      "semanticKey": "income.side-work.business",
+      "keywords": [
+        "经营收入",
+        "经营进账",
+        "营业收入",
+        "生意收入"
+      ],
+      "exclusions": []
+    },
+    {
+      "id": "income.investment.deposit-interest",
+      "semanticKey": "income.investment.deposit-interest",
+      "keywords": [
+        "存款利息",
+        "银行存款利息",
+        "定存利息"
+      ],
+      "exclusions": []
+    },
+    {
+      "id": "income.investment.product-interest",
+      "semanticKey": "income.investment.product-interest",
+      "keywords": [
+        "理财利息",
+        "理财产品利息"
+      ],
+      "exclusions": []
+    },
+    {
+      "id": "income.investment.dividend",
+      "semanticKey": "income.investment.dividend",
+      "keywords": [
+        "现金分红",
+        "股票分红",
+        "基金分红"
+      ],
+      "exclusions": []
+    },
+    {
+      "id": "income.investment.realized",
+      "semanticKey": "income.investment.realized",
+      "keywords": [
+        "已实现收益",
+        "已实现投资收益",
+        "卖出基金收益",
+        "卖出股票收益"
+      ],
+      "exclusions": []
+    },
+    {
+      "id": "income.rental.home",
+      "semanticKey": "income.rental.home",
+      "keywords": [
+        "房租",
+        "房屋租金",
+        "租客交"
+      ],
+      "exclusions": []
+    },
+    {
+      "id": "income.rental.parking",
+      "semanticKey": "income.rental.parking",
+      "keywords": [
+        "车位租金",
+        "车位出租"
+      ],
+      "exclusions": []
+    },
+    {
+      "id": "income.rental.equipment",
+      "semanticKey": "income.rental.equipment",
+      "keywords": [
+        "设备租金",
+        "出租摄影设备",
+        "设备出租"
+      ],
+      "exclusions": []
+    },
+    {
+      "id": "income.gifts.red-envelope",
+      "semanticKey": "income.gifts.red-envelope",
+      "keywords": [
+        "收到红包",
+        "新年红包",
+        "红包收入"
+      ],
+      "exclusions": [
+        "发出去"
+      ]
+    },
+    {
+      "id": "income.gifts.cash-gift",
+      "semanticKey": "income.gifts.cash-gift",
+      "keywords": [
+        "收到礼金",
+        "婚礼礼金",
+        "礼金收入"
+      ],
+      "exclusions": []
+    },
+    {
+      "id": "income.gifts.family-support",
+      "semanticKey": "income.gifts.family-support",
+      "keywords": [
+        "生活资助",
+        "亲友资助",
+        "父母资助"
+      ],
+      "exclusions": []
+    },
+    {
+      "id": "income.gifts.subsidy",
+      "semanticKey": "income.gifts.subsidy",
+      "keywords": [
+        "公共补贴",
+        "公共就业补贴",
+        "政府补贴",
+        "政府补助"
+      ],
+      "exclusions": []
+    },
+    {
+      "id": "income.other.pension",
+      "semanticKey": "income.other.pension",
+      "keywords": [
+        "养老金",
+        "退休金"
+      ],
+      "exclusions": []
+    },
+    {
+      "id": "income.other.award",
+      "semanticKey": "income.other.award",
+      "keywords": [
+        "奖学金",
+        "奖学奖励"
+      ],
+      "exclusions": []
+    }
+  ]
+}

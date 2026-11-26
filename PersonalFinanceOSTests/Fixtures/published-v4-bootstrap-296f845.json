@@ -1,0 +1,2332 @@
+[
+  {
+    "key": "expense.dining",
+    "parentKey": null,
+    "kind": "expense",
+    "name": "餐饮饮品",
+    "symbol": "fork.knife",
+    "color": "orange",
+    "sortOrder": 0,
+    "pinned": false
+  },
+  {
+    "key": "expense.dining.breakfast",
+    "parentKey": "expense.dining",
+    "kind": "expense",
+    "name": "早餐",
+    "symbol": "sunrise",
+    "color": "orange",
+    "sortOrder": 0,
+    "pinned": true
+  },
+  {
+    "key": "expense.dining.lunch",
+    "parentKey": "expense.dining",
+    "kind": "expense",
+    "name": "午餐",
+    "symbol": "fork.knife",
+    "color": "orange",
+    "sortOrder": 1,
+    "pinned": true
+  },
+  {
+    "key": "expense.dining.dinner",
+    "parentKey": "expense.dining",
+    "kind": "expense",
+    "name": "晚餐",
+    "symbol": "fork.knife",
+    "color": "orange",
+    "sortOrder": 2,
+    "pinned": true
+  },
+  {
+    "key": "expense.dining.late-meal",
+    "parentKey": "expense.dining",
+    "kind": "expense",
+    "name": "夜宵",
+    "symbol": "fork.knife",
+    "color": "orange",
+    "sortOrder": 3,
+    "pinned": false
+  },
+  {
+    "key": "expense.dining.regular-meal",
+    "parentKey": "expense.dining",
+    "kind": "expense",
+    "name": "正餐（未分餐次）",
+    "symbol": "fork.knife",
+    "color": "orange",
+    "sortOrder": 4,
+    "pinned": false
+  },
+  {
+    "key": "expense.dining.coffee",
+    "parentKey": "expense.dining",
+    "kind": "expense",
+    "name": "咖啡",
+    "symbol": "cup.and.saucer",
+    "color": "orange",
+    "sortOrder": 5,
+    "pinned": false
+  },
+  {
+    "key": "expense.dining.tea-drink",
+    "parentKey": "expense.dining",
+    "kind": "expense",
+    "name": "奶茶",
+    "symbol": "takeoutbag.and.cup.and.straw",
+    "color": "orange",
+    "sortOrder": 6,
+    "pinned": false
+  },
+  {
+    "key": "expense.dining.beverages",
+    "parentKey": "expense.dining",
+    "kind": "expense",
+    "name": "饮料饮水",
+    "symbol": "cup.and.saucer",
+    "color": "orange",
+    "sortOrder": 7,
+    "pinned": false
+  },
+  {
+    "key": "expense.dining.snacks",
+    "parentKey": "expense.dining",
+    "kind": "expense",
+    "name": "零食烘焙",
+    "symbol": "birthday.cake",
+    "color": "orange",
+    "sortOrder": 8,
+    "pinned": false
+  },
+  {
+    "key": "expense.dining.fruit",
+    "parentKey": "expense.dining",
+    "kind": "expense",
+    "name": "水果",
+    "symbol": "apple.logo",
+    "color": "orange",
+    "sortOrder": 9,
+    "pinned": false
+  },
+  {
+    "key": "expense.dining.alcohol",
+    "parentKey": "expense.dining",
+    "kind": "expense",
+    "name": "酒水",
+    "symbol": "wineglass",
+    "color": "orange",
+    "sortOrder": 10,
+    "pinned": false
+  },
+  {
+    "key": "expense.dining.other",
+    "parentKey": "expense.dining",
+    "kind": "expense",
+    "name": "其他餐饮",
+    "symbol": "fork.knife",
+    "color": "orange",
+    "sortOrder": 11,
+    "pinned": false
+  },
+  {
+    "key": "expense.groceries",
+    "parentKey": null,
+    "kind": "expense",
+    "name": "买菜食材",
+    "symbol": "basket",
+    "color": "green",
+    "sortOrder": 1,
+    "pinned": false
+  },
+  {
+    "key": "expense.groceries.vegetables",
+    "parentKey": "expense.groceries",
+    "kind": "expense",
+    "name": "蔬菜菌菇",
+    "symbol": "carrot",
+    "color": "green",
+    "sortOrder": 0,
+    "pinned": false
+  },
+  {
+    "key": "expense.groceries.meat-eggs",
+    "parentKey": "expense.groceries",
+    "kind": "expense",
+    "name": "肉禽蛋类",
+    "symbol": "basket",
+    "color": "green",
+    "sortOrder": 1,
+    "pinned": false
+  },
+  {
+    "key": "expense.groceries.seafood",
+    "parentKey": "expense.groceries",
+    "kind": "expense",
+    "name": "水产海鲜",
+    "symbol": "basket",
+    "color": "green",
+    "sortOrder": 2,
+    "pinned": false
+  },
+  {
+    "key": "expense.groceries.grains",
+    "parentKey": "expense.groceries",
+    "kind": "expense",
+    "name": "米面杂粮",
+    "symbol": "basket",
+    "color": "green",
+    "sortOrder": 3,
+    "pinned": false
+  },
+  {
+    "key": "expense.groceries.oil",
+    "parentKey": "expense.groceries",
+    "kind": "expense",
+    "name": "食用油",
+    "symbol": "basket",
+    "color": "green",
+    "sortOrder": 4,
+    "pinned": false
+  },
+  {
+    "key": "expense.groceries.seasoning",
+    "parentKey": "expense.groceries",
+    "kind": "expense",
+    "name": "调味干货",
+    "symbol": "basket",
+    "color": "green",
+    "sortOrder": 5,
+    "pinned": false
+  },
+  {
+    "key": "expense.groceries.dairy",
+    "parentKey": "expense.groceries",
+    "kind": "expense",
+    "name": "乳制品",
+    "symbol": "basket",
+    "color": "green",
+    "sortOrder": 6,
+    "pinned": false
+  },
+  {
+    "key": "expense.groceries.convenience",
+    "parentKey": "expense.groceries",
+    "kind": "expense",
+    "name": "速冻方便食品",
+    "symbol": "basket",
+    "color": "green",
+    "sortOrder": 7,
+    "pinned": false
+  },
+  {
+    "key": "expense.groceries.other",
+    "parentKey": "expense.groceries",
+    "kind": "expense",
+    "name": "其他食材",
+    "symbol": "basket",
+    "color": "green",
+    "sortOrder": 8,
+    "pinned": false
+  },
+  {
+    "key": "expense.transportation",
+    "parentKey": null,
+    "kind": "expense",
+    "name": "交通出行",
+    "symbol": "bus",
+    "color": "blue",
+    "sortOrder": 2,
+    "pinned": false
+  },
+  {
+    "key": "expense.transportation.bus",
+    "parentKey": "expense.transportation",
+    "kind": "expense",
+    "name": "公交",
+    "symbol": "bus",
+    "color": "blue",
+    "sortOrder": 0,
+    "pinned": false
+  },
+  {
+    "key": "expense.transportation.metro",
+    "parentKey": "expense.transportation",
+    "kind": "expense",
+    "name": "地铁",
+    "symbol": "tram",
+    "color": "blue",
+    "sortOrder": 1,
+    "pinned": true
+  },
+  {
+    "key": "expense.transportation.taxi",
+    "parentKey": "expense.transportation",
+    "kind": "expense",
+    "name": "打车",
+    "symbol": "car",
+    "color": "blue",
+    "sortOrder": 2,
+    "pinned": true
+  },
+  {
+    "key": "expense.transportation.bike",
+    "parentKey": "expense.transportation",
+    "kind": "expense",
+    "name": "共享骑行",
+    "symbol": "bicycle",
+    "color": "blue",
+    "sortOrder": 3,
+    "pinned": false
+  },
+  {
+    "key": "expense.transportation.rail",
+    "parentKey": "expense.transportation",
+    "kind": "expense",
+    "name": "高铁火车",
+    "symbol": "tram",
+    "color": "blue",
+    "sortOrder": 4,
+    "pinned": false
+  },
+  {
+    "key": "expense.transportation.coach",
+    "parentKey": "expense.transportation",
+    "kind": "expense",
+    "name": "长途汽车",
+    "symbol": "bus",
+    "color": "blue",
+    "sortOrder": 5,
+    "pinned": false
+  },
+  {
+    "key": "expense.transportation.flight",
+    "parentKey": "expense.transportation",
+    "kind": "expense",
+    "name": "飞机",
+    "symbol": "airplane",
+    "color": "blue",
+    "sortOrder": 6,
+    "pinned": false
+  },
+  {
+    "key": "expense.transportation.ferry",
+    "parentKey": "expense.transportation",
+    "kind": "expense",
+    "name": "轮渡船票",
+    "symbol": "bus",
+    "color": "blue",
+    "sortOrder": 7,
+    "pinned": false
+  },
+  {
+    "key": "expense.transportation.rental",
+    "parentKey": "expense.transportation",
+    "kind": "expense",
+    "name": "租车",
+    "symbol": "bus",
+    "color": "blue",
+    "sortOrder": 8,
+    "pinned": false
+  },
+  {
+    "key": "expense.transportation.other",
+    "parentKey": "expense.transportation",
+    "kind": "expense",
+    "name": "其他交通",
+    "symbol": "bus",
+    "color": "blue",
+    "sortOrder": 9,
+    "pinned": false
+  },
+  {
+    "key": "expense.vehicle",
+    "parentKey": null,
+    "kind": "expense",
+    "name": "车辆养护",
+    "symbol": "car",
+    "color": "blue",
+    "sortOrder": 3,
+    "pinned": false
+  },
+  {
+    "key": "expense.transportation.fuel",
+    "parentKey": "expense.vehicle",
+    "kind": "expense",
+    "name": "加油",
+    "symbol": "fuelpump",
+    "color": "blue",
+    "sortOrder": 0,
+    "pinned": false
+  },
+  {
+    "key": "expense.vehicle.charging",
+    "parentKey": "expense.vehicle",
+    "kind": "expense",
+    "name": "充电",
+    "symbol": "bolt.house",
+    "color": "blue",
+    "sortOrder": 1,
+    "pinned": false
+  },
+  {
+    "key": "expense.transportation.parking",
+    "parentKey": "expense.vehicle",
+    "kind": "expense",
+    "name": "停车",
+    "symbol": "parkingsign.circle",
+    "color": "blue",
+    "sortOrder": 2,
+    "pinned": false
+  },
+  {
+    "key": "expense.transportation.toll",
+    "parentKey": "expense.vehicle",
+    "kind": "expense",
+    "name": "高速过路",
+    "symbol": "road.lanes",
+    "color": "blue",
+    "sortOrder": 3,
+    "pinned": false
+  },
+  {
+    "key": "expense.vehicle.cleaning",
+    "parentKey": "expense.vehicle",
+    "kind": "expense",
+    "name": "洗车美容",
+    "symbol": "car",
+    "color": "blue",
+    "sortOrder": 4,
+    "pinned": false
+  },
+  {
+    "key": "expense.transportation.maintenance",
+    "parentKey": "expense.vehicle",
+    "kind": "expense",
+    "name": "维修保养",
+    "symbol": "wrench.and.screwdriver",
+    "color": "blue",
+    "sortOrder": 5,
+    "pinned": false
+  },
+  {
+    "key": "expense.vehicle.accessories",
+    "parentKey": "expense.vehicle",
+    "kind": "expense",
+    "name": "车载用品",
+    "symbol": "car",
+    "color": "blue",
+    "sortOrder": 6,
+    "pinned": false
+  },
+  {
+    "key": "expense.vehicle.insurance",
+    "parentKey": "expense.vehicle",
+    "kind": "expense",
+    "name": "车辆保险",
+    "symbol": "shield.checkered",
+    "color": "blue",
+    "sortOrder": 7,
+    "pinned": false
+  },
+  {
+    "key": "expense.vehicle.inspection-tax",
+    "parentKey": "expense.vehicle",
+    "kind": "expense",
+    "name": "年检车船税",
+    "symbol": "car",
+    "color": "blue",
+    "sortOrder": 8,
+    "pinned": false
+  },
+  {
+    "key": "expense.vehicle.other",
+    "parentKey": "expense.vehicle",
+    "kind": "expense",
+    "name": "其他养车",
+    "symbol": "car",
+    "color": "blue",
+    "sortOrder": 9,
+    "pinned": false
+  },
+  {
+    "key": "expense.home",
+    "parentKey": null,
+    "kind": "expense",
+    "name": "住房物业",
+    "symbol": "house",
+    "color": "teal",
+    "sortOrder": 4,
+    "pinned": false
+  },
+  {
+    "key": "expense.home.rent",
+    "parentKey": "expense.home",
+    "kind": "expense",
+    "name": "房租",
+    "symbol": "house",
+    "color": "teal",
+    "sortOrder": 0,
+    "pinned": false
+  },
+  {
+    "key": "expense.home.property",
+    "parentKey": "expense.home",
+    "kind": "expense",
+    "name": "物业",
+    "symbol": "building.2",
+    "color": "teal",
+    "sortOrder": 1,
+    "pinned": false
+  },
+  {
+    "key": "expense.home.water",
+    "parentKey": "expense.home",
+    "kind": "expense",
+    "name": "水费",
+    "symbol": "house",
+    "color": "teal",
+    "sortOrder": 2,
+    "pinned": false
+  },
+  {
+    "key": "expense.home.electricity",
+    "parentKey": "expense.home",
+    "kind": "expense",
+    "name": "电费",
+    "symbol": "bolt.house",
+    "color": "teal",
+    "sortOrder": 3,
+    "pinned": false
+  },
+  {
+    "key": "expense.home.gas",
+    "parentKey": "expense.home",
+    "kind": "expense",
+    "name": "燃气",
+    "symbol": "house",
+    "color": "teal",
+    "sortOrder": 4,
+    "pinned": false
+  },
+  {
+    "key": "expense.home.heating",
+    "parentKey": "expense.home",
+    "kind": "expense",
+    "name": "供暖",
+    "symbol": "house",
+    "color": "teal",
+    "sortOrder": 5,
+    "pinned": false
+  },
+  {
+    "key": "expense.home.cleaning",
+    "parentKey": "expense.home",
+    "kind": "expense",
+    "name": "家政保洁",
+    "symbol": "house",
+    "color": "teal",
+    "sortOrder": 6,
+    "pinned": false
+  },
+  {
+    "key": "expense.home.repair",
+    "parentKey": "expense.home",
+    "kind": "expense",
+    "name": "住房维修",
+    "symbol": "wrench.and.screwdriver",
+    "color": "teal",
+    "sortOrder": 7,
+    "pinned": false
+  },
+  {
+    "key": "expense.home.moving",
+    "parentKey": "expense.home",
+    "kind": "expense",
+    "name": "搬家",
+    "symbol": "shippingbox",
+    "color": "teal",
+    "sortOrder": 8,
+    "pinned": false
+  },
+  {
+    "key": "expense.home.other",
+    "parentKey": "expense.home",
+    "kind": "expense",
+    "name": "其他住房",
+    "symbol": "house",
+    "color": "teal",
+    "sortOrder": 9,
+    "pinned": false
+  },
+  {
+    "key": "expense.household",
+    "parentKey": null,
+    "kind": "expense",
+    "name": "日用家居",
+    "symbol": "sofa",
+    "color": "teal",
+    "sortOrder": 5,
+    "pinned": false
+  },
+  {
+    "key": "expense.household.paper-cleaning",
+    "parentKey": "expense.household",
+    "kind": "expense",
+    "name": "纸品清洁",
+    "symbol": "sofa",
+    "color": "teal",
+    "sortOrder": 0,
+    "pinned": false
+  },
+  {
+    "key": "expense.household.toiletries",
+    "parentKey": "expense.household",
+    "kind": "expense",
+    "name": "洗护日用",
+    "symbol": "sofa",
+    "color": "teal",
+    "sortOrder": 1,
+    "pinned": false
+  },
+  {
+    "key": "expense.household.kitchen",
+    "parentKey": "expense.household",
+    "kind": "expense",
+    "name": "厨房用品",
+    "symbol": "sofa",
+    "color": "teal",
+    "sortOrder": 2,
+    "pinned": false
+  },
+  {
+    "key": "expense.household.textiles",
+    "parentKey": "expense.household",
+    "kind": "expense",
+    "name": "家居布艺",
+    "symbol": "sofa",
+    "color": "teal",
+    "sortOrder": 3,
+    "pinned": false
+  },
+  {
+    "key": "expense.household.furniture",
+    "parentKey": "expense.household",
+    "kind": "expense",
+    "name": "家具",
+    "symbol": "sofa",
+    "color": "teal",
+    "sortOrder": 4,
+    "pinned": false
+  },
+  {
+    "key": "expense.household.appliances",
+    "parentKey": "expense.household",
+    "kind": "expense",
+    "name": "家电",
+    "symbol": "washer",
+    "color": "teal",
+    "sortOrder": 5,
+    "pinned": false
+  },
+  {
+    "key": "expense.household.appliance-service",
+    "parentKey": "expense.household",
+    "kind": "expense",
+    "name": "家电维修安装",
+    "symbol": "wrench.and.screwdriver",
+    "color": "teal",
+    "sortOrder": 6,
+    "pinned": false
+  },
+  {
+    "key": "expense.household.tools",
+    "parentKey": "expense.household",
+    "kind": "expense",
+    "name": "五金工具",
+    "symbol": "wrench.and.screwdriver",
+    "color": "teal",
+    "sortOrder": 7,
+    "pinned": false
+  },
+  {
+    "key": "expense.household.gardening",
+    "parentKey": "expense.household",
+    "kind": "expense",
+    "name": "绿植园艺",
+    "symbol": "leaf",
+    "color": "teal",
+    "sortOrder": 8,
+    "pinned": false
+  },
+  {
+    "key": "expense.household.other",
+    "parentKey": "expense.household",
+    "kind": "expense",
+    "name": "其他日用",
+    "symbol": "sofa",
+    "color": "teal",
+    "sortOrder": 9,
+    "pinned": false
+  },
+  {
+    "key": "expense.clothing",
+    "parentKey": null,
+    "kind": "expense",
+    "name": "服饰装扮",
+    "symbol": "tshirt",
+    "color": "purple",
+    "sortOrder": 6,
+    "pinned": false
+  },
+  {
+    "key": "expense.clothing.clothes",
+    "parentKey": "expense.clothing",
+    "kind": "expense",
+    "name": "衣服",
+    "symbol": "tshirt",
+    "color": "purple",
+    "sortOrder": 0,
+    "pinned": false
+  },
+  {
+    "key": "expense.clothing.shoes",
+    "parentKey": "expense.clothing",
+    "kind": "expense",
+    "name": "鞋靴",
+    "symbol": "tshirt",
+    "color": "purple",
+    "sortOrder": 1,
+    "pinned": false
+  },
+  {
+    "key": "expense.clothing.bags",
+    "parentKey": "expense.clothing",
+    "kind": "expense",
+    "name": "箱包",
+    "symbol": "bag",
+    "color": "purple",
+    "sortOrder": 2,
+    "pinned": false
+  },
+  {
+    "key": "expense.clothing.underwear",
+    "parentKey": "expense.clothing",
+    "kind": "expense",
+    "name": "内衣袜子",
+    "symbol": "tshirt",
+    "color": "purple",
+    "sortOrder": 3,
+    "pinned": false
+  },
+  {
+    "key": "expense.clothing.jewelry",
+    "parentKey": "expense.clothing",
+    "kind": "expense",
+    "name": "配饰珠宝",
+    "symbol": "tshirt",
+    "color": "purple",
+    "sortOrder": 4,
+    "pinned": false
+  },
+  {
+    "key": "expense.clothing.watch",
+    "parentKey": "expense.clothing",
+    "kind": "expense",
+    "name": "手表",
+    "symbol": "tshirt",
+    "color": "purple",
+    "sortOrder": 5,
+    "pinned": false
+  },
+  {
+    "key": "expense.clothing.laundry",
+    "parentKey": "expense.clothing",
+    "kind": "expense",
+    "name": "洗衣干洗",
+    "symbol": "washer",
+    "color": "purple",
+    "sortOrder": 6,
+    "pinned": false
+  },
+  {
+    "key": "expense.clothing.repair",
+    "parentKey": "expense.clothing",
+    "kind": "expense",
+    "name": "服饰修护",
+    "symbol": "tshirt",
+    "color": "purple",
+    "sortOrder": 7,
+    "pinned": false
+  },
+  {
+    "key": "expense.clothing.other",
+    "parentKey": "expense.clothing",
+    "kind": "expense",
+    "name": "其他服饰",
+    "symbol": "tshirt",
+    "color": "purple",
+    "sortOrder": 8,
+    "pinned": false
+  },
+  {
+    "key": "expense.personal-care",
+    "parentKey": null,
+    "kind": "expense",
+    "name": "美容个护",
+    "symbol": "comb",
+    "color": "purple",
+    "sortOrder": 7,
+    "pinned": false
+  },
+  {
+    "key": "expense.personal-care.skincare",
+    "parentKey": "expense.personal-care",
+    "kind": "expense",
+    "name": "护肤",
+    "symbol": "comb",
+    "color": "purple",
+    "sortOrder": 0,
+    "pinned": false
+  },
+  {
+    "key": "expense.personal-care.makeup",
+    "parentKey": "expense.personal-care",
+    "kind": "expense",
+    "name": "彩妆香水",
+    "symbol": "comb",
+    "color": "purple",
+    "sortOrder": 1,
+    "pinned": false
+  },
+  {
+    "key": "expense.personal-care.haircut",
+    "parentKey": "expense.personal-care",
+    "kind": "expense",
+    "name": "理发",
+    "symbol": "scissors",
+    "color": "purple",
+    "sortOrder": 2,
+    "pinned": false
+  },
+  {
+    "key": "expense.personal-care.hair-treatment",
+    "parentKey": "expense.personal-care",
+    "kind": "expense",
+    "name": "烫染",
+    "symbol": "comb",
+    "color": "purple",
+    "sortOrder": 3,
+    "pinned": false
+  },
+  {
+    "key": "expense.personal-care.beauty",
+    "parentKey": "expense.personal-care",
+    "kind": "expense",
+    "name": "美容护理",
+    "symbol": "comb",
+    "color": "purple",
+    "sortOrder": 4,
+    "pinned": false
+  },
+  {
+    "key": "expense.personal-care.nail-lash",
+    "parentKey": "expense.personal-care",
+    "kind": "expense",
+    "name": "美甲美睫",
+    "symbol": "comb",
+    "color": "purple",
+    "sortOrder": 5,
+    "pinned": false
+  },
+  {
+    "key": "expense.personal-care.massage",
+    "parentKey": "expense.personal-care",
+    "kind": "expense",
+    "name": "按摩洗浴",
+    "symbol": "comb",
+    "color": "purple",
+    "sortOrder": 6,
+    "pinned": false
+  },
+  {
+    "key": "expense.personal-care.other",
+    "parentKey": "expense.personal-care",
+    "kind": "expense",
+    "name": "其他个护",
+    "symbol": "comb",
+    "color": "purple",
+    "sortOrder": 7,
+    "pinned": false
+  },
+  {
+    "key": "expense.digital-services",
+    "parentKey": null,
+    "kind": "expense",
+    "name": "通讯数字服务",
+    "symbol": "wifi",
+    "color": "blue",
+    "sortOrder": 8,
+    "pinned": false
+  },
+  {
+    "key": "expense.digital-services.phone-plan",
+    "parentKey": "expense.digital-services",
+    "kind": "expense",
+    "name": "话费套餐",
+    "symbol": "smartphone",
+    "color": "blue",
+    "sortOrder": 0,
+    "pinned": false
+  },
+  {
+    "key": "expense.digital-services.mobile-data",
+    "parentKey": "expense.digital-services",
+    "kind": "expense",
+    "name": "流量加购",
+    "symbol": "wifi",
+    "color": "blue",
+    "sortOrder": 1,
+    "pinned": false
+  },
+  {
+    "key": "expense.digital-services.broadband",
+    "parentKey": "expense.digital-services",
+    "kind": "expense",
+    "name": "家庭宽带",
+    "symbol": "wifi",
+    "color": "blue",
+    "sortOrder": 2,
+    "pinned": false
+  },
+  {
+    "key": "expense.digital-services.media",
+    "parentKey": "expense.digital-services",
+    "kind": "expense",
+    "name": "影音会员",
+    "symbol": "rectangle.stack.badge.play",
+    "color": "blue",
+    "sortOrder": 3,
+    "pinned": false
+  },
+  {
+    "key": "expense.digital-services.reading",
+    "parentKey": "expense.digital-services",
+    "kind": "expense",
+    "name": "阅读会员",
+    "symbol": "book",
+    "color": "blue",
+    "sortOrder": 4,
+    "pinned": false
+  },
+  {
+    "key": "expense.digital-services.software",
+    "parentKey": "expense.digital-services",
+    "kind": "expense",
+    "name": "软件应用",
+    "symbol": "desktopcomputer",
+    "color": "blue",
+    "sortOrder": 5,
+    "pinned": false
+  },
+  {
+    "key": "expense.digital-services.ai-tools",
+    "parentKey": "expense.digital-services",
+    "kind": "expense",
+    "name": "AI工具",
+    "symbol": "wifi",
+    "color": "blue",
+    "sortOrder": 6,
+    "pinned": false
+  },
+  {
+    "key": "expense.digital-services.cloud-storage",
+    "parentKey": "expense.digital-services",
+    "kind": "expense",
+    "name": "云存储",
+    "symbol": "wifi",
+    "color": "blue",
+    "sortOrder": 7,
+    "pinned": false
+  },
+  {
+    "key": "expense.digital-services.hosting",
+    "parentKey": "expense.digital-services",
+    "kind": "expense",
+    "name": "域名服务器",
+    "symbol": "wifi",
+    "color": "blue",
+    "sortOrder": 8,
+    "pinned": false
+  },
+  {
+    "key": "expense.digital-services.other",
+    "parentKey": "expense.digital-services",
+    "kind": "expense",
+    "name": "其他数字服务",
+    "symbol": "wifi",
+    "color": "blue",
+    "sortOrder": 9,
+    "pinned": false
+  },
+  {
+    "key": "expense.devices",
+    "parentKey": null,
+    "kind": "expense",
+    "name": "数码设备",
+    "symbol": "desktopcomputer",
+    "color": "blue",
+    "sortOrder": 9,
+    "pinned": false
+  },
+  {
+    "key": "expense.devices.phone",
+    "parentKey": "expense.devices",
+    "kind": "expense",
+    "name": "手机",
+    "symbol": "smartphone",
+    "color": "blue",
+    "sortOrder": 0,
+    "pinned": false
+  },
+  {
+    "key": "expense.devices.computer",
+    "parentKey": "expense.devices",
+    "kind": "expense",
+    "name": "电脑",
+    "symbol": "laptopcomputer",
+    "color": "blue",
+    "sortOrder": 1,
+    "pinned": false
+  },
+  {
+    "key": "expense.devices.tablet",
+    "parentKey": "expense.devices",
+    "kind": "expense",
+    "name": "平板",
+    "symbol": "desktopcomputer",
+    "color": "blue",
+    "sortOrder": 2,
+    "pinned": false
+  },
+  {
+    "key": "expense.devices.peripherals",
+    "parentKey": "expense.devices",
+    "kind": "expense",
+    "name": "电脑配件外设",
+    "symbol": "desktopcomputer",
+    "color": "blue",
+    "sortOrder": 3,
+    "pinned": false
+  },
+  {
+    "key": "expense.devices.audio",
+    "parentKey": "expense.devices",
+    "kind": "expense",
+    "name": "耳机音响",
+    "symbol": "headphones",
+    "color": "blue",
+    "sortOrder": 4,
+    "pinned": false
+  },
+  {
+    "key": "expense.devices.wearables",
+    "parentKey": "expense.devices",
+    "kind": "expense",
+    "name": "智能穿戴",
+    "symbol": "desktopcomputer",
+    "color": "blue",
+    "sortOrder": 5,
+    "pinned": false
+  },
+  {
+    "key": "expense.devices.accessories",
+    "parentKey": "expense.devices",
+    "kind": "expense",
+    "name": "手机平板配件",
+    "symbol": "desktopcomputer",
+    "color": "blue",
+    "sortOrder": 6,
+    "pinned": false
+  },
+  {
+    "key": "expense.devices.repair",
+    "parentKey": "expense.devices",
+    "kind": "expense",
+    "name": "数码维修",
+    "symbol": "wrench.and.screwdriver",
+    "color": "blue",
+    "sortOrder": 7,
+    "pinned": false
+  },
+  {
+    "key": "expense.devices.other",
+    "parentKey": "expense.devices",
+    "kind": "expense",
+    "name": "其他数码",
+    "symbol": "desktopcomputer",
+    "color": "blue",
+    "sortOrder": 8,
+    "pinned": false
+  },
+  {
+    "key": "expense.health",
+    "parentKey": null,
+    "kind": "expense",
+    "name": "医疗健康",
+    "symbol": "cross.case",
+    "color": "green",
+    "sortOrder": 10,
+    "pinned": false
+  },
+  {
+    "key": "expense.health.outpatient",
+    "parentKey": "expense.health",
+    "kind": "expense",
+    "name": "门诊挂号",
+    "symbol": "cross.case",
+    "color": "green",
+    "sortOrder": 0,
+    "pinned": false
+  },
+  {
+    "key": "expense.health.medicine",
+    "parentKey": "expense.health",
+    "kind": "expense",
+    "name": "药品",
+    "symbol": "pills",
+    "color": "green",
+    "sortOrder": 1,
+    "pinned": false
+  },
+  {
+    "key": "expense.health.inpatient",
+    "parentKey": "expense.health",
+    "kind": "expense",
+    "name": "住院治疗",
+    "symbol": "cross.case",
+    "color": "green",
+    "sortOrder": 2,
+    "pinned": false
+  },
+  {
+    "key": "expense.health-education.checkup",
+    "parentKey": "expense.health",
+    "kind": "expense",
+    "name": "体检",
+    "symbol": "heart.text.clipboard",
+    "color": "green",
+    "sortOrder": 3,
+    "pinned": false
+  },
+  {
+    "key": "expense.health.dental",
+    "parentKey": "expense.health",
+    "kind": "expense",
+    "name": "牙科",
+    "symbol": "cross.case",
+    "color": "green",
+    "sortOrder": 4,
+    "pinned": false
+  },
+  {
+    "key": "expense.health.vision",
+    "parentKey": "expense.health",
+    "kind": "expense",
+    "name": "眼科配镜",
+    "symbol": "cross.case",
+    "color": "green",
+    "sortOrder": 5,
+    "pinned": false
+  },
+  {
+    "key": "expense.health.vaccine",
+    "parentKey": "expense.health",
+    "kind": "expense",
+    "name": "疫苗",
+    "symbol": "cross.case",
+    "color": "green",
+    "sortOrder": 6,
+    "pinned": false
+  },
+  {
+    "key": "expense.health.rehab",
+    "parentKey": "expense.health",
+    "kind": "expense",
+    "name": "康复护理",
+    "symbol": "cross.case",
+    "color": "green",
+    "sortOrder": 7,
+    "pinned": false
+  },
+  {
+    "key": "expense.health.devices",
+    "parentKey": "expense.health",
+    "kind": "expense",
+    "name": "医疗器械",
+    "symbol": "cross.case",
+    "color": "green",
+    "sortOrder": 8,
+    "pinned": false
+  },
+  {
+    "key": "expense.health-education.wellness",
+    "parentKey": "expense.health",
+    "kind": "expense",
+    "name": "保健营养",
+    "symbol": "heart",
+    "color": "green",
+    "sortOrder": 9,
+    "pinned": false
+  },
+  {
+    "key": "expense.health.other",
+    "parentKey": "expense.health",
+    "kind": "expense",
+    "name": "其他医疗",
+    "symbol": "cross.case",
+    "color": "green",
+    "sortOrder": 10,
+    "pinned": false
+  },
+  {
+    "key": "expense.education",
+    "parentKey": null,
+    "kind": "expense",
+    "name": "教育学习",
+    "symbol": "graduationcap",
+    "color": "blue",
+    "sortOrder": 11,
+    "pinned": false
+  },
+  {
+    "key": "expense.education.school-fees",
+    "parentKey": "expense.education",
+    "kind": "expense",
+    "name": "学费学杂",
+    "symbol": "graduationcap",
+    "color": "blue",
+    "sortOrder": 0,
+    "pinned": false
+  },
+  {
+    "key": "expense.education.courses",
+    "parentKey": "expense.education",
+    "kind": "expense",
+    "name": "培训课程",
+    "symbol": "graduationcap",
+    "color": "blue",
+    "sortOrder": 1,
+    "pinned": false
+  },
+  {
+    "key": "expense.education.books",
+    "parentKey": "expense.education",
+    "kind": "expense",
+    "name": "图书",
+    "symbol": "book",
+    "color": "blue",
+    "sortOrder": 2,
+    "pinned": false
+  },
+  {
+    "key": "expense.education.stationery",
+    "parentKey": "expense.education",
+    "kind": "expense",
+    "name": "文具",
+    "symbol": "pencil.and.ruler",
+    "color": "blue",
+    "sortOrder": 3,
+    "pinned": false
+  },
+  {
+    "key": "expense.education.exams",
+    "parentKey": "expense.education",
+    "kind": "expense",
+    "name": "考试认证",
+    "symbol": "graduationcap",
+    "color": "blue",
+    "sortOrder": 4,
+    "pinned": false
+  },
+  {
+    "key": "expense.education.learning-device",
+    "parentKey": "expense.education",
+    "kind": "expense",
+    "name": "学习机点读笔",
+    "symbol": "desktopcomputer",
+    "color": "blue",
+    "sortOrder": 5,
+    "pinned": false
+  },
+  {
+    "key": "expense.education.study-tour",
+    "parentKey": "expense.education",
+    "kind": "expense",
+    "name": "研学活动",
+    "symbol": "graduationcap",
+    "color": "blue",
+    "sortOrder": 6,
+    "pinned": false
+  },
+  {
+    "key": "expense.education.other",
+    "parentKey": "expense.education",
+    "kind": "expense",
+    "name": "其他教育",
+    "symbol": "graduationcap",
+    "color": "blue",
+    "sortOrder": 7,
+    "pinned": false
+  },
+  {
+    "key": "expense.childcare",
+    "parentKey": null,
+    "kind": "expense",
+    "name": "育儿照护",
+    "symbol": "figure.2.and.child.holdinghands",
+    "color": "orange",
+    "sortOrder": 12,
+    "pinned": false
+  },
+  {
+    "key": "expense.childcare.formula-food",
+    "parentKey": "expense.childcare",
+    "kind": "expense",
+    "name": "奶粉辅食",
+    "symbol": "figure.2.and.child.holdinghands",
+    "color": "orange",
+    "sortOrder": 0,
+    "pinned": false
+  },
+  {
+    "key": "expense.childcare.diapers",
+    "parentKey": "expense.childcare",
+    "kind": "expense",
+    "name": "尿裤湿巾",
+    "symbol": "figure.2.and.child.holdinghands",
+    "color": "orange",
+    "sortOrder": 1,
+    "pinned": false
+  },
+  {
+    "key": "expense.childcare.feeding-care",
+    "parentKey": "expense.childcare",
+    "kind": "expense",
+    "name": "喂养洗护",
+    "symbol": "figure.2.and.child.holdinghands",
+    "color": "orange",
+    "sortOrder": 2,
+    "pinned": false
+  },
+  {
+    "key": "expense.childcare.toys",
+    "parentKey": "expense.childcare",
+    "kind": "expense",
+    "name": "玩具益智",
+    "symbol": "figure.2.and.child.holdinghands",
+    "color": "orange",
+    "sortOrder": 3,
+    "pinned": false
+  },
+  {
+    "key": "expense.childcare.equipment",
+    "parentKey": "expense.childcare",
+    "kind": "expense",
+    "name": "婴童设备",
+    "symbol": "figure.2.and.child.holdinghands",
+    "color": "orange",
+    "sortOrder": 4,
+    "pinned": false
+  },
+  {
+    "key": "expense.childcare.daycare",
+    "parentKey": "expense.childcare",
+    "kind": "expense",
+    "name": "托育保育",
+    "symbol": "figure.2.and.child.holdinghands",
+    "color": "orange",
+    "sortOrder": 5,
+    "pinned": false
+  },
+  {
+    "key": "expense.childcare.nanny",
+    "parentKey": "expense.childcare",
+    "kind": "expense",
+    "name": "月嫂育儿嫂",
+    "symbol": "figure.2.and.child.holdinghands",
+    "color": "orange",
+    "sortOrder": 6,
+    "pinned": false
+  },
+  {
+    "key": "expense.childcare.other",
+    "parentKey": "expense.childcare",
+    "kind": "expense",
+    "name": "其他育儿",
+    "symbol": "figure.2.and.child.holdinghands",
+    "color": "orange",
+    "sortOrder": 7,
+    "pinned": false
+  },
+  {
+    "key": "expense.entertainment",
+    "parentKey": null,
+    "kind": "expense",
+    "name": "休闲娱乐",
+    "symbol": "gamecontroller",
+    "color": "purple",
+    "sortOrder": 13,
+    "pinned": false
+  },
+  {
+    "key": "expense.entertainment.movie",
+    "parentKey": "expense.entertainment",
+    "kind": "expense",
+    "name": "电影",
+    "symbol": "film",
+    "color": "purple",
+    "sortOrder": 0,
+    "pinned": false
+  },
+  {
+    "key": "expense.entertainment.show",
+    "parentKey": "expense.entertainment",
+    "kind": "expense",
+    "name": "演出",
+    "symbol": "theatermasks",
+    "color": "purple",
+    "sortOrder": 1,
+    "pinned": false
+  },
+  {
+    "key": "expense.entertainment.game-purchase",
+    "parentKey": "expense.entertainment",
+    "kind": "expense",
+    "name": "游戏购买",
+    "symbol": "gamecontroller",
+    "color": "purple",
+    "sortOrder": 2,
+    "pinned": false
+  },
+  {
+    "key": "expense.entertainment.game-topup",
+    "parentKey": "expense.entertainment",
+    "kind": "expense",
+    "name": "游戏充值",
+    "symbol": "gamecontroller",
+    "color": "purple",
+    "sortOrder": 3,
+    "pinned": false
+  },
+  {
+    "key": "expense.entertainment.tabletop",
+    "parentKey": "expense.entertainment",
+    "kind": "expense",
+    "name": "桌游棋牌",
+    "symbol": "gamecontroller",
+    "color": "purple",
+    "sortOrder": 4,
+    "pinned": false
+  },
+  {
+    "key": "expense.entertainment.karaoke-bar",
+    "parentKey": "expense.entertainment",
+    "kind": "expense",
+    "name": "KTV酒吧",
+    "symbol": "music.note",
+    "color": "purple",
+    "sortOrder": 5,
+    "pinned": false
+  },
+  {
+    "key": "expense.entertainment.exhibition",
+    "parentKey": "expense.entertainment",
+    "kind": "expense",
+    "name": "展览活动",
+    "symbol": "paintpalette",
+    "color": "purple",
+    "sortOrder": 6,
+    "pinned": false
+  },
+  {
+    "key": "expense.entertainment.amusement",
+    "parentKey": "expense.entertainment",
+    "kind": "expense",
+    "name": "游乐园",
+    "symbol": "gamecontroller",
+    "color": "purple",
+    "sortOrder": 7,
+    "pinned": false
+  },
+  {
+    "key": "expense.entertainment.other",
+    "parentKey": "expense.entertainment",
+    "kind": "expense",
+    "name": "其他娱乐",
+    "symbol": "gamecontroller",
+    "color": "purple",
+    "sortOrder": 8,
+    "pinned": false
+  },
+  {
+    "key": "expense.hobbies",
+    "parentKey": null,
+    "kind": "expense",
+    "name": "运动爱好",
+    "symbol": "figure.run",
+    "color": "green",
+    "sortOrder": 14,
+    "pinned": false
+  },
+  {
+    "key": "expense.hobbies.gym",
+    "parentKey": "expense.hobbies",
+    "kind": "expense",
+    "name": "健身会员",
+    "symbol": "dumbbell",
+    "color": "green",
+    "sortOrder": 0,
+    "pinned": false
+  },
+  {
+    "key": "expense.hobbies.venue",
+    "parentKey": "expense.hobbies",
+    "kind": "expense",
+    "name": "运动场馆",
+    "symbol": "sportscourt",
+    "color": "green",
+    "sortOrder": 1,
+    "pinned": false
+  },
+  {
+    "key": "expense.hobbies.coaching",
+    "parentKey": "expense.hobbies",
+    "kind": "expense",
+    "name": "运动课程",
+    "symbol": "figure.run",
+    "color": "green",
+    "sortOrder": 2,
+    "pinned": false
+  },
+  {
+    "key": "expense.hobbies.gear",
+    "parentKey": "expense.hobbies",
+    "kind": "expense",
+    "name": "运动装备",
+    "symbol": "figure.run",
+    "color": "green",
+    "sortOrder": 3,
+    "pinned": false
+  },
+  {
+    "key": "expense.hobbies.camping",
+    "parentKey": "expense.hobbies",
+    "kind": "expense",
+    "name": "户外露营",
+    "symbol": "house.lodge",
+    "color": "green",
+    "sortOrder": 4,
+    "pinned": false
+  },
+  {
+    "key": "expense.hobbies.camera",
+    "parentKey": "expense.hobbies",
+    "kind": "expense",
+    "name": "摄影器材",
+    "symbol": "camera",
+    "color": "green",
+    "sortOrder": 5,
+    "pinned": false
+  },
+  {
+    "key": "expense.hobbies.photo-service",
+    "parentKey": "expense.hobbies",
+    "kind": "expense",
+    "name": "摄影服务",
+    "symbol": "camera",
+    "color": "green",
+    "sortOrder": 6,
+    "pinned": false
+  },
+  {
+    "key": "expense.hobbies.music-art",
+    "parentKey": "expense.hobbies",
+    "kind": "expense",
+    "name": "乐器美术",
+    "symbol": "paintpalette",
+    "color": "green",
+    "sortOrder": 7,
+    "pinned": false
+  },
+  {
+    "key": "expense.hobbies.collecting",
+    "parentKey": "expense.hobbies",
+    "kind": "expense",
+    "name": "收藏手作",
+    "symbol": "figure.run",
+    "color": "green",
+    "sortOrder": 8,
+    "pinned": false
+  },
+  {
+    "key": "expense.hobbies.other",
+    "parentKey": "expense.hobbies",
+    "kind": "expense",
+    "name": "其他兴趣",
+    "symbol": "figure.run",
+    "color": "green",
+    "sortOrder": 9,
+    "pinned": false
+  },
+  {
+    "key": "expense.travel",
+    "parentKey": null,
+    "kind": "expense",
+    "name": "旅行住宿",
+    "symbol": "suitcase.rolling",
+    "color": "teal",
+    "sortOrder": 15,
+    "pinned": false
+  },
+  {
+    "key": "expense.travel.lodging",
+    "parentKey": "expense.travel",
+    "kind": "expense",
+    "name": "酒店民宿",
+    "symbol": "bed.double",
+    "color": "teal",
+    "sortOrder": 0,
+    "pinned": false
+  },
+  {
+    "key": "expense.travel.tickets",
+    "parentKey": "expense.travel",
+    "kind": "expense",
+    "name": "景区门票",
+    "symbol": "ticket",
+    "color": "teal",
+    "sortOrder": 1,
+    "pinned": false
+  },
+  {
+    "key": "expense.travel.guide",
+    "parentKey": "expense.travel",
+    "kind": "expense",
+    "name": "跟团导游",
+    "symbol": "map",
+    "color": "teal",
+    "sortOrder": 2,
+    "pinned": false
+  },
+  {
+    "key": "expense.travel.visa",
+    "parentKey": "expense.travel",
+    "kind": "expense",
+    "name": "签证证件",
+    "symbol": "doc.text",
+    "color": "teal",
+    "sortOrder": 3,
+    "pinned": false
+  },
+  {
+    "key": "expense.travel.luggage",
+    "parentKey": "expense.travel",
+    "kind": "expense",
+    "name": "行李寄存",
+    "symbol": "suitcase.rolling",
+    "color": "teal",
+    "sortOrder": 4,
+    "pinned": false
+  },
+  {
+    "key": "expense.travel.service",
+    "parentKey": "expense.travel",
+    "kind": "expense",
+    "name": "旅行服务",
+    "symbol": "suitcase.rolling",
+    "color": "teal",
+    "sortOrder": 5,
+    "pinned": false
+  },
+  {
+    "key": "expense.travel.other",
+    "parentKey": "expense.travel",
+    "kind": "expense",
+    "name": "其他旅行",
+    "symbol": "suitcase.rolling",
+    "color": "teal",
+    "sortOrder": 6,
+    "pinned": false
+  },
+  {
+    "key": "expense.gifts",
+    "parentKey": null,
+    "kind": "expense",
+    "name": "人情公益",
+    "symbol": "gift",
+    "color": "orange",
+    "sortOrder": 16,
+    "pinned": false
+  },
+  {
+    "key": "expense.shopping.gifts",
+    "parentKey": "expense.gifts",
+    "kind": "expense",
+    "name": "礼物",
+    "symbol": "gift",
+    "color": "orange",
+    "sortOrder": 0,
+    "pinned": false
+  },
+  {
+    "key": "expense.gifts.red-envelope",
+    "parentKey": "expense.gifts",
+    "kind": "expense",
+    "name": "红包",
+    "symbol": "envelope",
+    "color": "orange",
+    "sortOrder": 1,
+    "pinned": false
+  },
+  {
+    "key": "expense.gifts.cash-gift",
+    "parentKey": "expense.gifts",
+    "kind": "expense",
+    "name": "礼金随礼",
+    "symbol": "gift",
+    "color": "orange",
+    "sortOrder": 2,
+    "pinned": false
+  },
+  {
+    "key": "expense.gifts.parents",
+    "parentKey": "expense.gifts",
+    "kind": "expense",
+    "name": "孝敬长辈",
+    "symbol": "person.2",
+    "color": "orange",
+    "sortOrder": 3,
+    "pinned": false
+  },
+  {
+    "key": "expense.gifts.family-support",
+    "parentKey": "expense.gifts",
+    "kind": "expense",
+    "name": "亲友资助",
+    "symbol": "gift",
+    "color": "orange",
+    "sortOrder": 4,
+    "pinned": false
+  },
+  {
+    "key": "expense.gifts.charity",
+    "parentKey": "expense.gifts",
+    "kind": "expense",
+    "name": "公益捐赠",
+    "symbol": "heart",
+    "color": "orange",
+    "sortOrder": 5,
+    "pinned": false
+  },
+  {
+    "key": "expense.gifts.other",
+    "parentKey": "expense.gifts",
+    "kind": "expense",
+    "name": "其他人情",
+    "symbol": "gift",
+    "color": "orange",
+    "sortOrder": 6,
+    "pinned": false
+  },
+  {
+    "key": "expense.pets",
+    "parentKey": null,
+    "kind": "expense",
+    "name": "宠物养护",
+    "symbol": "pawprint",
+    "color": "orange",
+    "sortOrder": 17,
+    "pinned": false
+  },
+  {
+    "key": "expense.pets.food",
+    "parentKey": "expense.pets",
+    "kind": "expense",
+    "name": "宠物食品",
+    "symbol": "pawprint",
+    "color": "orange",
+    "sortOrder": 0,
+    "pinned": false
+  },
+  {
+    "key": "expense.pets.supplies",
+    "parentKey": "expense.pets",
+    "kind": "expense",
+    "name": "宠物用品",
+    "symbol": "pawprint",
+    "color": "orange",
+    "sortOrder": 1,
+    "pinned": false
+  },
+  {
+    "key": "expense.pets.medical",
+    "parentKey": "expense.pets",
+    "kind": "expense",
+    "name": "宠物医疗",
+    "symbol": "cross.case",
+    "color": "orange",
+    "sortOrder": 2,
+    "pinned": false
+  },
+  {
+    "key": "expense.pets.grooming",
+    "parentKey": "expense.pets",
+    "kind": "expense",
+    "name": "洗护美容",
+    "symbol": "scissors",
+    "color": "orange",
+    "sortOrder": 3,
+    "pinned": false
+  },
+  {
+    "key": "expense.pets.boarding",
+    "parentKey": "expense.pets",
+    "kind": "expense",
+    "name": "寄养托管",
+    "symbol": "pawprint",
+    "color": "orange",
+    "sortOrder": 4,
+    "pinned": false
+  },
+  {
+    "key": "expense.pets.purchase",
+    "parentKey": "expense.pets",
+    "kind": "expense",
+    "name": "宠物购置",
+    "symbol": "pawprint",
+    "color": "orange",
+    "sortOrder": 5,
+    "pinned": false
+  },
+  {
+    "key": "expense.pets.other",
+    "parentKey": "expense.pets",
+    "kind": "expense",
+    "name": "其他宠物",
+    "symbol": "pawprint",
+    "color": "orange",
+    "sortOrder": 6,
+    "pinned": false
+  },
+  {
+    "key": "expense.insurance",
+    "parentKey": null,
+    "kind": "expense",
+    "name": "保险保障",
+    "symbol": "shield.checkered",
+    "color": "green",
+    "sortOrder": 18,
+    "pinned": false
+  },
+  {
+    "key": "expense.insurance.medical",
+    "parentKey": "expense.insurance",
+    "kind": "expense",
+    "name": "医疗保险",
+    "symbol": "shield.checkered",
+    "color": "green",
+    "sortOrder": 0,
+    "pinned": false
+  },
+  {
+    "key": "expense.insurance.critical-illness",
+    "parentKey": "expense.insurance",
+    "kind": "expense",
+    "name": "重疾保险",
+    "symbol": "shield.checkered",
+    "color": "green",
+    "sortOrder": 1,
+    "pinned": false
+  },
+  {
+    "key": "expense.insurance.life",
+    "parentKey": "expense.insurance",
+    "kind": "expense",
+    "name": "寿险",
+    "symbol": "shield.checkered",
+    "color": "green",
+    "sortOrder": 2,
+    "pinned": false
+  },
+  {
+    "key": "expense.insurance.accident",
+    "parentKey": "expense.insurance",
+    "kind": "expense",
+    "name": "意外险",
+    "symbol": "shield.checkered",
+    "color": "green",
+    "sortOrder": 3,
+    "pinned": false
+  },
+  {
+    "key": "expense.insurance.property",
+    "parentKey": "expense.insurance",
+    "kind": "expense",
+    "name": "家财保险",
+    "symbol": "shield.checkered",
+    "color": "green",
+    "sortOrder": 4,
+    "pinned": false
+  },
+  {
+    "key": "expense.insurance.travel",
+    "parentKey": "expense.insurance",
+    "kind": "expense",
+    "name": "旅行保险",
+    "symbol": "shield.checkered",
+    "color": "green",
+    "sortOrder": 5,
+    "pinned": false
+  },
+  {
+    "key": "expense.insurance.other",
+    "parentKey": "expense.insurance",
+    "kind": "expense",
+    "name": "其他保障险",
+    "symbol": "shield.checkered",
+    "color": "green",
+    "sortOrder": 6,
+    "pinned": false
+  },
+  {
+    "key": "expense.other",
+    "parentKey": null,
+    "kind": "expense",
+    "name": "费用杂项",
+    "symbol": "doc.text",
+    "color": "teal",
+    "sortOrder": 19,
+    "pinned": false
+  },
+  {
+    "key": "expense.other.fees",
+    "parentKey": "expense.other",
+    "kind": "expense",
+    "name": "银行支付手续费",
+    "symbol": "creditcard",
+    "color": "teal",
+    "sortOrder": 0,
+    "pinned": false
+  },
+  {
+    "key": "expense.other.interest",
+    "parentKey": "expense.other",
+    "kind": "expense",
+    "name": "借款利息",
+    "symbol": "percent",
+    "color": "teal",
+    "sortOrder": 1,
+    "pinned": false
+  },
+  {
+    "key": "expense.other.taxes",
+    "parentKey": "expense.other",
+    "kind": "expense",
+    "name": "税费",
+    "symbol": "doc.text",
+    "color": "teal",
+    "sortOrder": 2,
+    "pinned": false
+  },
+  {
+    "key": "expense.other.postage",
+    "parentKey": "expense.other",
+    "kind": "expense",
+    "name": "快递邮寄",
+    "symbol": "shippingbox",
+    "color": "teal",
+    "sortOrder": 3,
+    "pinned": false
+  },
+  {
+    "key": "expense.other.administration",
+    "parentKey": "expense.other",
+    "kind": "expense",
+    "name": "证件办事",
+    "symbol": "doc.text",
+    "color": "teal",
+    "sortOrder": 4,
+    "pinned": false
+  },
+  {
+    "key": "expense.other.penalty",
+    "parentKey": "expense.other",
+    "kind": "expense",
+    "name": "违约滞纳",
+    "symbol": "doc.text",
+    "color": "teal",
+    "sortOrder": 5,
+    "pinned": false
+  },
+  {
+    "key": "expense.other.other",
+    "parentKey": "expense.other",
+    "kind": "expense",
+    "name": "其他支出",
+    "symbol": "doc.text",
+    "color": "teal",
+    "sortOrder": 6,
+    "pinned": false
+  },
+  {
+    "key": "income.work",
+    "parentKey": null,
+    "kind": "income",
+    "name": "工作薪酬",
+    "symbol": "banknote",
+    "color": "green",
+    "sortOrder": 20,
+    "pinned": false
+  },
+  {
+    "key": "income.work.salary",
+    "parentKey": "income.work",
+    "kind": "income",
+    "name": "工资",
+    "symbol": "banknote",
+    "color": "green",
+    "sortOrder": 0,
+    "pinned": true
+  },
+  {
+    "key": "income.work.performance",
+    "parentKey": "income.work",
+    "kind": "income",
+    "name": "绩效奖金",
+    "symbol": "banknote",
+    "color": "green",
+    "sortOrder": 1,
+    "pinned": false
+  },
+  {
+    "key": "income.work.annual-bonus",
+    "parentKey": "income.work",
+    "kind": "income",
+    "name": "年终奖",
+    "symbol": "banknote",
+    "color": "green",
+    "sortOrder": 2,
+    "pinned": false
+  },
+  {
+    "key": "income.work.allowance",
+    "parentKey": "income.work",
+    "kind": "income",
+    "name": "津贴补助",
+    "symbol": "banknote",
+    "color": "green",
+    "sortOrder": 3,
+    "pinned": false
+  },
+  {
+    "key": "income.work.overtime",
+    "parentKey": "income.work",
+    "kind": "income",
+    "name": "加班费",
+    "symbol": "clock.arrow.circlepath",
+    "color": "green",
+    "sortOrder": 4,
+    "pinned": false
+  },
+  {
+    "key": "income.work.other",
+    "parentKey": "income.work",
+    "kind": "income",
+    "name": "其他薪酬",
+    "symbol": "banknote",
+    "color": "green",
+    "sortOrder": 5,
+    "pinned": false
+  },
+  {
+    "key": "income.side-work",
+    "parentKey": null,
+    "kind": "income",
+    "name": "副业劳务",
+    "symbol": "briefcase",
+    "color": "teal",
+    "sortOrder": 21,
+    "pinned": false
+  },
+  {
+    "key": "income.work.part-time",
+    "parentKey": "income.side-work",
+    "kind": "income",
+    "name": "兼职劳务",
+    "symbol": "briefcase",
+    "color": "teal",
+    "sortOrder": 0,
+    "pinned": false
+  },
+  {
+    "key": "income.side-work.consulting",
+    "parentKey": "income.side-work",
+    "kind": "income",
+    "name": "咨询服务",
+    "symbol": "briefcase",
+    "color": "teal",
+    "sortOrder": 1,
+    "pinned": false
+  },
+  {
+    "key": "income.side-work.royalties",
+    "parentKey": "income.side-work",
+    "kind": "income",
+    "name": "稿酬版税",
+    "symbol": "book",
+    "color": "teal",
+    "sortOrder": 2,
+    "pinned": false
+  },
+  {
+    "key": "income.side-work.creator",
+    "parentKey": "income.side-work",
+    "kind": "income",
+    "name": "内容创作",
+    "symbol": "briefcase",
+    "color": "teal",
+    "sortOrder": 3,
+    "pinned": false
+  },
+  {
+    "key": "income.side-work.business",
+    "parentKey": "income.side-work",
+    "kind": "income",
+    "name": "经营所得",
+    "symbol": "briefcase",
+    "color": "teal",
+    "sortOrder": 4,
+    "pinned": false
+  },
+  {
+    "key": "income.side-work.other",
+    "parentKey": "income.side-work",
+    "kind": "income",
+    "name": "其他副业",
+    "symbol": "briefcase",
+    "color": "teal",
+    "sortOrder": 5,
+    "pinned": false
+  },
+  {
+    "key": "income.investment",
+    "parentKey": null,
+    "kind": "income",
+    "name": "投资收益",
+    "symbol": "chart.line.uptrend.xyaxis",
+    "color": "green",
+    "sortOrder": 22,
+    "pinned": false
+  },
+  {
+    "key": "income.investment.deposit-interest",
+    "parentKey": "income.investment",
+    "kind": "income",
+    "name": "存款利息",
+    "symbol": "percent",
+    "color": "green",
+    "sortOrder": 0,
+    "pinned": false
+  },
+  {
+    "key": "income.investment.product-interest",
+    "parentKey": "income.investment",
+    "kind": "income",
+    "name": "理财利息",
+    "symbol": "percent",
+    "color": "green",
+    "sortOrder": 1,
+    "pinned": false
+  },
+  {
+    "key": "income.investment.dividend",
+    "parentKey": "income.investment",
+    "kind": "income",
+    "name": "现金分红",
+    "symbol": "chart.pie",
+    "color": "green",
+    "sortOrder": 2,
+    "pinned": false
+  },
+  {
+    "key": "income.investment.realized",
+    "parentKey": "income.investment",
+    "kind": "income",
+    "name": "已实现投资收益",
+    "symbol": "chart.line.uptrend.xyaxis",
+    "color": "green",
+    "sortOrder": 3,
+    "pinned": false
+  },
+  {
+    "key": "income.investment.other",
+    "parentKey": "income.investment",
+    "kind": "income",
+    "name": "其他投资收益",
+    "symbol": "chart.line.uptrend.xyaxis",
+    "color": "green",
+    "sortOrder": 4,
+    "pinned": false
+  },
+  {
+    "key": "income.rental",
+    "parentKey": null,
+    "kind": "income",
+    "name": "资产出租",
+    "symbol": "building.2",
+    "color": "blue",
+    "sortOrder": 23,
+    "pinned": false
+  },
+  {
+    "key": "income.rental.home",
+    "parentKey": "income.rental",
+    "kind": "income",
+    "name": "房屋租金",
+    "symbol": "building.2",
+    "color": "blue",
+    "sortOrder": 0,
+    "pinned": false
+  },
+  {
+    "key": "income.rental.parking",
+    "parentKey": "income.rental",
+    "kind": "income",
+    "name": "车位租金",
+    "symbol": "parkingsign.circle",
+    "color": "blue",
+    "sortOrder": 1,
+    "pinned": false
+  },
+  {
+    "key": "income.rental.equipment",
+    "parentKey": "income.rental",
+    "kind": "income",
+    "name": "设备租金",
+    "symbol": "building.2",
+    "color": "blue",
+    "sortOrder": 2,
+    "pinned": false
+  },
+  {
+    "key": "income.rental.other",
+    "parentKey": "income.rental",
+    "kind": "income",
+    "name": "其他租金",
+    "symbol": "building.2",
+    "color": "blue",
+    "sortOrder": 3,
+    "pinned": false
+  },
+  {
+    "key": "income.gifts",
+    "parentKey": null,
+    "kind": "income",
+    "name": "礼赠补助",
+    "symbol": "giftcard",
+    "color": "orange",
+    "sortOrder": 24,
+    "pinned": false
+  },
+  {
+    "key": "income.other.red-envelope",
+    "parentKey": "income.gifts",
+    "kind": "income",
+    "name": "收到红包",
+    "symbol": "envelope",
+    "color": "orange",
+    "sortOrder": 0,
+    "pinned": false
+  },
+  {
+    "key": "income.other.cash-gift",
+    "parentKey": "income.gifts",
+    "kind": "income",
+    "name": "收到礼金",
+    "symbol": "giftcard",
+    "color": "orange",
+    "sortOrder": 1,
+    "pinned": false
+  },
+  {
+    "key": "income.gifts.family-support",
+    "parentKey": "income.gifts",
+    "kind": "income",
+    "name": "亲友资助",
+    "symbol": "giftcard",
+    "color": "orange",
+    "sortOrder": 2,
+    "pinned": false
+  },
+  {
+    "key": "income.gifts.subsidy",
+    "parentKey": "income.gifts",
+    "kind": "income",
+    "name": "公共补贴",
+    "symbol": "giftcard",
+    "color": "orange",
+    "sortOrder": 3,
+    "pinned": false
+  },
+  {
+    "key": "income.gifts.other",
+    "parentKey": "income.gifts",
+    "kind": "income",
+    "name": "其他礼赠补助",
+    "symbol": "giftcard",
+    "color": "orange",
+    "sortOrder": 4,
+    "pinned": false
+  },
+  {
+    "key": "income.other",
+    "parentKey": null,
+    "kind": "income",
+    "name": "其他收入",
+    "symbol": "plus.circle",
+    "color": "green",
+    "sortOrder": 25,
+    "pinned": false
+  },
+  {
+    "key": "income.other.pension",
+    "parentKey": "income.other",
+    "kind": "income",
+    "name": "养老金",
+    "symbol": "plus.circle",
+    "color": "green",
+    "sortOrder": 0,
+    "pinned": false
+  },
+  {
+    "key": "income.other.award",
+    "parentKey": "income.other",
+    "kind": "income",
+    "name": "奖学金奖励",
+    "symbol": "graduationcap",
+    "color": "green",
+    "sortOrder": 1,
+    "pinned": false
+  },
+  {
+    "key": "income.other.other",
+    "parentKey": "income.other",
+    "kind": "income",
+    "name": "其他收入",
+    "symbol": "plus.circle",
+    "color": "green",
+    "sortOrder": 2,
+    "pinned": false
+  }
+]

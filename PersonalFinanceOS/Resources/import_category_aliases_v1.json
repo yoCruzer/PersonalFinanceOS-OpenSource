@@ -1,0 +1,45 @@
+{
+  "version": 1,
+  "aliases": [
+    {
+      "sources": [
+        "餐饮美食",
+        "美食餐饮",
+        "食品餐饮"
+      ],
+      "storageKey": "expense.dining"
+    },
+    {
+      "sources": [
+        "交通出行",
+        "出行交通"
+      ],
+      "storageKey": "expense.transportation"
+    },
+    {
+      "sources": [
+        "数码电器",
+        "手机通讯"
+      ],
+      "storageKey": "expense.shopping.digital"
+    },
+    {
+      "sources": [
+        "母婴用品"
+      ],
+      "storageKey": "expense.shopping.baby-care"
+    },
+    {
+      "sources": [
+        "生活缴费"
+      ],
+      "storageKey": "expense.home.utilities"
+    },
+    {
+      "sources": [
+        "酒店住宿"
+      ],
+      "storageKey": "expense.travel.lodging"
+    }
+  ]
+}

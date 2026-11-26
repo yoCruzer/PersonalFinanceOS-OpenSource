@@ -1,0 +1,2614 @@
+{
+  "version": 1,
+  "baseline": "e30cb2f5d739b0029fb2a0f256b0805461379c6d",
+  "provenance": "Agent-authored synthetic expressions frozen before V4 rule implementation. Not human blind-test or real-user evidence. Development examples from the task are excluded as exact strings.",
+  "cases": [
+    {
+      "id": "clear-001",
+      "cohort": "clear",
+      "type": "expense",
+      "note": "早上路边买油条豆浆当早饭",
+      "merchant": "",
+      "expectedSemanticKeys": [
+        "expense.dining.breakfast"
+      ],
+      "mustNotAutoApply": false
+    },
+    {
+      "id": "clear-002",
+      "cohort": "clear",
+      "type": "expense",
+      "note": "中午和同事一起吃了牛肉面",
+      "merchant": "",
+      "expectedSemanticKeys": [
+        "expense.dining.lunch"
+      ],
+      "mustNotAutoApply": false
+    },
+    {
+      "id": "clear-003",
+      "cohort": "clear",
+      "type": "expense",
+      "note": "今天的午饭是麻辣烫",
+      "merchant": "",
+      "expectedSemanticKeys": [
+        "expense.dining.lunch"
+      ],
+      "mustNotAutoApply": false
+    },
+    {
+      "id": "clear-004",
+      "cohort": "clear",
+      "type": "expense",
+      "note": "下班后两个人的晚饭",
+      "merchant": "",
+      "expectedSemanticKeys": [
+        "expense.dining.dinner"
+      ],
+      "mustNotAutoApply": false
+    },
+    {
+      "id": "clear-005",
+      "cohort": "clear",
+      "type": "expense",
+      "note": "加班到十一点吃夜宵",
+      "merchant": "",
+      "expectedSemanticKeys": [
+        "expense.dining.late-meal"
+      ],
+      "mustNotAutoApply": false
+    },
+    {
+      "id": "clear-006",
+      "cohort": "clear",
+      "type": "expense",
+      "note": "在面馆吃了一碗面条",
+      "merchant": "",
+      "expectedSemanticKeys": [
+        "expense.dining.regular-meal"
+      ],
+      "mustNotAutoApply": false
+    },
+    {
+      "id": "clear-007",
+      "cohort": "clear",
+      "type": "expense",
+      "note": "瑞幸拿铁一杯",
+      "merchant": "",
+      "expectedSemanticKeys": [
+        "expense.dining.coffee"
+      ],
+      "mustNotAutoApply": false
+    },
+    {
+      "id": "clear-008",
+      "cohort": "clear",
+      "type": "expense",
+      "note": "早晨买美式提神",
+      "merchant": "",
+      "expectedSemanticKeys": [
+        "expense.dining.coffee"
+      ],
+      "mustNotAutoApply": false
+    },
+    {
+      "id": "clear-009",
+      "cohort": "clear",
+      "type": "expense",
+      "note": "喜茶的葡萄奶茶",
+      "merchant": "",
+      "expectedSemanticKeys": [
+        "expense.dining.tea-drink"
+      ],
+      "mustNotAutoApply": false
+    },
+    {
+      "id": "clear-010",
+      "cohort": "clear",
+      "type": "expense",
+      "note": "便利店拿了一瓶矿泉水",
+      "merchant": "",
+      "expectedSemanticKeys": [
+        "expense.dining.beverages"
+      ],
+      "mustNotAutoApply": false
+    },
+    {
+      "id": "clear-011",
+      "cohort": "clear",
+      "type": "expense",
+      "note": "买饼干和一袋薯片",
+      "merchant": "",
+      "expectedSemanticKeys": [
+        "expense.dining.snacks"
+      ],
+      "mustNotAutoApply": false
+    },
+    {
+      "id": "clear-012",
+      "cohort": "clear",
+      "type": "expense",
+      "note": "下楼买了一袋橘子",
+      "merchant": "",
+      "expectedSemanticKeys": [
+        "expense.dining.fruit"
+      ],
+      "mustNotAutoApply": false
+    },
+    {
+      "id": "clear-013",
+      "cohort": "clear",
+      "type": "expense",
+      "note": "朋友聚会带了一瓶红酒",
+      "merchant": "",
+      "expectedSemanticKeys": [
+        "expense.dining.alcohol"
+      ],
+      "mustNotAutoApply": false
+    },
+    {
+      "id": "clear-014",
+      "cohort": "clear",
+      "type": "expense",
+      "note": "菜市场挑了菠菜和香菇",
+      "merchant": "",
+      "expectedSemanticKeys": [
+        "expense.groceries.vegetables"
+      ],
+      "mustNotAutoApply": false
+    },
+    {
+      "id": "clear-015",
+      "cohort": "clear",
+      "type": "expense",
+      "note": "买排骨和鸡蛋回家做菜",
+      "merchant": "",
+      "expectedSemanticKeys": [
+        "expense.groceries.meat-eggs"
+      ],
+      "mustNotAutoApply": false
+    },
+    {
+      "id": "clear-016",
+      "cohort": "clear",
+      "type": "expense",
+      "note": "今晚做饭买了活虾",
+      "merchant": "",
+      "expectedSemanticKeys": [
+        "expense.groceries.seafood"
+      ],
+      "mustNotAutoApply": false
+    },
+    {
+      "id": "clear-017",
+      "cohort": "clear",
+      "type": "expense",
+      "note": "给家里买一袋大米",
+      "merchant": "",
+      "expectedSemanticKeys": [
+        "expense.groceries.grains"
+      ],
+      "mustNotAutoApply": false
+    },
+    {
+      "id": "clear-018",
+      "cohort": "clear",
+      "type": "expense",
+      "note": "补一桶花生油",
+      "merchant": "",
+      "expectedSemanticKeys": [
+        "expense.groceries.oil"
+      ],
+      "mustNotAutoApply": false
+    },
+    {
+      "id": "clear-019",
+      "cohort": "clear",
+      "type": "expense",
+      "note": "厨房酱油醋都用完了",
+      "merchant": "",
+      "expectedSemanticKeys": [
+        "expense.groceries.seasoning"
+      ],
+      "mustNotAutoApply": false
+    },
+    {
+      "id": "clear-020",
+      "cohort": "clear",
+      "type": "expense",
+      "note": "超市买纯牛奶一箱",
+      "merchant": "",
+      "expectedSemanticKeys": [
+        "expense.groceries.dairy"
+      ],
+      "mustNotAutoApply": false
+    },
+    {
+      "id": "clear-021",
+      "cohort": "clear",
+      "type": "expense",
+      "note": "囤些冷冻水饺在冰箱",
+      "merchant": "",
+      "expectedSemanticKeys": [
+        "expense.groceries.convenience"
+      ],
+      "mustNotAutoApply": false
+    },
+    {
+      "id": "clear-022",
+      "cohort": "clear",
+      "type": "expense",
+      "note": "刷卡坐公交去公司",
+      "merchant": "",
+      "expectedSemanticKeys": [
+        "expense.transportation.bus"
+      ],
+      "mustNotAutoApply": false
+    },
+    {
+      "id": "clear-023",
+      "cohort": "clear",
+      "type": "expense",
+      "note": "地铁通勤扣费",
+      "merchant": "",
+      "expectedSemanticKeys": [
+        "expense.transportation.metro"
+      ],
+      "mustNotAutoApply": false
+    },
+    {
+      "id": "clear-024",
+      "cohort": "clear",
+      "type": "expense",
+      "note": "下雨打滴滴回家",
+      "merchant": "",
+      "expectedSemanticKeys": [
+        "expense.transportation.taxi"
+      ],
+      "mustNotAutoApply": false
+    },
+    {
+      "id": "clear-025",
+      "cohort": "clear",
+      "type": "expense",
+      "note": "扫共享单车骑到地铁站",
+      "merchant": "",
+      "expectedSemanticKeys": [
+        "expense.transportation.bike"
+      ],
+      "mustNotAutoApply": false
+    },
+    {
+      "id": "clear-026",
+      "cohort": "clear",
+      "type": "expense",
+      "note": "买周五回老家的高铁票",
+      "merchant": "",
+      "expectedSemanticKeys": [
+        "expense.transportation.rail"
+      ],
+      "mustNotAutoApply": false
+    },
+    {
+      "id": "clear-027",
+      "cohort": "clear",
+      "type": "expense",
+      "note": "去县城的长途客车票",
+      "merchant": "",
+      "expectedSemanticKeys": [
+        "expense.transportation.coach"
+      ],
+      "mustNotAutoApply": false
+    },
+    {
+      "id": "clear-028",
+      "cohort": "clear",
+      "type": "expense",
+      "note": "订去上海的飞机票",
+      "merchant": "",
+      "expectedSemanticKeys": [
+        "expense.transportation.flight"
+      ],
+      "mustNotAutoApply": false
+    },
+    {
+      "id": "clear-029",
+      "cohort": "clear",
+      "type": "expense",
+      "note": "过江坐轮渡买票",
+      "merchant": "",
+      "expectedSemanticKeys": [
+        "expense.transportation.ferry"
+      ],
+      "mustNotAutoApply": false
+    },
+    {
+      "id": "clear-030",
+      "cohort": "clear",
+      "type": "expense",
+      "note": "租车开两天",
+      "merchant": "",
+      "expectedSemanticKeys": [
+        "expense.transportation.rental"
+      ],
+      "mustNotAutoApply": false
+    },
+    {
+      "id": "clear-031",
+      "cohort": "clear",
+      "type": "expense",
+      "note": "中石化加了半箱汽油",
+      "merchant": "",
+      "expectedSemanticKeys": [
+        "expense.vehicle.fuel"
+      ],
+      "mustNotAutoApply": false
+    },
+    {
+      "id": "clear-032",
+      "cohort": "clear",
+      "type": "expense",
+      "note": "服务区给电动车充电",
+      "merchant": "",
+      "expectedSemanticKeys": [
+        "expense.vehicle.charging"
+      ],
+      "mustNotAutoApply": false
+    },
+    {
+      "id": "clear-033",
+      "cohort": "clear",
+      "type": "expense",
+      "note": "商场停了三小时的停车费",
+      "merchant": "",
+      "expectedSemanticKeys": [
+        "expense.vehicle.parking"
+      ],
+      "mustNotAutoApply": false
+    },
+    {
+      "id": "clear-034",
+      "cohort": "clear",
+      "type": "expense",
+      "note": "高速出口扣了过路费",
+      "merchant": "",
+      "expectedSemanticKeys": [
+        "expense.vehicle.toll"
+      ],
+      "mustNotAutoApply": false
+    },
+    {
+      "id": "clear-035",
+      "cohort": "clear",
+      "type": "expense",
+      "note": "周末去洗车店洗车",
+      "merchant": "",
+      "expectedSemanticKeys": [
+        "expense.vehicle.cleaning"
+      ],
+      "mustNotAutoApply": false
+    },
+    {
+      "id": "clear-036",
+      "cohort": "clear",
+      "type": "expense",
+      "note": "给车换机油做保养",
+      "merchant": "",
+      "expectedSemanticKeys": [
+        "expense.vehicle.maintenance"
+      ],
+      "mustNotAutoApply": false
+    },
+    {
+      "id": "clear-037",
+      "cohort": "clear",
+      "type": "expense",
+      "note": "给汽车买新的脚垫",
+      "merchant": "",
+      "expectedSemanticKeys": [
+        "expense.vehicle.accessories"
+      ],
+      "mustNotAutoApply": false
+    },
+    {
+      "id": "clear-038",
+      "cohort": "clear",
+      "type": "expense",
+      "note": "续交汽车交强险",
+      "merchant": "",
+      "expectedSemanticKeys": [
+        "expense.vehicle.insurance"
+      ],
+      "mustNotAutoApply": false
+    },
+    {
+      "id": "clear-039",
+      "cohort": "clear",
+      "type": "expense",
+      "note": "今年车船税缴纳",
+      "merchant": "",
+      "expectedSemanticKeys": [
+        "expense.vehicle.inspection-tax"
+      ],
+      "mustNotAutoApply": false
+    },
+    {
+      "id": "clear-040",
+      "cohort": "clear",
+      "type": "expense",
+      "note": "付本月租房的钱",
+      "merchant": "",
+      "expectedSemanticKeys": [
+        "expense.home.rent"
+      ],
+      "mustNotAutoApply": false
+    },
+    {
+      "id": "clear-041",
+      "cohort": "clear",
+      "type": "expense",
+      "note": "小区季度物业费",
+      "merchant": "",
+      "expectedSemanticKeys": [
+        "expense.home.property"
+      ],
+      "mustNotAutoApply": false
+    },
+    {
+      "id": "clear-042",
+      "cohort": "clear",
+      "type": "expense",
+      "note": "自来水账单缴费",
+      "merchant": "",
+      "expectedSemanticKeys": [
+        "expense.home.water"
+      ],
+      "mustNotAutoApply": false
+    },
+    {
+      "id": "clear-043",
+      "cohort": "clear",
+      "type": "expense",
+      "note": "家里电表充值",
+      "merchant": "",
+      "expectedSemanticKeys": [
+        "expense.home.electricity"
+      ],
+      "mustNotAutoApply": false
+    },
+    {
+      "id": "clear-044",
+      "cohort": "clear",
+      "type": "expense",
+      "note": "缴天然气费",
+      "merchant": "",
+      "expectedSemanticKeys": [
+        "expense.home.gas"
+      ],
+      "mustNotAutoApply": false
+    },
+    {
+      "id": "clear-045",
+      "cohort": "clear",
+      "type": "expense",
+      "note": "冬季集中供暖费",
+      "merchant": "",
+      "expectedSemanticKeys": [
+        "expense.home.heating"
+      ],
+      "mustNotAutoApply": false
+    },
+    {
+      "id": "clear-046",
+      "cohort": "clear",
+      "type": "expense",
+      "note": "请保洁上门打扫屋子",
+      "merchant": "",
+      "expectedSemanticKeys": [
+        "expense.home.cleaning"
+      ],
+      "mustNotAutoApply": false
+    },
+    {
+      "id": "clear-047",
+      "cohort": "clear",
+      "type": "expense",
+      "note": "请师傅疏通下水道",
+      "merchant": "",
+      "expectedSemanticKeys": [
+        "expense.home.repair"
+      ],
+      "mustNotAutoApply": false
+    },
+    {
+      "id": "clear-048",
+      "cohort": "clear",
+      "type": "expense",
+      "note": "搬家请货拉拉搬家具",
+      "merchant": "",
+      "expectedSemanticKeys": [
+        "expense.home.moving"
+      ],
+      "mustNotAutoApply": false
+    },
+    {
+      "id": "clear-049",
+      "cohort": "clear",
+      "type": "expense",
+      "note": "补货抽纸和洗洁精",
+      "merchant": "",
+      "expectedSemanticKeys": [
+        "expense.household.paper-cleaning"
+      ],
+      "mustNotAutoApply": false
+    },
+    {
+      "id": "clear-050",
+      "cohort": "clear",
+      "type": "expense",
+      "note": "买牙刷牙膏",
+      "merchant": "",
+      "expectedSemanticKeys": [
+        "expense.household.toiletries"
+      ],
+      "mustNotAutoApply": false
+    },
+    {
+      "id": "clear-051",
+      "cohort": "clear",
+      "type": "expense",
+      "note": "换一口炒锅",
+      "merchant": "",
+      "expectedSemanticKeys": [
+        "expense.household.kitchen"
+      ],
+      "mustNotAutoApply": false
+    },
+    {
+      "id": "clear-052",
+      "cohort": "clear",
+      "type": "expense",
+      "note": "买新的床单被套",
+      "merchant": "",
+      "expectedSemanticKeys": [
+        "expense.household.textiles"
+      ],
+      "mustNotAutoApply": false
+    },
+    {
+      "id": "clear-053",
+      "cohort": "clear",
+      "type": "expense",
+      "note": "客厅添了张沙发",
+      "merchant": "",
+      "expectedSemanticKeys": [
+        "expense.household.furniture"
+      ],
+      "mustNotAutoApply": false
+    },
+    {
+      "id": "clear-054",
+      "cohort": "clear",
+      "type": "expense",
+      "note": "买了一台洗衣机",
+      "merchant": "",
+      "expectedSemanticKeys": [
+        "expense.household.appliances"
+      ],
+      "mustNotAutoApply": false
+    },
+    {
+      "id": "clear-055",
+      "cohort": "clear",
+      "type": "expense",
+      "note": "空调漏水请人维修",
+      "merchant": "",
+      "expectedSemanticKeys": [
+        "expense.household.appliance-service"
+      ],
+      "mustNotAutoApply": false
+    },
+    {
+      "id": "clear-056",
+      "cohort": "clear",
+      "type": "expense",
+      "note": "家里备一套螺丝刀",
+      "merchant": "",
+      "expectedSemanticKeys": [
+        "expense.household.tools"
+      ],
+      "mustNotAutoApply": false
+    },
+    {
+      "id": "clear-057",
+      "cohort": "clear",
+      "type": "expense",
+      "note": "花店买了绿萝和花盆",
+      "merchant": "",
+      "expectedSemanticKeys": [
+        "expense.household.gardening"
+      ],
+      "mustNotAutoApply": false
+    },
+    {
+      "id": "clear-058",
+      "cohort": "clear",
+      "type": "expense",
+      "note": "给自己买件外套",
+      "merchant": "",
+      "expectedSemanticKeys": [
+        "expense.clothing.clothes"
+      ],
+      "mustNotAutoApply": false
+    },
+    {
+      "id": "clear-059",
+      "cohort": "clear",
+      "type": "expense",
+      "note": "买一双通勤皮鞋",
+      "merchant": "",
+      "expectedSemanticKeys": [
+        "expense.clothing.shoes"
+      ],
+      "mustNotAutoApply": false
+    },
+    {
+      "id": "clear-060",
+      "cohort": "clear",
+      "type": "expense",
+      "note": "换个上班用的背包",
+      "merchant": "",
+      "expectedSemanticKeys": [
+        "expense.clothing.bags"
+      ],
+      "mustNotAutoApply": false
+    },
+    {
+      "id": "clear-061",
+      "cohort": "clear",
+      "type": "expense",
+      "note": "添几双袜子",
+      "merchant": "",
+      "expectedSemanticKeys": [
+        "expense.clothing.underwear"
+      ],
+      "mustNotAutoApply": false
+    },
+    {
+      "id": "clear-062",
+      "cohort": "clear",
+      "type": "expense",
+      "note": "给自己买条银项链",
+      "merchant": "",
+      "expectedSemanticKeys": [
+        "expense.clothing.jewelry"
+      ],
+      "mustNotAutoApply": false
+    },
+    {
+      "id": "clear-063",
+      "cohort": "clear",
+      "type": "expense",
+      "note": "修好后买了块机械手表",
+      "merchant": "",
+      "expectedSemanticKeys": [
+        "expense.clothing.watch"
+      ],
+      "mustNotAutoApply": false
+    },
+    {
+      "id": "clear-064",
+      "cohort": "clear",
+      "type": "expense",
+      "note": "大衣送去干洗",
+      "merchant": "",
+      "expectedSemanticKeys": [
+        "expense.clothing.laundry"
+      ],
+      "mustNotAutoApply": false
+    },
+    {
+      "id": "clear-065",
+      "cohort": "clear",
+      "type": "expense",
+      "note": "裁缝店改裤脚",
+      "merchant": "",
+      "expectedSemanticKeys": [
+        "expense.clothing.repair"
+      ],
+      "mustNotAutoApply": false
+    },
+    {
+      "id": "clear-066",
+      "cohort": "clear",
+      "type": "expense",
+      "note": "面霜用完补一瓶",
+      "merchant": "",
+      "expectedSemanticKeys": [
+        "expense.personal-care.skincare"
+      ],
+      "mustNotAutoApply": false
+    },
+    {
+      "id": "clear-067",
+      "cohort": "clear",
+      "type": "expense",
+      "note": "买支口红",
+      "merchant": "",
+      "expectedSemanticKeys": [
+        "expense.personal-care.makeup"
+      ],
+      "mustNotAutoApply": false
+    },
+    {
+      "id": "clear-068",
+      "cohort": "clear",
+      "type": "expense",
+      "note": "去楼下剪头发",
+      "merchant": "",
+      "expectedSemanticKeys": [
+        "expense.personal-care.haircut"
+      ],
+      "mustNotAutoApply": false
+    },
+    {
+      "id": "clear-069",
+      "cohort": "clear",
+      "type": "expense",
+      "note": "理发店做了染发",
+      "merchant": "",
+      "expectedSemanticKeys": [
+        "expense.personal-care.hair-treatment"
+      ],
+      "mustNotAutoApply": false
+    },
+    {
+      "id": "clear-070",
+      "cohort": "clear",
+      "type": "expense",
+      "note": "预约了一次面部护理",
+      "merchant": "",
+      "expectedSemanticKeys": [
+        "expense.personal-care.beauty"
+      ],
+      "mustNotAutoApply": false
+    },
+    {
+      "id": "clear-071",
+      "cohort": "clear",
+      "type": "expense",
+      "note": "周末做美甲",
+      "merchant": "",
+      "expectedSemanticKeys": [
+        "expense.personal-care.nail-lash"
+      ],
+      "mustNotAutoApply": false
+    },
+    {
+      "id": "clear-072",
+      "cohort": "clear",
+      "type": "expense",
+      "note": "肩膀酸去按个摩",
+      "merchant": "",
+      "expectedSemanticKeys": [
+        "expense.personal-care.massage"
+      ],
+      "mustNotAutoApply": false
+    },
+    {
+      "id": "clear-073",
+      "cohort": "clear",
+      "type": "expense",
+      "note": "给手机号充了本月话费",
+      "merchant": "",
+      "expectedSemanticKeys": [
+        "expense.digital-services.phone-plan"
+      ],
+      "mustNotAutoApply": false
+    },
+    {
+      "id": "clear-074",
+      "cohort": "clear",
+      "type": "expense",
+      "note": "临时买个流量包",
+      "merchant": "",
+      "expectedSemanticKeys": [
+        "expense.digital-services.mobile-data"
+      ],
+      "mustNotAutoApply": false
+    },
+    {
+      "id": "clear-075",
+      "cohort": "clear",
+      "type": "expense",
+      "note": "家里的宽带续费一年",
+      "merchant": "",
+      "expectedSemanticKeys": [
+        "expense.digital-services.broadband"
+      ],
+      "mustNotAutoApply": false
+    },
+    {
+      "id": "clear-076",
+      "cohort": "clear",
+      "type": "expense",
+      "note": "续腾讯视频会员",
+      "merchant": "",
+      "expectedSemanticKeys": [
+        "expense.digital-services.media"
+      ],
+      "mustNotAutoApply": false
+    },
+    {
+      "id": "clear-077",
+      "cohort": "clear",
+      "type": "expense",
+      "note": "微信读书会员包月",
+      "merchant": "",
+      "expectedSemanticKeys": [
+        "expense.digital-services.reading"
+      ],
+      "mustNotAutoApply": false
+    },
+    {
+      "id": "clear-078",
+      "cohort": "clear",
+      "type": "expense",
+      "note": "买了一年的修图软件订阅",
+      "merchant": "",
+      "expectedSemanticKeys": [
+        "expense.digital-services.software"
+      ],
+      "mustNotAutoApply": false
+    },
+    {
+      "id": "clear-079",
+      "cohort": "clear",
+      "type": "expense",
+      "note": "续费人工智能助手订阅",
+      "merchant": "",
+      "expectedSemanticKeys": [
+        "expense.digital-services.ai-tools"
+      ],
+      "mustNotAutoApply": false
+    },
+    {
+      "id": "clear-080",
+      "cohort": "clear",
+      "type": "expense",
+      "note": "网盘空间续费",
+      "merchant": "",
+      "expectedSemanticKeys": [
+        "expense.digital-services.cloud-storage"
+      ],
+      "mustNotAutoApply": false
+    },
+    {
+      "id": "clear-081",
+      "cohort": "clear",
+      "type": "expense",
+      "note": "个人网站域名续费",
+      "merchant": "",
+      "expectedSemanticKeys": [
+        "expense.digital-services.hosting"
+      ],
+      "mustNotAutoApply": false
+    },
+    {
+      "id": "clear-082",
+      "cohort": "clear",
+      "type": "expense",
+      "note": "换了一台新手机",
+      "merchant": "",
+      "expectedSemanticKeys": [
+        "expense.devices.phone"
+      ],
+      "mustNotAutoApply": false
+    },
+    {
+      "id": "clear-083",
+      "cohort": "clear",
+      "type": "expense",
+      "note": "买台轻薄笔记本电脑办公",
+      "merchant": "",
+      "expectedSemanticKeys": [
+        "expense.devices.computer"
+      ],
+      "mustNotAutoApply": false
+    },
+    {
+      "id": "clear-084",
+      "cohort": "clear",
+      "type": "expense",
+      "note": "买了一台平板电脑",
+      "merchant": "",
+      "expectedSemanticKeys": [
+        "expense.devices.tablet"
+      ],
+      "mustNotAutoApply": false
+    },
+    {
+      "id": "clear-085",
+      "cohort": "clear",
+      "type": "expense",
+      "note": "给电脑添个键盘鼠标",
+      "merchant": "",
+      "expectedSemanticKeys": [
+        "expense.devices.peripherals"
+      ],
+      "mustNotAutoApply": false
+    },
+    {
+      "id": "clear-086",
+      "cohort": "clear",
+      "type": "expense",
+      "note": "新买降噪耳机",
+      "merchant": "",
+      "expectedSemanticKeys": [
+        "expense.devices.audio"
+      ],
+      "mustNotAutoApply": false
+    },
+    {
+      "id": "clear-087",
+      "cohort": "clear",
+      "type": "expense",
+      "note": "买个智能手环看步数",
+      "merchant": "",
+      "expectedSemanticKeys": [
+        "expense.devices.wearables"
+      ],
+      "mustNotAutoApply": false
+    },
+    {
+      "id": "clear-088",
+      "cohort": "clear",
+      "type": "expense",
+      "note": "手机屏幕贴膜",
+      "merchant": "",
+      "expectedSemanticKeys": [
+        "expense.devices.accessories"
+      ],
+      "mustNotAutoApply": false
+    },
+    {
+      "id": "clear-089",
+      "cohort": "clear",
+      "type": "expense",
+      "note": "手机摔坏换屏幕",
+      "merchant": "",
+      "expectedSemanticKeys": [
+        "expense.devices.repair"
+      ],
+      "mustNotAutoApply": false
+    },
+    {
+      "id": "clear-090",
+      "cohort": "clear",
+      "type": "expense",
+      "note": "去医院交挂号费",
+      "merchant": "",
+      "expectedSemanticKeys": [
+        "expense.health.outpatient"
+      ],
+      "mustNotAutoApply": false
+    },
+    {
+      "id": "clear-091",
+      "cohort": "clear",
+      "type": "expense",
+      "note": "药店买了感冒药",
+      "merchant": "",
+      "expectedSemanticKeys": [
+        "expense.health.medicine"
+      ],
+      "mustNotAutoApply": false
+    },
+    {
+      "id": "clear-092",
+      "cohort": "clear",
+      "type": "expense",
+      "note": "住院押金补缴",
+      "merchant": "",
+      "expectedSemanticKeys": [
+        "expense.health.inpatient"
+      ],
+      "mustNotAutoApply": false
+    },
+    {
+      "id": "clear-093",
+      "cohort": "clear",
+      "type": "expense",
+      "note": "预约年度体检",
+      "merchant": "",
+      "expectedSemanticKeys": [
+        "expense.health.checkup"
+      ],
+      "mustNotAutoApply": false
+    },
+    {
+      "id": "clear-094",
+      "cohort": "clear",
+      "type": "expense",
+      "note": "牙科补一颗牙",
+      "merchant": "",
+      "expectedSemanticKeys": [
+        "expense.health.dental"
+      ],
+      "mustNotAutoApply": false
+    },
+    {
+      "id": "clear-095",
+      "cohort": "clear",
+      "type": "expense",
+      "note": "眼镜店配近视眼镜",
+      "merchant": "",
+      "expectedSemanticKeys": [
+        "expense.health.vision"
+      ],
+      "mustNotAutoApply": false
+    },
+    {
+      "id": "clear-096",
+      "cohort": "clear",
+      "type": "expense",
+      "note": "接种流感疫苗",
+      "merchant": "",
+      "expectedSemanticKeys": [
+        "expense.health.vaccine"
+      ],
+      "mustNotAutoApply": false
+    },
+    {
+      "id": "clear-097",
+      "cohort": "clear",
+      "type": "expense",
+      "note": "膝盖术后做康复训练",
+      "merchant": "",
+      "expectedSemanticKeys": [
+        "expense.health.rehab"
+      ],
+      "mustNotAutoApply": false
+    },
+    {
+      "id": "clear-098",
+      "cohort": "clear",
+      "type": "expense",
+      "note": "给家里买台血压计",
+      "merchant": "",
+      "expectedSemanticKeys": [
+        "expense.health.devices"
+      ],
+      "mustNotAutoApply": false
+    },
+    {
+      "id": "clear-099",
+      "cohort": "clear",
+      "type": "expense",
+      "note": "买一瓶维生素片",
+      "merchant": "",
+      "expectedSemanticKeys": [
+        "expense.health.wellness"
+      ],
+      "mustNotAutoApply": false
+    },
+    {
+      "id": "clear-100",
+      "cohort": "clear",
+      "type": "expense",
+      "note": "缴大学本学期学费",
+      "merchant": "",
+      "expectedSemanticKeys": [
+        "expense.education.school-fees"
+      ],
+      "mustNotAutoApply": false
+    },
+    {
+      "id": "clear-101",
+      "cohort": "clear",
+      "type": "expense",
+      "note": "报了一个英语培训班",
+      "merchant": "",
+      "expectedSemanticKeys": [
+        "expense.education.courses"
+      ],
+      "mustNotAutoApply": false
+    },
+    {
+      "id": "clear-102",
+      "cohort": "clear",
+      "type": "expense",
+      "note": "书店买两本小说",
+      "merchant": "",
+      "expectedSemanticKeys": [
+        "expense.education.books"
+      ],
+      "mustNotAutoApply": false
+    },
+    {
+      "id": "clear-103",
+      "cohort": "clear",
+      "type": "expense",
+      "note": "买铅笔橡皮和练习本",
+      "merchant": "",
+      "expectedSemanticKeys": [
+        "expense.education.stationery"
+      ],
+      "mustNotAutoApply": false
+    },
+    {
+      "id": "clear-104",
+      "cohort": "clear",
+      "type": "expense",
+      "note": "报名会计资格考试",
+      "merchant": "",
+      "expectedSemanticKeys": [
+        "expense.education.exams"
+      ],
+      "mustNotAutoApply": false
+    },
+    {
+      "id": "clear-105",
+      "cohort": "clear",
+      "type": "expense",
+      "note": "给小孩买了点读笔",
+      "merchant": "",
+      "expectedSemanticKeys": [
+        "expense.education.learning-device"
+      ],
+      "mustNotAutoApply": false
+    },
+    {
+      "id": "clear-106",
+      "cohort": "clear",
+      "type": "expense",
+      "note": "学校组织的研学活动报名费",
+      "merchant": "",
+      "expectedSemanticKeys": [
+        "expense.education.study-tour"
+      ],
+      "mustNotAutoApply": false
+    },
+    {
+      "id": "clear-107",
+      "cohort": "clear",
+      "type": "expense",
+      "note": "给宝宝补一罐奶粉",
+      "merchant": "",
+      "expectedSemanticKeys": [
+        "expense.childcare.formula-food"
+      ],
+      "mustNotAutoApply": false
+    },
+    {
+      "id": "clear-108",
+      "cohort": "clear",
+      "type": "expense",
+      "note": "囤两包宝宝纸尿裤",
+      "merchant": "",
+      "expectedSemanticKeys": [
+        "expense.childcare.diapers"
+      ],
+      "mustNotAutoApply": false
+    },
+    {
+      "id": "clear-109",
+      "cohort": "clear",
+      "type": "expense",
+      "note": "给婴儿买新奶瓶",
+      "merchant": "",
+      "expectedSemanticKeys": [
+        "expense.childcare.feeding-care"
+      ],
+      "mustNotAutoApply": false
+    },
+    {
+      "id": "clear-110",
+      "cohort": "clear",
+      "type": "expense",
+      "note": "给宝宝买积木玩具",
+      "merchant": "",
+      "expectedSemanticKeys": [
+        "expense.childcare.toys"
+      ],
+      "mustNotAutoApply": false
+    },
+    {
+      "id": "clear-111",
+      "cohort": "clear",
+      "type": "expense",
+      "note": "买了一辆婴儿推车",
+      "merchant": "",
+      "expectedSemanticKeys": [
+        "expense.childcare.equipment"
+      ],
+      "mustNotAutoApply": false
+    },
+    {
+      "id": "clear-112",
+      "cohort": "clear",
+      "type": "expense",
+      "note": "缴下个月托育费",
+      "merchant": "",
+      "expectedSemanticKeys": [
+        "expense.childcare.daycare"
+      ],
+      "mustNotAutoApply": false
+    },
+    {
+      "id": "clear-113",
+      "cohort": "clear",
+      "type": "expense",
+      "note": "给月嫂结算服务费",
+      "merchant": "",
+      "expectedSemanticKeys": [
+        "expense.childcare.nanny"
+      ],
+      "mustNotAutoApply": false
+    },
+    {
+      "id": "clear-114",
+      "cohort": "clear",
+      "type": "expense",
+      "note": "两张电影院票",
+      "merchant": "",
+      "expectedSemanticKeys": [
+        "expense.entertainment.movie"
+      ],
+      "mustNotAutoApply": false
+    },
+    {
+      "id": "clear-115",
+      "cohort": "clear",
+      "type": "expense",
+      "note": "买了周末音乐会的票",
+      "merchant": "",
+      "expectedSemanticKeys": [
+        "expense.entertainment.show"
+      ],
+      "mustNotAutoApply": false
+    },
+    {
+      "id": "clear-116",
+      "cohort": "clear",
+      "type": "expense",
+      "note": "买了一款单机游戏",
+      "merchant": "",
+      "expectedSemanticKeys": [
+        "expense.entertainment.game-purchase"
+      ],
+      "mustNotAutoApply": false
+    },
+    {
+      "id": "clear-117",
+      "cohort": "clear",
+      "type": "expense",
+      "note": "手游充了月卡",
+      "merchant": "",
+      "expectedSemanticKeys": [
+        "expense.entertainment.game-topup"
+      ],
+      "mustNotAutoApply": false
+    },
+    {
+      "id": "clear-118",
+      "cohort": "clear",
+      "type": "expense",
+      "note": "和朋友去桌游店玩",
+      "merchant": "",
+      "expectedSemanticKeys": [
+        "expense.entertainment.tabletop"
+      ],
+      "mustNotAutoApply": false
+    },
+    {
+      "id": "clear-119",
+      "cohort": "clear",
+      "type": "expense",
+      "note": "晚上唱K包厢费",
+      "merchant": "",
+      "expectedSemanticKeys": [
+        "expense.entertainment.karaoke-bar"
+      ],
+      "mustNotAutoApply": false
+    },
+    {
+      "id": "clear-120",
+      "cohort": "clear",
+      "type": "expense",
+      "note": "美术展门票",
+      "merchant": "",
+      "expectedSemanticKeys": [
+        "expense.entertainment.exhibition"
+      ],
+      "mustNotAutoApply": false
+    },
+    {
+      "id": "clear-121",
+      "cohort": "clear",
+      "type": "expense",
+      "note": "去游乐园买门票",
+      "merchant": "",
+      "expectedSemanticKeys": [
+        "expense.entertainment.amusement"
+      ],
+      "mustNotAutoApply": false
+    },
+    {
+      "id": "clear-122",
+      "cohort": "clear",
+      "type": "expense",
+      "note": "健身房年卡续费",
+      "merchant": "",
+      "expectedSemanticKeys": [
+        "expense.hobbies.gym"
+      ],
+      "mustNotAutoApply": false
+    },
+    {
+      "id": "clear-123",
+      "cohort": "clear",
+      "type": "expense",
+      "note": "订羽毛球场两小时",
+      "merchant": "",
+      "expectedSemanticKeys": [
+        "expense.hobbies.venue"
+      ],
+      "mustNotAutoApply": false
+    },
+    {
+      "id": "clear-124",
+      "cohort": "clear",
+      "type": "expense",
+      "note": "报名游泳教学课",
+      "merchant": "",
+      "expectedSemanticKeys": [
+        "expense.hobbies.coaching"
+      ],
+      "mustNotAutoApply": false
+    },
+    {
+      "id": "clear-125",
+      "cohort": "clear",
+      "type": "expense",
+      "note": "买一支网球拍",
+      "merchant": "",
+      "expectedSemanticKeys": [
+        "expense.hobbies.gear"
+      ],
+      "mustNotAutoApply": false
+    },
+    {
+      "id": "clear-126",
+      "cohort": "clear",
+      "type": "expense",
+      "note": "周末露营买帐篷",
+      "merchant": "",
+      "expectedSemanticKeys": [
+        "expense.hobbies.camping"
+      ],
+      "mustNotAutoApply": false
+    },
+    {
+      "id": "clear-127",
+      "cohort": "clear",
+      "type": "expense",
+      "note": "给相机配一支镜头",
+      "merchant": "",
+      "expectedSemanticKeys": [
+        "expense.hobbies.camera"
+      ],
+      "mustNotAutoApply": false
+    },
+    {
+      "id": "clear-128",
+      "cohort": "clear",
+      "type": "expense",
+      "note": "预约照相馆拍证件照",
+      "merchant": "",
+      "expectedSemanticKeys": [
+        "expense.hobbies.photo-service"
+      ],
+      "mustNotAutoApply": false
+    },
+    {
+      "id": "clear-129",
+      "cohort": "clear",
+      "type": "expense",
+      "note": "买一盒水彩颜料",
+      "merchant": "",
+      "expectedSemanticKeys": [
+        "expense.hobbies.music-art"
+      ],
+      "mustNotAutoApply": false
+    },
+    {
+      "id": "clear-130",
+      "cohort": "clear",
+      "type": "expense",
+      "note": "买手工编织材料",
+      "merchant": "",
+      "expectedSemanticKeys": [
+        "expense.hobbies.collecting"
+      ],
+      "mustNotAutoApply": false
+    },
+    {
+      "id": "clear-131",
+      "cohort": "clear",
+      "type": "expense",
+      "note": "出差订两晚酒店",
+      "merchant": "",
+      "expectedSemanticKeys": [
+        "expense.travel.lodging"
+      ],
+      "mustNotAutoApply": false
+    },
+    {
+      "id": "clear-132",
+      "cohort": "clear",
+      "type": "expense",
+      "note": "黄山景区门票",
+      "merchant": "",
+      "expectedSemanticKeys": [
+        "expense.travel.tickets"
+      ],
+      "mustNotAutoApply": false
+    },
+    {
+      "id": "clear-133",
+      "cohort": "clear",
+      "type": "expense",
+      "note": "旅行团导游服务费",
+      "merchant": "",
+      "expectedSemanticKeys": [
+        "expense.travel.guide"
+      ],
+      "mustNotAutoApply": false
+    },
+    {
+      "id": "clear-134",
+      "cohort": "clear",
+      "type": "expense",
+      "note": "办旅游签证",
+      "merchant": "",
+      "expectedSemanticKeys": [
+        "expense.travel.visa"
+      ],
+      "mustNotAutoApply": false
+    },
+    {
+      "id": "clear-135",
+      "cohort": "clear",
+      "type": "expense",
+      "note": "车站寄存行李",
+      "merchant": "",
+      "expectedSemanticKeys": [
+        "expense.travel.luggage"
+      ],
+      "mustNotAutoApply": false
+    },
+    {
+      "id": "clear-136",
+      "cohort": "clear",
+      "type": "expense",
+      "note": "旅行社收的行程服务费",
+      "merchant": "",
+      "expectedSemanticKeys": [
+        "expense.travel.service"
+      ],
+      "mustNotAutoApply": false
+    },
+    {
+      "id": "clear-137",
+      "cohort": "clear",
+      "type": "expense",
+      "note": "给朋友买生日礼物",
+      "merchant": "",
+      "expectedSemanticKeys": [
+        "expense.gifts.gifts"
+      ],
+      "mustNotAutoApply": false
+    },
+    {
+      "id": "clear-138",
+      "cohort": "clear",
+      "type": "expense",
+      "note": "过年发出去一个红包",
+      "merchant": "",
+      "expectedSemanticKeys": [
+        "expense.gifts.red-envelope"
+      ],
+      "mustNotAutoApply": false
+    },
+    {
+      "id": "clear-139",
+      "cohort": "clear",
+      "type": "expense",
+      "note": "同学结婚随礼",
+      "merchant": "",
+      "expectedSemanticKeys": [
+        "expense.gifts.cash-gift"
+      ],
+      "mustNotAutoApply": false
+    },
+    {
+      "id": "clear-140",
+      "cohort": "clear",
+      "type": "expense",
+      "note": "给爸妈的孝敬钱",
+      "merchant": "",
+      "expectedSemanticKeys": [
+        "expense.gifts.parents"
+      ],
+      "mustNotAutoApply": false
+    },
+    {
+      "id": "clear-141",
+      "cohort": "clear",
+      "type": "expense",
+      "note": "资助弟弟生活费",
+      "merchant": "",
+      "expectedSemanticKeys": [
+        "expense.gifts.family-support"
+      ],
+      "mustNotAutoApply": false
+    },
+    {
+      "id": "clear-142",
+      "cohort": "clear",
+      "type": "expense",
+      "note": "向公益项目捐款",
+      "merchant": "",
+      "expectedSemanticKeys": [
+        "expense.gifts.charity"
+      ],
+      "mustNotAutoApply": false
+    },
+    {
+      "id": "clear-143",
+      "cohort": "clear",
+      "type": "expense",
+      "note": "给猫买一袋猫粮",
+      "merchant": "",
+      "expectedSemanticKeys": [
+        "expense.pets.food"
+      ],
+      "mustNotAutoApply": false
+    },
+    {
+      "id": "clear-144",
+      "cohort": "clear",
+      "type": "expense",
+      "note": "给猫换新猫砂盆",
+      "merchant": "",
+      "expectedSemanticKeys": [
+        "expense.pets.supplies"
+      ],
+      "mustNotAutoApply": false
+    },
+    {
+      "id": "clear-145",
+      "cohort": "clear",
+      "type": "expense",
+      "note": "带狗去宠物医院看病",
+      "merchant": "",
+      "expectedSemanticKeys": [
+        "expense.pets.medical"
+      ],
+      "mustNotAutoApply": false
+    },
+    {
+      "id": "clear-146",
+      "cohort": "clear",
+      "type": "expense",
+      "note": "给狗洗澡修毛",
+      "merchant": "",
+      "expectedSemanticKeys": [
+        "expense.pets.grooming"
+      ],
+      "mustNotAutoApply": false
+    },
+    {
+      "id": "clear-147",
+      "cohort": "clear",
+      "type": "expense",
+      "note": "出门把猫寄养三天",
+      "merchant": "",
+      "expectedSemanticKeys": [
+        "expense.pets.boarding"
+      ],
+      "mustNotAutoApply": false
+    },
+    {
+      "id": "clear-148",
+      "cohort": "clear",
+      "type": "expense",
+      "note": "领养小猫支付购置费用",
+      "merchant": "",
+      "expectedSemanticKeys": [
+        "expense.pets.purchase"
+      ],
+      "mustNotAutoApply": false
+    },
+    {
+      "id": "clear-149",
+      "cohort": "clear",
+      "type": "expense",
+      "note": "续缴商业医疗保险",
+      "merchant": "",
+      "expectedSemanticKeys": [
+        "expense.insurance.medical"
+      ],
+      "mustNotAutoApply": false
+    },
+    {
+      "id": "clear-150",
+      "cohort": "clear",
+      "type": "expense",
+      "note": "今年的重疾险保费",
+      "merchant": "",
+      "expectedSemanticKeys": [
+        "expense.insurance.critical-illness"
+      ],
+      "mustNotAutoApply": false
+    },
+    {
+      "id": "clear-151",
+      "cohort": "clear",
+      "type": "expense",
+      "note": "缴定期寿险年费",
+      "merchant": "",
+      "expectedSemanticKeys": [
+        "expense.insurance.life"
+      ],
+      "mustNotAutoApply": false
+    },
+    {
+      "id": "clear-152",
+      "cohort": "clear",
+      "type": "expense",
+      "note": "买了一年的意外险",
+      "merchant": "",
+      "expectedSemanticKeys": [
+        "expense.insurance.accident"
+      ],
+      "mustNotAutoApply": false
+    },
+    {
+      "id": "clear-153",
+      "cohort": "clear",
+      "type": "expense",
+      "note": "家庭财产保险续费",
+      "merchant": "",
+      "expectedSemanticKeys": [
+        "expense.insurance.property"
+      ],
+      "mustNotAutoApply": false
+    },
+    {
+      "id": "clear-154",
+      "cohort": "clear",
+      "type": "expense",
+      "note": "出国前买旅游保险",
+      "merchant": "",
+      "expectedSemanticKeys": [
+        "expense.insurance.travel"
+      ],
+      "mustNotAutoApply": false
+    },
+    {
+      "id": "clear-155",
+      "cohort": "clear",
+      "type": "expense",
+      "note": "银行卡跨行转账手续费",
+      "merchant": "",
+      "expectedSemanticKeys": [
+        "expense.other.fees"
+      ],
+      "mustNotAutoApply": false
+    },
+    {
+      "id": "clear-156",
+      "cohort": "clear",
+      "type": "expense",
+      "note": "偿还本月借款利息",
+      "merchant": "",
+      "expectedSemanticKeys": [
+        "expense.other.interest"
+      ],
+      "mustNotAutoApply": false
+    },
+    {
+      "id": "clear-157",
+      "cohort": "clear",
+      "type": "expense",
+      "note": "补缴个人所得税",
+      "merchant": "",
+      "expectedSemanticKeys": [
+        "expense.other.taxes"
+      ],
+      "mustNotAutoApply": false
+    },
+    {
+      "id": "clear-158",
+      "cohort": "clear",
+      "type": "expense",
+      "note": "寄快递给朋友",
+      "merchant": "",
+      "expectedSemanticKeys": [
+        "expense.other.postage"
+      ],
+      "mustNotAutoApply": false
+    },
+    {
+      "id": "clear-159",
+      "cohort": "clear",
+      "type": "expense",
+      "note": "补办证件工本费",
+      "merchant": "",
+      "expectedSemanticKeys": [
+        "expense.other.administration"
+      ],
+      "mustNotAutoApply": false
+    },
+    {
+      "id": "clear-160",
+      "cohort": "clear",
+      "type": "expense",
+      "note": "迟缴费用的滞纳金",
+      "merchant": "",
+      "expectedSemanticKeys": [
+        "expense.other.penalty"
+      ],
+      "mustNotAutoApply": false
+    },
+    {
+      "id": "clear-161",
+      "cohort": "clear",
+      "type": "income",
+      "note": "公司发了这个月薪水",
+      "merchant": "",
+      "expectedSemanticKeys": [
+        "income.work.salary"
+      ],
+      "mustNotAutoApply": false
+    },
+    {
+      "id": "clear-162",
+      "cohort": "clear",
+      "type": "income",
+      "note": "季度绩效奖到账",
+      "merchant": "",
+      "expectedSemanticKeys": [
+        "income.work.performance"
+      ],
+      "mustNotAutoApply": false
+    },
+    {
+      "id": "clear-163",
+      "cohort": "clear",
+      "type": "income",
+      "note": "公司的年终奖金到账",
+      "merchant": "",
+      "expectedSemanticKeys": [
+        "income.work.annual-bonus"
+      ],
+      "mustNotAutoApply": false
+    },
+    {
+      "id": "clear-164",
+      "cohort": "clear",
+      "type": "income",
+      "note": "收到本月餐补",
+      "merchant": "",
+      "expectedSemanticKeys": [
+        "income.work.allowance"
+      ],
+      "mustNotAutoApply": false
+    },
+    {
+      "id": "clear-165",
+      "cohort": "clear",
+      "type": "income",
+      "note": "夜班加班费发下来了",
+      "merchant": "",
+      "expectedSemanticKeys": [
+        "income.work.overtime"
+      ],
+      "mustNotAutoApply": false
+    },
+    {
+      "id": "clear-166",
+      "cohort": "clear",
+      "type": "income",
+      "note": "周末兼职结算收入",
+      "merchant": "",
+      "expectedSemanticKeys": [
+        "income.side-work.part-time"
+      ],
+      "mustNotAutoApply": false
+    },
+    {
+      "id": "clear-167",
+      "cohort": "clear",
+      "type": "income",
+      "note": "客户支付咨询服务费",
+      "merchant": "",
+      "expectedSemanticKeys": [
+        "income.side-work.consulting"
+      ],
+      "mustNotAutoApply": false
+    },
+    {
+      "id": "clear-168",
+      "cohort": "clear",
+      "type": "income",
+      "note": "出版社打来稿费",
+      "merchant": "",
+      "expectedSemanticKeys": [
+        "income.side-work.royalties"
+      ],
+      "mustNotAutoApply": false
+    },
+    {
+      "id": "clear-169",
+      "cohort": "clear",
+      "type": "income",
+      "note": "短视频平台创作分成到账",
+      "merchant": "",
+      "expectedSemanticKeys": [
+        "income.side-work.creator"
+      ],
+      "mustNotAutoApply": false
+    },
+    {
+      "id": "clear-170",
+      "cohort": "clear",
+      "type": "income",
+      "note": "小店今天经营进账",
+      "merchant": "",
+      "expectedSemanticKeys": [
+        "income.side-work.business"
+      ],
+      "mustNotAutoApply": false
+    },
+    {
+      "id": "clear-171",
+      "cohort": "clear",
+      "type": "income",
+      "note": "银行存款利息到账",
+      "merchant": "",
+      "expectedSemanticKeys": [
+        "income.investment.deposit-interest"
+      ],
+      "mustNotAutoApply": false
+    },
+    {
+      "id": "clear-172",
+      "cohort": "clear",
+      "type": "income",
+      "note": "理财产品利息到账",
+      "merchant": "",
+      "expectedSemanticKeys": [
+        "income.investment.product-interest"
+      ],
+      "mustNotAutoApply": false
+    },
+    {
+      "id": "clear-173",
+      "cohort": "clear",
+      "type": "income",
+      "note": "收到股票现金分红",
+      "merchant": "",
+      "expectedSemanticKeys": [
+        "income.investment.dividend"
+      ],
+      "mustNotAutoApply": false
+    },
+    {
+      "id": "clear-174",
+      "cohort": "clear",
+      "type": "income",
+      "note": "卖出基金的已实现收益",
+      "merchant": "",
+      "expectedSemanticKeys": [
+        "income.investment.realized"
+      ],
+      "mustNotAutoApply": false
+    },
+    {
+      "id": "clear-175",
+      "cohort": "clear",
+      "type": "income",
+      "note": "租客交这个月房租",
+      "merchant": "",
+      "expectedSemanticKeys": [
+        "income.rental.home"
+      ],
+      "mustNotAutoApply": false
+    },
+    {
+      "id": "clear-176",
+      "cohort": "clear",
+      "type": "income",
+      "note": "收到车位出租租金",
+      "merchant": "",
+      "expectedSemanticKeys": [
+        "income.rental.parking"
+      ],
+      "mustNotAutoApply": false
+    },
+    {
+      "id": "clear-177",
+      "cohort": "clear",
+      "type": "income",
+      "note": "出租摄影设备的租金到账",
+      "merchant": "",
+      "expectedSemanticKeys": [
+        "income.rental.equipment"
+      ],
+      "mustNotAutoApply": false
+    },
+    {
+      "id": "clear-178",
+      "cohort": "clear",
+      "type": "income",
+      "note": "收到长辈的新年红包",
+      "merchant": "",
+      "expectedSemanticKeys": [
+        "income.gifts.red-envelope"
+      ],
+      "mustNotAutoApply": false
+    },
+    {
+      "id": "clear-179",
+      "cohort": "clear",
+      "type": "income",
+      "note": "收到亲友的婚礼礼金",
+      "merchant": "",
+      "expectedSemanticKeys": [
+        "income.gifts.cash-gift"
+      ],
+      "mustNotAutoApply": false
+    },
+    {
+      "id": "clear-180",
+      "cohort": "clear",
+      "type": "income",
+      "note": "爸妈给我的生活资助",
+      "merchant": "",
+      "expectedSemanticKeys": [
+        "income.gifts.family-support"
+      ],
+      "mustNotAutoApply": false
+    },
+    {
+      "id": "clear-181",
+      "cohort": "clear",
+      "type": "income",
+      "note": "公共就业补贴发放到账",
+      "merchant": "",
+      "expectedSemanticKeys": [
+        "income.gifts.subsidy"
+      ],
+      "mustNotAutoApply": false
+    },
+    {
+      "id": "clear-182",
+      "cohort": "clear",
+      "type": "income",
+      "note": "养老金发放到账",
+      "merchant": "",
+      "expectedSemanticKeys": [
+        "income.other.pension"
+      ],
+      "mustNotAutoApply": false
+    },
+    {
+      "id": "clear-183",
+      "cohort": "clear",
+      "type": "income",
+      "note": "学校奖学金到账",
+      "merchant": "",
+      "expectedSemanticKeys": [
+        "income.other.award"
+      ],
+      "mustNotAutoApply": false
+    },
+    {
+      "id": "ambiguous-001",
+      "cohort": "ambiguous",
+      "type": "expense",
+      "note": "京东扣款",
+      "merchant": "",
+      "expectedSemanticKeys": [],
+      "mustNotAutoApply": true
+    },
+    {
+      "id": "ambiguous-002",
+      "cohort": "ambiguous",
+      "type": "expense",
+      "note": "淘宝付款成功",
+      "merchant": "",
+      "expectedSemanticKeys": [],
+      "mustNotAutoApply": true
+    },
+    {
+      "id": "ambiguous-003",
+      "cohort": "ambiguous",
+      "type": "expense",
+      "note": "拼多多买东西",
+      "merchant": "",
+      "expectedSemanticKeys": [],
+      "mustNotAutoApply": true
+    },
+    {
+      "id": "ambiguous-004",
+      "cohort": "ambiguous",
+      "type": "expense",
+      "note": "支付宝消费",
+      "merchant": "",
+      "expectedSemanticKeys": [],
+      "mustNotAutoApply": true
+    },
+    {
+      "id": "ambiguous-005",
+      "cohort": "ambiguous",
+      "type": "expense",
+      "note": "微信支付",
+      "merchant": "",
+      "expectedSemanticKeys": [],
+      "mustNotAutoApply": true
+    },
+    {
+      "id": "ambiguous-006",
+      "cohort": "ambiguous",
+      "type": "expense",
+      "note": "超市买了一些东西",
+      "merchant": "",
+      "expectedSemanticKeys": [],
+      "mustNotAutoApply": true
+    },
+    {
+      "id": "ambiguous-007",
+      "cohort": "ambiguous",
+      "type": "expense",
+      "note": "商场刷卡",
+      "merchant": "",
+      "expectedSemanticKeys": [],
+      "mustNotAutoApply": true
+    },
+    {
+      "id": "ambiguous-008",
+      "cohort": "ambiguous",
+      "type": "expense",
+      "note": "便利店购物",
+      "merchant": "",
+      "expectedSemanticKeys": [],
+      "mustNotAutoApply": true
+    },
+    {
+      "id": "ambiguous-009",
+      "cohort": "ambiguous",
+      "type": "expense",
+      "note": "今天花的钱",
+      "merchant": "",
+      "expectedSemanticKeys": [],
+      "mustNotAutoApply": true
+    },
+    {
+      "id": "ambiguous-010",
+      "cohort": "ambiguous",
+      "type": "expense",
+      "note": "其他",
+      "merchant": "",
+      "expectedSemanticKeys": [],
+      "mustNotAutoApply": true
+    },
+    {
+      "id": "ambiguous-011",
+      "cohort": "ambiguous",
+      "type": "expense",
+      "note": "买了一些日用品和食材",
+      "merchant": "",
+      "expectedSemanticKeys": [],
+      "mustNotAutoApply": true
+    },
+    {
+      "id": "ambiguous-012",
+      "cohort": "ambiguous",
+      "type": "expense",
+      "note": "苹果",
+      "merchant": "",
+      "expectedSemanticKeys": [],
+      "mustNotAutoApply": true
+    },
+    {
+      "id": "ambiguous-013",
+      "cohort": "ambiguous",
+      "type": "expense",
+      "note": "小米",
+      "merchant": "",
+      "expectedSemanticKeys": [],
+      "mustNotAutoApply": true
+    },
+    {
+      "id": "ambiguous-014",
+      "cohort": "ambiguous",
+      "type": "expense",
+      "note": "会员续费",
+      "merchant": "",
+      "expectedSemanticKeys": [],
+      "mustNotAutoApply": true
+    },
+    {
+      "id": "ambiguous-015",
+      "cohort": "ambiguous",
+      "type": "expense",
+      "note": "设备配件",
+      "merchant": "",
+      "expectedSemanticKeys": [],
+      "mustNotAutoApply": true
+    },
+    {
+      "id": "ambiguous-016",
+      "cohort": "ambiguous",
+      "type": "expense",
+      "note": "充值成功",
+      "merchant": "",
+      "expectedSemanticKeys": [],
+      "mustNotAutoApply": true
+    },
+    {
+      "id": "ambiguous-017",
+      "cohort": "ambiguous",
+      "type": "expense",
+      "note": "幼儿园这个月费用",
+      "merchant": "",
+      "expectedSemanticKeys": [],
+      "mustNotAutoApply": true
+    },
+    {
+      "id": "ambiguous-018",
+      "cohort": "ambiguous",
+      "type": "expense",
+      "note": "学校收的钱",
+      "merchant": "",
+      "expectedSemanticKeys": [],
+      "mustNotAutoApply": true
+    },
+    {
+      "id": "ambiguous-019",
+      "cohort": "ambiguous",
+      "type": "expense",
+      "note": "给孩子买东西",
+      "merchant": "",
+      "expectedSemanticKeys": [],
+      "mustNotAutoApply": true
+    },
+    {
+      "id": "ambiguous-020",
+      "cohort": "ambiguous",
+      "type": "expense",
+      "note": "全家周末的开销",
+      "merchant": "",
+      "expectedSemanticKeys": [],
+      "mustNotAutoApply": true
+    },
+    {
+      "id": "ambiguous-021",
+      "cohort": "ambiguous",
+      "type": "expense",
+      "note": "公司报销相关支出",
+      "merchant": "",
+      "expectedSemanticKeys": [],
+      "mustNotAutoApply": true
+    },
+    {
+      "id": "ambiguous-022",
+      "cohort": "ambiguous",
+      "type": "expense",
+      "note": "生活费",
+      "merchant": "",
+      "expectedSemanticKeys": [],
+      "mustNotAutoApply": true
+    },
+    {
+      "id": "ambiguous-023",
+      "cohort": "ambiguous",
+      "type": "expense",
+      "note": "订阅",
+      "merchant": "",
+      "expectedSemanticKeys": [],
+      "mustNotAutoApply": true
+    },
+    {
+      "id": "ambiguous-024",
+      "cohort": "ambiguous",
+      "type": "expense",
+      "note": "服务费",
+      "merchant": "",
+      "expectedSemanticKeys": [],
+      "mustNotAutoApply": true
+    },
+    {
+      "id": "ambiguous-025",
+      "cohort": "ambiguous",
+      "type": "expense",
+      "note": "买手机顺便买了一袋苹果",
+      "merchant": "",
+      "expectedSemanticKeys": [],
+      "mustNotAutoApply": true
+    },
+    {
+      "id": "ambiguous-026",
+      "cohort": "ambiguous",
+      "type": "expense",
+      "note": "地铁费加上午饭",
+      "merchant": "",
+      "expectedSemanticKeys": [],
+      "mustNotAutoApply": true
+    },
+    {
+      "id": "ambiguous-027",
+      "cohort": "ambiguous",
+      "type": "expense",
+      "note": "买猫粮和自己的早餐",
+      "merchant": "",
+      "expectedSemanticKeys": [],
+      "mustNotAutoApply": true
+    },
+    {
+      "id": "ambiguous-028",
+      "cohort": "ambiguous",
+      "type": "expense",
+      "note": "咖啡和一本书一起结账",
+      "merchant": "",
+      "expectedSemanticKeys": [],
+      "mustNotAutoApply": true
+    },
+    {
+      "id": "ambiguous-029",
+      "cohort": "ambiguous",
+      "type": "expense",
+      "note": "给车加油后买了牙膏",
+      "merchant": "",
+      "expectedSemanticKeys": [],
+      "mustNotAutoApply": true
+    },
+    {
+      "id": "ambiguous-030",
+      "cohort": "ambiguous",
+      "type": "expense",
+      "note": "酒店和机票打包付款",
+      "merchant": "",
+      "expectedSemanticKeys": [],
+      "mustNotAutoApply": true
+    },
+    {
+      "id": "ambiguous-031",
+      "cohort": "ambiguous",
+      "type": "expense",
+      "note": "付房租以及水电费",
+      "merchant": "",
+      "expectedSemanticKeys": [],
+      "mustNotAutoApply": true
+    },
+    {
+      "id": "ambiguous-032",
+      "cohort": "ambiguous",
+      "type": "expense",
+      "note": "充话费又买了新耳机",
+      "merchant": "",
+      "expectedSemanticKeys": [],
+      "mustNotAutoApply": true
+    },
+    {
+      "id": "ambiguous-033",
+      "cohort": "ambiguous",
+      "type": "expense",
+      "note": "衣服鞋子一起买",
+      "merchant": "",
+      "expectedSemanticKeys": [],
+      "mustNotAutoApply": true
+    },
+    {
+      "id": "ambiguous-034",
+      "cohort": "ambiguous",
+      "type": "expense",
+      "note": "超市买药和零食",
+      "merchant": "",
+      "expectedSemanticKeys": [],
+      "mustNotAutoApply": true
+    },
+    {
+      "id": "ambiguous-035",
+      "cohort": "ambiguous",
+      "type": "expense",
+      "note": "火锅和电影票一起付",
+      "merchant": "",
+      "expectedSemanticKeys": [],
+      "mustNotAutoApply": true
+    },
+    {
+      "id": "ambiguous-036",
+      "cohort": "ambiguous",
+      "type": "expense",
+      "note": "房租或者物业费记不清了",
+      "merchant": "",
+      "expectedSemanticKeys": [],
+      "mustNotAutoApply": true
+    },
+    {
+      "id": "ambiguous-037",
+      "cohort": "ambiguous",
+      "type": "expense",
+      "note": "不是买电脑，是别的支出",
+      "merchant": "",
+      "expectedSemanticKeys": [],
+      "mustNotAutoApply": true
+    },
+    {
+      "id": "ambiguous-038",
+      "cohort": "ambiguous",
+      "type": "expense",
+      "note": "没有买手机，只是咨询价格",
+      "merchant": "",
+      "expectedSemanticKeys": [],
+      "mustNotAutoApply": true
+    },
+    {
+      "id": "ambiguous-039",
+      "cohort": "ambiguous",
+      "type": "expense",
+      "note": "本来想买奶茶，最后没有买",
+      "merchant": "",
+      "expectedSemanticKeys": [],
+      "mustNotAutoApply": true
+    },
+    {
+      "id": "ambiguous-040",
+      "cohort": "ambiguous",
+      "type": "expense",
+      "note": "这不是咖啡饮品",
+      "merchant": "",
+      "expectedSemanticKeys": [],
+      "mustNotAutoApply": true
+    },
+    {
+      "id": "ambiguous-041",
+      "cohort": "ambiguous",
+      "type": "expense",
+      "note": "取消了健身年卡",
+      "merchant": "",
+      "expectedSemanticKeys": [],
+      "mustNotAutoApply": true
+    },
+    {
+      "id": "ambiguous-042",
+      "cohort": "ambiguous",
+      "type": "expense",
+      "note": "收到商家的退款",
+      "merchant": "",
+      "expectedSemanticKeys": [],
+      "mustNotAutoApply": true
+    },
+    {
+      "id": "ambiguous-043",
+      "cohort": "ambiguous",
+      "type": "expense",
+      "note": "退还昨天的咖啡钱",
+      "merchant": "",
+      "expectedSemanticKeys": [],
+      "mustNotAutoApply": true
+    },
+    {
+      "id": "ambiguous-044",
+      "cohort": "ambiguous",
+      "type": "expense",
+      "note": "退货后的差额不清楚",
+      "merchant": "",
+      "expectedSemanticKeys": [],
+      "mustNotAutoApply": true
+    },
+    {
+      "id": "ambiguous-045",
+      "cohort": "ambiguous",
+      "type": "expense",
+      "note": "把买鞋的钱退回来了",
+      "merchant": "",
+      "expectedSemanticKeys": [],
+      "mustNotAutoApply": true
+    },
+    {
+      "id": "ambiguous-046",
+      "cohort": "ambiguous",
+      "type": "expense",
+      "note": "帮朋友垫的钱已返还",
+      "merchant": "",
+      "expectedSemanticKeys": [],
+      "mustNotAutoApply": true
+    },
+    {
+      "id": "ambiguous-047",
+      "cohort": "ambiguous",
+      "type": "expense",
+      "note": "偿还房贷本金",
+      "merchant": "",
+      "expectedSemanticKeys": [],
+      "mustNotAutoApply": true
+    },
+    {
+      "id": "ambiguous-048",
+      "cohort": "ambiguous",
+      "type": "expense",
+      "note": "信用卡还款",
+      "merchant": "",
+      "expectedSemanticKeys": [],
+      "mustNotAutoApply": true
+    },
+    {
+      "id": "ambiguous-049",
+      "cohort": "ambiguous",
+      "type": "expense",
+      "note": "余额充值到另一个账户",
+      "merchant": "",
+      "expectedSemanticKeys": [],
+      "mustNotAutoApply": true
+    },
+    {
+      "id": "ambiguous-050",
+      "cohort": "ambiguous",
+      "type": "expense",
+      "note": "借给朋友的钱",
+      "merchant": "",
+      "expectedSemanticKeys": [],
+      "mustNotAutoApply": true
+    },
+    {
+      "id": "ambiguous-051",
+      "cohort": "ambiguous",
+      "type": "income",
+      "note": "一笔钱到账",
+      "merchant": "",
+      "expectedSemanticKeys": [],
+      "mustNotAutoApply": true
+    },
+    {
+      "id": "ambiguous-052",
+      "cohort": "ambiguous",
+      "type": "income",
+      "note": "朋友转账",
+      "merchant": "",
+      "expectedSemanticKeys": [],
+      "mustNotAutoApply": true
+    },
+    {
+      "id": "ambiguous-053",
+      "cohort": "ambiguous",
+      "type": "income",
+      "note": "平台余额提现",
+      "merchant": "",
+      "expectedSemanticKeys": [],
+      "mustNotAutoApply": true
+    },
+    {
+      "id": "ambiguous-054",
+      "cohort": "ambiguous",
+      "type": "income",
+      "note": "退款收入",
+      "merchant": "",
+      "expectedSemanticKeys": [],
+      "mustNotAutoApply": true
+    },
+    {
+      "id": "ambiguous-055",
+      "cohort": "ambiguous",
+      "type": "income",
+      "note": "奖金到账，不清楚是哪种奖金",
+      "merchant": "",
+      "expectedSemanticKeys": [],
+      "mustNotAutoApply": true
+    },
+    {
+      "id": "ambiguous-056",
+      "cohort": "ambiguous",
+      "type": "income",
+      "note": "利息到账，来源未知",
+      "merchant": "",
+      "expectedSemanticKeys": [],
+      "mustNotAutoApply": true
+    },
+    {
+      "id": "ambiguous-057",
+      "cohort": "ambiguous",
+      "type": "income",
+      "note": "收到了一笔补款",
+      "merchant": "",
+      "expectedSemanticKeys": [],
+      "mustNotAutoApply": true
+    },
+    {
+      "id": "ambiguous-058",
+      "cohort": "ambiguous",
+      "type": "income",
+      "note": "投资账户市值上涨",
+      "merchant": "",
+      "expectedSemanticKeys": [],
+      "mustNotAutoApply": true
+    },
+    {
+      "id": "ambiguous-059",
+      "cohort": "ambiguous",
+      "type": "income",
+      "note": "收到借款本金",
+      "merchant": "",
+      "expectedSemanticKeys": [],
+      "mustNotAutoApply": true
+    },
+    {
+      "id": "ambiguous-060",
+      "cohort": "ambiguous",
+      "type": "income",
+      "note": "报销的交通费到账",
+      "merchant": "",
+      "expectedSemanticKeys": [],
+      "mustNotAutoApply": true
+    },
+    {
+      "id": "ambiguous-061",
+      "cohort": "ambiguous",
+      "type": "income",
+      "note": "工资和报销一起到账",
+      "merchant": "",
+      "expectedSemanticKeys": [],
+      "mustNotAutoApply": true
+    },
+    {
+      "id": "ambiguous-062",
+      "cohort": "ambiguous",
+      "type": "income",
+      "note": "房租加车位租金到账",
+      "merchant": "",
+      "expectedSemanticKeys": [],
+      "mustNotAutoApply": true
+    },
+    {
+      "id": "ambiguous-063",
+      "cohort": "ambiguous",
+      "type": "transfer",
+      "note": "从银行卡转到零钱",
+      "merchant": "",
+      "expectedSemanticKeys": [],
+      "mustNotAutoApply": true
+    },
+    {
+      "id": "ambiguous-064",
+      "cohort": "ambiguous",
+      "type": "transfer",
+      "note": "用工资卡给储蓄卡转账",
+      "merchant": "",
+      "expectedSemanticKeys": [],
+      "mustNotAutoApply": true
+    },
+    {
+      "id": "ambiguous-065",
+      "cohort": "ambiguous",
+      "type": "transfer",
+      "note": "账户互转，备注午餐",
+      "merchant": "",
+      "expectedSemanticKeys": [],
+      "mustNotAutoApply": true
+    },
+    {
+      "id": "ambiguous-066",
+      "cohort": "ambiguous",
+      "type": "transfer",
+      "note": "给另一个自己的账户充值话费预算",
+      "merchant": "",
+      "expectedSemanticKeys": [],
+      "mustNotAutoApply": true
+    }
+  ]
+}
